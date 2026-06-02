@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { questionBank, getTopicName } from "@/lib/questions";
-import { getStats } from "@/lib/storage";
+import { getStats as getLocalStats } from "@/lib/storage";
 
 export default function Home() {
-  const stats = getStats();
+  const localStats = getLocalStats();
 
   return (
     <div className="space-y-8">
@@ -16,21 +16,31 @@ export default function Home() {
         </p>
       </div>
 
+      {/* Email sync banner */}
+      <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800">
+        <p className="font-semibold mb-1">☁️ Sinkronisasi Cloud (Turso)</p>
+        <p className="text-amber-700">
+          Tambahkan <code className="bg-amber-100 px-1 rounded">?email=kamu@email.com</code> di URL untuk sync progress ke cloud.
+          <br />
+          Contoh: <code className="bg-amber-100 px-1 rounded">/quiz?mode=all&email=test@mail.com</code>
+        </p>
+      </div>
+
       {/* Quick Stats */}
-      {stats.totalSessions > 0 && (
+      {localStats.totalSessions > 0 && (
         <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-          <h2 className="font-semibold text-gray-700 mb-4">📊 Ringkasan Progress</h2>
+          <h2 className="font-semibold text-gray-700 mb-4">📊 Ringkasan Progress (Lokal)</h2>
           <div className="grid grid-cols-3 gap-4 text-center">
             <div>
-              <div className="text-2xl font-bold text-indigo-600">{stats.totalSessions}</div>
+              <div className="text-2xl font-bold text-indigo-600">{localStats.totalSessions}</div>
               <div className="text-sm text-gray-500">Sesi Latihan</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-green-600">{stats.accuracy.toFixed(0)}%</div>
+              <div className="text-2xl font-bold text-green-600">{localStats.accuracy.toFixed(0)}%</div>
               <div className="text-sm text-gray-500">Akurasi</div>
             </div>
             <div>
-              <div className="text-2xl font-bold text-purple-600">{stats.totalQuestions}</div>
+              <div className="text-2xl font-bold text-purple-600">{localStats.totalQuestions}</div>
               <div className="text-sm text-gray-500">Soal Dikerjakan</div>
             </div>
           </div>
