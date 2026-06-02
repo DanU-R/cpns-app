@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { getStats as getLocalStats, clearProgress } from "@/lib/storage";
 import { getTopicName } from "@/lib/questions";
+import { formasiList, getFormasi } from "@/lib/formasi";
 import Link from "next/link";
 
 interface CloudStats {
@@ -11,22 +12,30 @@ interface CloudStats {
   totalQuestions: number;
   totalCorrect: number;
   topicStats: { topic: string; total: number; correct: number }[];
-  recentSessions: { id: string; email: string | null; date: string; mode: string; topic: string | null; total: number; correct: number }[];
+  recentSessions: { id: string; email: string | null; date: string; mode: string; topic: string | null; total: number; correct: number; formasi?: string }[];
 }
 
 const topicIcons: Record<string, string> = {
-  jaringan_komputer: "🌐",
-  database: "🗄️",
-  keamanan_informasi: "🔒",
-  sistem_operasi: "💻",
-  pemrograman_teori: "📝",
-  hardware: "🔧",
+  jaringan_komputer: "🌐", database: "🗄️", keamanan_informasi: "🔒",
+  sistem_operasi: "⚙️", pemrograman_teori: "📝", hardware: "🔧",
+  pedagogik: "📚", kepribadian_guru: "🧠", sosial: "🤝",
+  profesional: "📋", kurikulum: "📐",
+  kesehatan_masyarakat: "🏘️", farmasi: "💊", keperawatan: "🩺",
+  gizi: "🥗", epidemiologi: "🔬",
+  kebijakan_publik: "🏛️", hukum_administrasi: "⚖️", riset_kebijakan: "📈",
+  statistik: "📉", manajemen_publik: "🏢",
+  ilmu_perpustakaan: "📚", klasifikasi: "🗂️", layanan_informasi: "🔍",
+  ti_perpustakaan: "💾", manajemen_koleksi: "📦",
+  audit_keuangan: "💰", audit_kinerja: "📊", spip: "🛡️",
+  peraturan_bpkp: "📜", standar_audit: "✅",
 };
 
 export default function StatsClient() {
   const searchParams = useSearchParams();
   const urlEmail = searchParams.get("email");
+  const urlFormasi = searchParams.get("formasi");
   const email = urlEmail || (typeof window !== "undefined" ? localStorage.getItem("cpns-email") || "" : "");
+  const [filterFormasi, setFilterFormasi] = useState(urlFormasi || "all");
   const [cloudStats, setCloudStats] = useState<CloudStats | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -52,9 +61,35 @@ export default function StatsClient() {
     }
   };
 
-  const displayStats = cloudStats || { ...localStats, topicStats: Object.entries(localStats.topicStats).map(([topic, s]) => ({ topic, ...s })), recentSessions: localStats.recentSessions };
+  // Filter sessions by formasi
+  const filterByFormasi = (sessions: any[]) => {
+    if (filterFormasi === "all") return sessions;
+    return sessions.filter((s) => s.formasi === filterFormasi);
+  };
+
+  const filteredSessions = filterByFormasi(localStats.recentSessions || []);
+  const filteredTopicStats = filterFormasi === "all"
+    ? localStats.topicStats
+    : Object.fromEntries(
+        Object.entries(localStats.topicStats).filter(([key]) => {
+          const formasi = getFormasi(filterFormasi);
+          return formasi?.topics.some((t) => t.key === key);
+        })
+      );
+
+  const totalFiltered = filteredSessions.reduce((s, r) => s + r.total, 0);
+  const correctFiltered = filteredSessions.reduce((s, r) => s + r.correct, 0);
+  const accuracyFiltered = totalFiltered > 0 ? (correctFiltered / totalFiltered) * 100 : 0;
+
+  const displayStats = {
+    totalSessions: filteredSessions.length,
+    totalQuestions: totalFiltered,
+    totalCorrect: correctFiltered,
+    topicStats: Object.entries(filteredTopicStats).map(([topic, s]: [string, any]) => ({ topic, ...s })),
+    recentSessions: filteredSessions,
+  };
+
   const isCloud = !!cloudStats;
-  const accuracy = displayStats.totalQuestions > 0 ? (displayStats.totalCorrect / displayStats.totalQuestions) * 100 : 0;
 
   return (
     <div className="space-y-8 animate-fadeIn">
@@ -71,6 +106,29 @@ export default function StatsClient() {
             Reset
           </button>
         )}
+      </div>
+
+      {/* Formasi filter */}
+      <div className="flex gap-2 overflow-x-auto pb-2">
+        <button
+          onClick={() => setFilterFormasi("all")}
+          className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-all ${
+            filterFormasi === "all" ? "bg-[var(--primary)] text-white" : "bg-[var(--muted-light)] text-[var(--muted)] hover:bg-[var(--card-border)]"
+          }`}
+        >
+          Semua
+        </button>
+        {formasiList.map((f) => (
+          <button
+            key={f.id}
+            onClick={() => setFilterFormasi(f.id)}
+            className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-all ${
+              filterFormasi === f.id ? "bg-[var(--primary)] text-white" : "bg-[var(--muted-light)] text-[var(--muted)] hover:bg-[var(--card-border)]"
+            }`}
+          >
+            {f.icon} {f.name}
+          </button>
+        ))}
       </div>
 
       {!email && (
@@ -93,8 +151,10 @@ export default function StatsClient() {
       {displayStats.totalSessions === 0 && !loading && (
         <div className="card p-12 text-center">
           <div className="text-4xl mb-4">📊</div>
-          <p className="text-[var(--muted)] mb-4">Belum ada riwayat latihan</p>
-          <Link href="/quiz?mode=all" className="btn-primary inline-block">Mulai Latihan →</Link>
+          <p className="text-[var(--muted)] mb-4">
+            {filterFormasi !== "all" ? `Belum ada riwayat untuk ${getFormasi(filterFormasi)?.name}` : "Belum ada riwayat latihan"}
+          </p>
+          <Link href="/" className="btn-primary inline-block">Mulai Latihan →</Link>
         </div>
       )}
 
@@ -106,7 +166,7 @@ export default function StatsClient() {
               { label: "Sesi", value: displayStats.totalSessions, color: "text-[var(--primary)]" },
               { label: "Soal", value: displayStats.totalQuestions, color: "text-[var(--muted)]" },
               { label: "Benar", value: displayStats.totalCorrect, color: "text-[var(--success)]" },
-              { label: "Akurasi", value: `${accuracy.toFixed(0)}%`, color: accuracy >= 70 ? "text-[var(--success)]" : accuracy >= 50 ? "text-[var(--warning)]" : "text-[var(--danger)]" },
+              { label: "Akurasi", value: `${accuracyFiltered.toFixed(0)}%`, color: accuracyFiltered >= 70 ? "text-[var(--success)]" : accuracyFiltered >= 50 ? "text-[var(--warning)]" : "text-[var(--danger)]" },
             ].map((s) => (
               <div key={s.label} className="card p-5 text-center">
                 <div className={`text-2xl font-bold ${s.color}`}>{s.value}</div>
@@ -116,7 +176,7 @@ export default function StatsClient() {
           </div>
 
           {/* Topic breakdown */}
-          {displayStats.topicStats && displayStats.topicStats.length > 0 && (
+          {displayStats.topicStats.length > 0 && (
             <div className="card p-6">
               <h2 className="font-semibold mb-4">Per Topik</h2>
               <div className="space-y-4">
@@ -152,16 +212,19 @@ export default function StatsClient() {
           )}
 
           {/* Recent sessions */}
-          {displayStats.recentSessions && displayStats.recentSessions.length > 0 && (
+          {displayStats.recentSessions.length > 0 && (
             <div className="card p-6">
               <h2 className="font-semibold mb-4">Riwayat</h2>
               <div className="space-y-1">
                 {displayStats.recentSessions.slice(0, 10).map((session) => {
                   const acc = session.total > 0 ? (session.correct / session.total) * 100 : 0;
+                  const sessionFormasi = getFormasi(session.formasi || "");
                   return (
                     <div key={session.id} className="flex items-center justify-between py-3 border-b border-[var(--card-border)] last:border-0">
                       <div>
-                        <p className="text-sm font-medium">{session.mode}</p>
+                        <p className="text-sm font-medium">
+                          {sessionFormasi?.icon} {session.mode}
+                        </p>
                         <p className="text-xs text-[var(--muted)]">{session.date}</p>
                       </div>
                       <div className="flex items-center gap-3">

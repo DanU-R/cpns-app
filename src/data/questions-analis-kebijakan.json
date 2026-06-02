@@ -1,0 +1,562 @@
+{
+  "kebijakan_publik": [
+    {
+      "q": "Kebijakan publik adalah...",
+      "options": [
+        "Keputusan pribadi pejabat",
+        "Tindakan pemerintah yang dipilih untuk mencapai tujuan tertentu bagi kepentingan publik",
+        "Undang-undang saja",
+        "Peraturan daerah"
+      ],
+      "answer": 1,
+      "explanation": "Kebijakan publik merupakan serangkaian tindakan atau keputusan yang diambil pemerintah untuk mencapai tujuan tertentu bagi kepentingan masyarakat."
+    },
+    {
+      "q": "Siklus kebijakan publik dimulai dari...",
+      "options": [
+        "Implementasi",
+        "Penyusunan agenda (agenda setting)",
+        "Evaluasi",
+        "Formulasi"
+      ],
+      "answer": 1,
+      "explanation": "Siklus: Agenda setting → Formulasi → Adopsi → Implementasi → Evaluasi."
+    },
+    {
+      "q": "Agenda setting dalam kebijakan publik adalah...",
+      "options": [
+        "Pelaksanaan kebijakan",
+        "Proses penentuan masalah yang perlu ditangani pemerintah",
+        "Evaluasi kebijakan",
+        "Pembatalan kebijakan"
+      ],
+      "answer": 1,
+      "explanation": "Agenda setting adalah proses dimana masalah-masalah publik mendapat perhatian dan prioritas dari pembuat kebijakan."
+    },
+    {
+      "q": "Stakeholder dalam kebijakan publik meliputi...",
+      "options": [
+        "Hanya pemerintah",
+        "Pemerintah, masyarakat, swasta, LSM, dan media",
+        "Hanya DPR",
+        "Hanya presiden"
+      ],
+      "answer": 1,
+      "explanation": "Stakeholder mencakup semua pihak yang terdampak atau memiliki kepentingan terhadap kebijakan."
+    },
+    {
+      "q": "Evidence-based policy making berarti...",
+      "options": [
+        "Kebijakan berdasarkan intuisi",
+        "Kebijakan yang didasarkan pada data, fakta, dan bukti empiris",
+        "Kebijakan berdasarkan keinginan politik",
+        "Kebijakan tanpa penelitian"
+      ],
+      "answer": 1,
+      "explanation": "Evidence-based policy making menggunakan data dan bukti ilmiah sebagai dasar pengambilan keputusan kebijakan."
+    },
+    {
+      "q": "Kebijakan yang bersifat distributif bertujuan untuk...",
+      "options": [
+        "Mengatur perilaku",
+        "Mendistribusikan manfaat kepada kelompok tertentu dalam masyarakat",
+        "Memungut pajak",
+        "Membatasi kebebasan"
+      ],
+      "answer": 1,
+      "explanation": "Kebijakan distributif mengalokasikan sumber daya/manfaat kepada kelompok atau masyarakat tertentu (misal: bantuan sosial)."
+    },
+    {
+      "q": "Public policy failure (kegagalan kebijakan) dapat disebabkan oleh...",
+      "options": [
+        "Implementasi yang tepat",
+        "Analisis masalah yang tidak akurat, implementasi buruk, atau evaluasi lemah",
+        "Partisipasi masyarakat yang tinggi",
+        "Data yang lengkap"
+      ],
+      "answer": 1,
+      "explanation": "Kegagalan kebijakan sering terjadi karena diagnosa masalah yang salah, implementasi tidak konsisten, atau evaluasi yang tidak memadai."
+    },
+    {
+      "q": "Good governance dalam perumusan kebijakan mencakup prinsip...",
+      "options": [
+        "Transparansi, akuntabilitas, partisipasi, dan supremasi hukum",
+        "Kerahasiaan, otoriter, dan sentralisasi",
+        "Kecepatan tanpa pertimbangan",
+        "Eksklusivitas"
+      ],
+      "answer": 0,
+      "explanation": "Good governance menekankan transparansi, akuntabilitas, partisipasi publik, penegakan hukum, dan responsivitas."
+    },
+    {
+      "q": "Cost-benefit analysis dalam kebijakan publik digunakan untuk...",
+      "options": [
+        "Menentukan siapa yang bersalah",
+        "Membandingkan biaya dan manfaat dari alternatif kebijakan",
+        "Menghitung gaji pegawai",
+        "Menentukan pajak"
+      ],
+      "answer": 1,
+      "explanation": "CBA membandingkan total biaya dan total manfaat dari berbagai alternatif kebijakan untuk menentukan yang paling efisien."
+    },
+    {
+      "q": "Kebijakan afirmatif (affirmative action) bertujuan untuk...",
+      "options": [
+        "Mendiskriminasi kelompok tertentu",
+        "Memberikan perlakuan khusus kepada kelompok yang secara historis terdisadvantage",
+        "Menghapus semua perbedaan",
+        "Menyeragamkan semua kebijakan"
+      ],
+      "answer": 1,
+      "explanation": "Kebijakan afirmatif memberikan perlakuan khusus sementara kepada kelompok marginal untuk mencapai kesetaraan substantif."
+    }
+  ],
+  "hukum_administrasi": [
+    {
+      "q": "Hukum administrasi negara mengatur...",
+      "options": [
+        "Hubungan antar individu",
+        "Hubungan antara pemerintah/administrasi negara dengan warga negara",
+        "Hukum pidana",
+        "Hukum internasional"
+      ],
+      "answer": 1,
+      "explanation": "Hukum administrasi negara mengatur tindakan dan kewenangan aparatur pemerintah dalam menjalankan fungsi pemerintahan."
+    },
+    {
+      "q": "Asas legalitas dalam hukum administrasi berarti...",
+      "options": [
+        "Pemerintah bisa melakukan apa saja",
+        "Setiap tindakan pemerintah harus berdasarkan peraturan perundang-undangan",
+        "Hukum tidak berlaku bagi pemerintah",
+        "Pemerintah bebas bertindak"
+      ],
+      "answer": 1,
+      "explanation": "Asas legalitas (wetmatigheid) mewajibkan setiap tindakan pemerintah memiliki dasar hukum yang jelas."
+    },
+    {
+      "q": "Keputusan Tata Usaha Negara (KTUN) adalah...",
+      "options": [
+        "Undang-undang",
+        "Penetapan tertulis yang dikeluarkan badan/pejabat TUN yang menimbulkan akibat hukum",
+        "Peraturan daerah",
+        "Putusan pengadilan"
+      ],
+      "answer": 1,
+      "explanation": "KTUN adalah penetapan tertulis yang dikeluarkan pejabat TUN yang bersifat konkret, individual, dan final."
+    },
+    {
+      "q": "PTUN (Pengadilan Tata Usaha Negara) berwenang mengadili...",
+      "options": [
+        "Sengketa pidana",
+        "Sengketa antara warga negara dengan keputusan pejabat TUN",
+        "Sengketa bisnis",
+        "Sengketa internasional"
+      ],
+      "answer": 1,
+      "explanation": "PTUN mengadili sengketa TUN yaitu gugatan terhadap KTUN yang dianggap merugikan warga negara."
+    },
+    {
+      "q": "Asas freies ermessen (diskresi) dalam hukum administrasi adalah...",
+      "options": [
+        "Pemerintah tidak boleh mengambil keputusan",
+        "Kebebasan pejabat TUN untuk mengambil keputusan tanpa aturan spesifik demi kepentingan publik",
+        "Pemerintah bebas melanggar hukum",
+        "Warga negara bebas bertindak"
+      ],
+      "answer": 1,
+      "explanation": "Diskresi memberikan ruang bagi pejabat untuk bertindak secara inisiatif ketika hukum tidak mengatur secara spesifik, demi kepentingan publik."
+    },
+    {
+      "q": "Maladministrasi dalam pelayanan publik meliputi...",
+      "options": [
+        "Pelayanan yang cepat dan tepat",
+        "Penyimpangan, keterlambatan, prosedur berbelit, dan penyalahgunaan wewenang",
+        "Transparansi prosedur",
+        "Partisipasi masyarakat"
+      ],
+      "answer": 1,
+      "explanation": "Maladministrasi mencakup perilaku melawan hukum, melampaui wewenang, penggunaan wewenang tidak tepat, kelalaian, dan penyalahgunaan kekuasaan."
+    },
+    {
+      "q": "Ombudsman Republik Indonesia bertugas mengawasi...",
+      "options": [
+        "Sektor swasta",
+        "Penyelenggaraan pelayanan publik oleh negara",
+        "Peradilan pidana",
+        "Pemilihan umum"
+      ],
+      "answer": 1,
+      "explanation": "Ombudsman RI mengawasi penyelenggaraan pelayanan publik untuk mencegah dan menangani maladministrasi."
+    },
+    {
+      "q": "Asas-asas umum pemerintahan yang baik (AUPB) berfungsi sebagai...",
+      "options": [
+        "Hukuman bagi PNS",
+        "Pedoman dan batasan bagi pejabat dalam menjalankan pemerintahan",
+        "Dasar pemungutan pajak",
+        "Syarat pembuatan kontrak"
+      ],
+      "answer": 1,
+      "explanation": "AUPB mencakup asas kepastian hukum, keseimbangan, kesamaan, bertindak cermat, motivasi, dan larangan menyalahgunakan wewenang."
+    },
+    {
+      "q": "Delegasi wewenang dalam hukum administrasi adalah...",
+      "options": [
+        "Penyerahan wewenang dari atasan kepada bawahan secara permanen",
+        "Pelimpahan wewenang dari satu organ ke organ lain",
+        "Penghapusan wewenang",
+        "Penggabungan lembaga"
+      ],
+      "answer": 1,
+      "explanation": "Delegasi adalah pelimpahan wewenang dari satu organ pemerintahan kepada organ lain, baik vertikal maupun horizontal."
+    },
+    {
+      "q": "Undang-Undang yang mengatur pelayanan publik di Indonesia adalah...",
+      "options": [
+        "UU No. 28/1999",
+        "UU No. 25/2009 tentang Pelayanan Publik",
+        "UU No. 30/2014",
+        "UU No. 5/1986"
+      ],
+      "answer": 1,
+      "explanation": "UU No. 25/2009 mengatur standar, prinsip, dan mekanisme pelayanan publik di Indonesia."
+    }
+  ],
+  "riset_kebijakan": [
+    {
+      "q": "Riset kebijakan (policy research) bertujuan untuk...",
+      "options": [
+        "Hanya untuk publikasi akademik",
+        "Memberikan rekomendasi berbasis bukti untuk pengambilan keputusan kebijakan",
+        "Menghitung anggaran",
+        "Menentukan pemilu"
+      ],
+      "answer": 1,
+      "explanation": "Riset kebijakan menghasilkan bukti dan rekomendasi yang dapat digunakan pembuat kebijakan untuk mengambil keputusan yang lebih baik."
+    },
+    {
+      "q": "Metode mixed-methods dalam riset kebijakan menggabungkan...",
+      "options": [
+        "Hanya data kuantitatif",
+        "Data kuantitatif dan kualitatif",
+        "Hanya wawancara",
+        "Hanya survei"
+      ],
+      "answer": 1,
+      "explanation": "Mixed-methods menggabungkan pendekatan kuantitatif (statistik) dan kualitatif (wawancara, observasi) untuk analisis yang komprehensif."
+    },
+    {
+      "q": "Studi komparatif kebijakan adalah...",
+      "options": [
+        "Membandingkan dua orang",
+        "Membandingkan kebijakan antar negara/wilayah untuk pembelajaran",
+        "Menghitung biaya",
+        "Membuat undang-undang"
+      ],
+      "answer": 1,
+      "explanation": "Studi komparatif membandingkan kebijakan di berbagai konteks untuk mengidentifikasi praktik terbaik dan pelajaran yang bisa diadopsi."
+    },
+    {
+      "q": "Policy brief adalah...",
+      "options": [
+        "Laporan penelitian panjang",
+        "Dokumen singkat yang menyajikan rekomendasi kebijakan untuk pembuat keputusan",
+        "Survei masyarakat",
+        "Undang-undang"
+      ],
+      "answer": 1,
+      "explanation": "Policy brief adalah dokumen ringkas (biasanya 2-4 halaman) yang menyajikan temuan riset dan rekomendasi untuk pengambilan kebijakan."
+    },
+    {
+      "q": "Sampling dalam riset kebijakan harus representatif agar...",
+      "options": [
+        "Hasil bisa digeneralisasi ke populasi yang lebih luas",
+        "Biaya riset lebih murah",
+        "Penelitian selesai lebih cepat",
+        "Hasil bisa dimanipulasi"
+      ],
+      "answer": 0,
+      "explanation": "Sampling representatif memastikan temuan riset dapat digeneralisasi dan menjadi dasar kebijakan yang valid."
+    },
+    {
+      "q": "Focus Group Discussion (FGD) dalam riset kebijakan digunakan untuk...",
+      "options": [
+        "Menghitung statistik",
+        "Menggali persepsi, pengalaman, dan pandangan mendalam dari stakeholder",
+        "Memungut suara",
+        "Membuat undang-undang"
+      ],
+      "answer": 1,
+      "explanation": "FGD mengumpulkan data kualitatif dari diskusi terarah dengan kelompok stakeholder terkait kebijakan."
+    },
+    {
+      "q": "Triangulasi dalam riset berarti...",
+      "options": [
+        "Menggunakan satu sumber data",
+        "Menggunakan beberapa sumber/metode untuk memvalidasi temuan",
+        "Membagi tiga kelompok",
+        "Melakukan tiga kali riset"
+      ],
+      "answer": 1,
+      "explanation": "Triangulasi menggunakan berbagai sumber data, metode, atau perspektif untuk meningkatkan validitas dan keandalan temuan."
+    },
+    {
+      "q": "Impact evaluation (evaluasi dampak) kebijakan mengukur...",
+      "options": [
+        "Biaya implementasi",
+        "Perubahan yang secara kausal dapat diatribusikan pada kebijakan/intervensi",
+        "Jumlah pegawai",
+        "Lama proses perizinan"
+      ],
+      "answer": 1,
+      "explanation": "Evaluasi dampak mengisolasi efek spesifik dari kebijakan dengan membandingkan kelompok terdampak dan tidak terdampak."
+    },
+    {
+      "q": "Problem tree analysis dalam riset kebijakan digunakan untuk...",
+      "options": [
+        "Menanam pohon",
+        "Mengidentifikasi akar masalah, efek, dan hubungan sebab-akibat",
+        "Menghitung biaya",
+        "Menentukan lokasi kantor"
+      ],
+      "answer": 1,
+      "explanation": "Problem tree memetakan masalah utama, penyebab (akar), dan dampak (cabang) untuk memahami kompleksitas masalah kebijakan."
+    },
+    {
+      "q": "Stakeholder mapping dalam riset kebijakan bertujuan untuk...",
+      "options": [
+        "Membuat peta geografis",
+        "Mengidentifikasi dan menganalisis kepentingan, pengaruh, dan posisi setiap stakeholder",
+        "Menentukan anggaran",
+        "Membuat jadwal"
+      ],
+      "answer": 1,
+      "explanation": "Stakeholder mapping membantu memahami siapa saja yang terdampak, siapa yang berpengaruh, dan bagaimana strategi engagement."
+    }
+  ],
+  "statistik": [
+    {
+      "q": "Skala pengukuran data yang memiliki jarak sama dan titik nol absolut adalah...",
+      "options": [
+        "Nominal",
+        "Ordinal",
+        "Interval",
+        "Rasio"
+      ],
+      "answer": 3,
+      "explanation": "Skala rasio memiliki jarak sama DAN titik nol absolut (misal: berat, tinggi, pendapatan). Interval punya jarak sama tapi tanpa nol absolut (misal: suhu Celsius)."
+    },
+    {
+      "q": "Mean, median, dan modus merupakan ukuran...",
+      "options": [
+        "Penyebaran data",
+        "Pemusatan data (central tendency)",
+        "Korelasi",
+        "Regresi"
+      ],
+      "answer": 1,
+      "explanation": "Ukuran pemusatan data: mean (rata-rata), median (nilai tengah), modus (nilai paling sering muncul)."
+    },
+    {
+      "q": "Standar deviasi mengukur...",
+      "options": [
+        "Nilai rata-rata",
+        "Sebaran/dispersi data dari rata-rata",
+        "Nilai tengah",
+        "Jumlah data"
+      ],
+      "answer": 1,
+      "explanation": "Standar deviasi menunjukkan seberapa tersebar data dari nilai rata-ratanya. Semakin besar SD, semakin besar variasi data."
+    },
+    {
+      "q": "Koefisien korelasi Pearson (r) berkisar antara...",
+      "options": [
+        "0 sampai 1",
+        "-1 sampai +1",
+        "-100 sampai +100",
+        "0 sampai 100"
+      ],
+      "answer": 1,
+      "explanation": "Koefisien korelasi Pearson: -1 (korelasi negatif sempurna), 0 (tidak berkorelasi), +1 (korelasi positif sempurna)."
+    },
+    {
+      "q": "Uji hipotesis dengan p-value < 0.05 berarti...",
+      "options": [
+        "Hipotesis nol diterima",
+        "Hipotesis nol ditolak (hasil signifikan secara statistik)",
+        "Data tidak valid",
+        "Sampel terlalu kecil"
+      ],
+      "answer": 1,
+      "explanation": "p-value < 0.05 berarti probabilitas mendapat hasil tersebut jika H0 benar kurang dari 5%, sehingga H0 ditolak."
+    },
+    {
+      "q": "Distribusi normal memiliki karakteristik...",
+      "options": [
+        "Miring ke kanan",
+        "Berbentuk lonceng simetris (bell curve)",
+        "Seragam",
+        "Eksponensial"
+      ],
+      "answer": 1,
+      "explanation": "Distribusi normal berbentuk lonceng simetris dengan mean = median = modus, dan mengikuti aturan 68-95-99.7."
+    },
+    {
+      "q": "Regresi linear sederhana digunakan untuk...",
+      "options": [
+        "Menghitung mean",
+        "Memprediksi variabel dependen berdasarkan satu variabel independen",
+        "Menghitung modus",
+        "Membuat grafik"
+      ],
+      "answer": 1,
+      "explanation": "Regresi linear sederhana memodelkan hubungan linear antara satu variabel prediktor (X) dan satu variabel outcome (Y)."
+    },
+    {
+      "q": "Sampel acak sederhana (simple random sampling) memastikan...",
+      "options": [
+        "Hanya orang tertentu yang terpilih",
+        "Setiap anggota populasi memiliki peluang sama untuk terpilih",
+        "Hasil selalu akurat",
+        "Tidak ada error"
+      ],
+      "answer": 1,
+      "explanation": "Simple random sampling memberikan kesempatan yang sama bagi setiap unit populasi untuk menjadi sampel."
+    },
+    {
+      "q": "Confidence interval (selang kepercayaan) 95% berarti...",
+      "options": [
+        "95% data ada di dalam interval",
+        "Jika sampling diulang banyak kali, 95% interval akan mengandung parameter populasi",
+        "Error 5%",
+        "Data tidak valid"
+      ],
+      "answer": 1,
+      "explanation": "CI 95% berarti dari 100 sampel yang berbeda, sekitar 95 interval kepercayaan akan mengandung nilai parameter populasi sebenarnya."
+    },
+    {
+      "q": "ANOVA (Analysis of Variance) digunakan untuk...",
+      "options": [
+        "Membandingkan mean dua kelompok",
+        "Membandingkan mean tiga kelompok atau lebih",
+        "Menghitung korelasi",
+        "Menghitung median"
+      ],
+      "answer": 1,
+      "explanation": "ANOVA menguji apakah ada perbedaan mean yang signifikan antara tiga kelompok atau lebih secara simultan."
+    }
+  ],
+  "manajemen_publik": [
+    {
+      "q": "Manajemen publik berbeda dari manajemen swasta karena...",
+      "options": [
+        "Tidak ada perbedaan",
+        "Fokus pada pelayanan publik dan akuntabilitas kepada masyarakat, bukan profit",
+        "Lebih menguntungkan",
+        "Tidak perlu perencanaan"
+      ],
+      "answer": 1,
+      "explanation": "Manajemen publik berorientasi pada pelayanan dan kepentingan publik dengan akuntabilitas kepada masyarakat, bukan mencari keuntungan."
+    },
+    {
+      "q": "New Public Management (NPM) menekankan...",
+      "options": [
+        "Birokrasi kaku",
+        "Efisiensi, orientasi hasil, dan adopsi praktik manajemen swasta di sektor publik",
+        "Sentralisasi penuh",
+        "Penghapusan semua regulasi"
+      ],
+      "answer": 1,
+      "explanation": "NPM memperkenalkan pendekatan berbasis pasar dan manajemen bisnis ke sektor publik untuk meningkatkan efisiensi dan kualitas layanan."
+    },
+    {
+      "q": "Misi organisasi publik berbeda dari swasta karena...",
+      "options": [
+        "Sama persis",
+        "Berorientasi pada kepentingan publik dan pencapaian tujuan sosial",
+        "Hanya mencari untung",
+        "Tidak memiliki misi"
+      ],
+      "answer": 1,
+      "explanation": "Misi organisasi publik berfokus pada pelayanan masyarakat dan pencapaian tujuan sosial yang ditetapkan pemerintah."
+    },
+    {
+      "q": "Perencanaan strategis dalam organisasi publik bertujuan untuk...",
+      "options": [
+        "Menentukan gaji pegawai",
+        "Menetapkan arah, prioritas, dan alokasi sumber daya untuk mencapai tujuan jangka panjang",
+        "Menentukan jadwal libur",
+        "Mengatur seragam pegawai"
+      ],
+      "answer": 1,
+      "explanation": "Perencanaan strategis mengarahkan organisasi publik dalam mencapai tujuan jangka panjang melalui prioritas dan alokasi sumber daya."
+    },
+    {
+      "q": "Reformasi birokrasi di Indonesia bertujuan untuk...",
+      "options": [
+        "Menambah jumlah pegawai",
+        "Menciptakan birokrasi yang bersih, akuntabel, dan berkinerja tinggi",
+        "Menghapus semua aturan",
+        "Menambah pajak"
+      ],
+      "answer": 1,
+      "explanation": "Reformasi birokrasi bertujuan membangun tata kelola pemerintahan yang baik (good governance) melalui perubahan mendasar."
+    },
+    {
+      "q": "Key Performance Indicator (KPI) dalam manajemen publik digunakan untuk...",
+      "options": [
+        "Menghukum pegawai",
+        "Mengukur pencapaian kinerja organisasi terhadap tujuan yang ditetapkan",
+        "Menentukan promosi",
+        "Menghitung anggaran"
+      ],
+      "answer": 1,
+      "explanation": "KPI adalah ukuran kuantitatif yang digunakan untuk mengevaluasi keberhasilan organisasi dalam mencapai tujuan strategis."
+    },
+    {
+      "q": "Desentralisasi dalam manajemen publik berarti...",
+      "options": [
+        "Semua keputusan di pusat",
+        "Pelimpahan wewenang dari pemerintah pusat ke daerah",
+        "Penghapusan pemerintah daerah",
+        "Sentralisasi penuh"
+      ],
+      "answer": 1,
+      "explanation": "Desentralisasi memberikan kewenangan kepada pemerintah daerah untuk mengatur dan mengurus urusan pemerintahan sendiri."
+    },
+    {
+      "q": "Manajemen perubahan (change management) dalam organisasi publik diperlukan karena...",
+      "options": [
+        "Organisasi publik tidak pernah berubah",
+        "Untuk memfasilitasi transisi dari kondisi saat ini ke kondisi yang diinginkan secara efektif",
+        "Hanya untuk kepentingan politik",
+        "Tidak diperlukan"
+      ],
+      "answer": 1,
+      "explanation": "Change management membantu organisasi publik beradaptasi dengan perubahan lingkungan, teknologi, dan kebutuhan masyarakat."
+    },
+    {
+      "q": "E-Government (pemerintahan elektronik) bertujuan untuk...",
+      "options": [
+        "Mengganti semua pegawai dengan komputer",
+        "Meningkatkan efisiensi, transparansi, dan kualitas layanan publik melalui teknologi informasi",
+        "Mengurangi anggaran IT",
+        "Menutup kantor pemerintah"
+      ],
+      "answer": 1,
+      "explanation": "E-Government memanfaatkan TI untuk meningkatkan layanan publik, transparansi, dan efisiensi penyelenggaraan pemerintahan."
+    },
+    {
+      "q": "Akuntabilitas publik dalam manajemen berarti...",
+      "options": [
+        "Pemerintah tidak perlu pertanggungjawaban",
+        "Kewajiban pemerintah mempertanggungjawabkan kebijakan dan penggunaan sumber daya kepada masyarakat",
+        "Hanya pertanggungjawaban kepada atasan",
+        "Tidak ada yang perlu dipertanggungjawabkan"
+      ],
+      "answer": 1,
+      "explanation": "Akuntabilitas publik mewajibkan pemerintah menjelaskan dan mempertanggungjawabkan setiap kebijakan dan penggunaan dana publik."
+    }
+  ]
+}

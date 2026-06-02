@@ -1,0 +1,562 @@
+{
+  "ilmu_perpustakaan": [
+    {
+      "q": "Ilmu perpustakaan (library science) mempelajari...",
+      "options": [
+        "Cara membangun gedung",
+        "Pengelolaan, pelestarian, dan pelayanan koleksi informasi untuk memenuhi kebutuhan pengguna",
+        "Cara mencetak buku",
+        "Cara menerbitkan buku"
+      ],
+      "answer": 1,
+      "explanation": "Ilmu perpustakaan mencakup teori dan praktik pengelolaan koleksi informasi, mulai dari pengumpulan, pengolahan, hingga pelayanan kepada pengguna."
+    },
+    {
+      "q": "Peran pustakawan di era digital adalah...",
+      "options": [
+        "Hanya meminjamkan buku",
+        "Pengelola informasi, fasilitator literasi digital, dan kurator konten",
+        "Pengawas pengunjung",
+        "Penjual buku"
+      ],
+      "answer": 1,
+      "explanation": "Pustakawan modern berperan sebagai pengelola informasi, fasilitator literasi informasi, dan kurator konten digital."
+    },
+    {
+      "q": "Fungsi utama perpustakaan adalah...",
+      "options": [
+        "Menyimpan buku agar tidak dibaca",
+        "Mengoleksi, mengolah, dan menyediakan akses informasi",
+        "Menjual buku bekas",
+        "Membuat buku"
+      ],
+      "answer": 1,
+      "explanation": "Fungsi utama perpustakaan: mengumpulkan, mengolah, melestarikan, dan menyediakan akses informasi bagi pengguna."
+    },
+    {
+      "q": "Perpustakaan nasional RI berfungsi sebagai...",
+      "options": [
+        "Toko buku pemerintah",
+        "Perpustakaan deposit nasional dan pusat referensi tertinggi",
+        "Kantor pemerintah biasa",
+        "Museum buku"
+      ],
+      "answer": 1,
+      "explanation": "Perpusnas RI berfungsi sebagai perpustakaan deposit nasional, pusat bibliografi, dan referensi tertinggi di Indonesia."
+    },
+    {
+      "q": "Jenis perpustakaan berdasarkan penyelenggaranya meliputi...",
+      "options": [
+        "Hanya perpustakaan umum",
+        "Perpustakaan nasional, umum, sekolah, perguruan tinggi, dan khusus",
+        "Hanya perpustakaan sekolah",
+        "Hanya perpustakaan digital"
+      ],
+      "answer": 1,
+      "explanation": "UU No. 43/2007 mengelompokkan perpustakaan menjadi: nasional, umum, sekolah, perguruan tinggi, dan khusus."
+    },
+    {
+      "q": "Literasi informasi (information literacy) adalah kemampuan untuk...",
+      "options": [
+        "Membaca dengan cepat",
+        "Mengidentifikasi, menemukan, mengevaluasi, dan menggunakan informasi secara efektif",
+        "Menulis buku",
+        "Mencetak dokumen"
+      ],
+      "answer": 1,
+      "explanation": "Literasi informasi mencakup kemampuan mengidentifikasi kebutuhan informasi, mencari, mengevaluasi kredibilitas, dan menggunakan informasi secara etis."
+    },
+    {
+      "q": "Open Access dalam konteks perpustakaan berarti...",
+      "options": [
+        "Perpustakaan buka 24 jam",
+        "Akses terbuka dan gratis terhadap karya ilmiah dan informasi",
+        "Semua buku bisa dibawa pulang",
+        "Tidak ada aturan pinjaman"
+      ],
+      "answer": 1,
+      "explanation": "Open Access memungkinkan akses gratis dan tanpa hambatan terhadap literatur ilmiah dan informasi bagi semua pengguna."
+    },
+    {
+      "q": "Manajemen koleksi perpustakaan meliputi kegiatan...",
+      "options": [
+        "Hanya membeli buku",
+        "Seleksi, pengadaan, pengolahan, pelestarian, dan penyiangan koleksi",
+        "Hanya menyimpan buku",
+        "Hanya meminjamkan buku"
+      ],
+      "answer": 1,
+      "explanation": "Manajemen koleksi mencakup seleksi, pengadaan, pengolahan, penyiangan (weeding), dan pelestarian koleksi."
+    },
+    {
+      "q": "Undang-Undang yang mengatur perpustakaan di Indonesia adalah...",
+      "options": [
+        "UU No. 20/2003",
+        "UU No. 43/2007 tentang Perpustakaan",
+        "UU No. 14/2008",
+        "UU No. 25/2009"
+      ],
+      "answer": 1,
+      "explanation": "UU No. 43/2007 mengatur tentang Perpustakaan, termasuk jenis, fungsi, pengelolaan, dan peran pustakawan."
+    },
+    {
+      "q": "Perpustakaan digital (digital library) adalah...",
+      "options": [
+        "Perpustakaan tanpa buku",
+        "Koleksi informasi dalam format digital yang dapat diakses melalui jaringan",
+        "Toko buku online",
+        "Mesin fotocopy"
+      ],
+      "answer": 1,
+      "explanation": "Perpustakaan digital menyimpan dan menyediakan akses ke koleksi dalam format digital melalui jaringan komputer."
+    }
+  ],
+  "klasifikasi": [
+    {
+      "q": "Sistem klasifikasi DDC (Dewey Decimal Classification) menggunakan...",
+      "options": [
+        "Huruf",
+        "Angka desimal (000-999)",
+        "Warna",
+        "Simbol"
+      ],
+      "answer": 1,
+      "explanation": "DDC menggunakan notasi angka desimal dari 000-999 untuk mengklasifikasikan pengetahuan manusia menjadi 10 kelas utama."
+    },
+    {
+      "q": "Kelas 000 dalam DDC mencakup...",
+      "options": [
+        "Filsafat",
+        "Karya umum, komputer, dan informasi",
+        "Agama",
+        "Sejarah"
+      ],
+      "answer": 1,
+      "explanation": "Kelas 000 DDC: Karya umum, ilmu komputer, informasi, dan bibliografi."
+    },
+    {
+      "q": "Katalogisasi adalah proses...",
+      "options": [
+        "Menghancurkan buku rusak",
+        "Membuat deskripsi bibliografis dan menentukan titik akses untuk setiap bahan pustaka",
+        "Menjual buku",
+        "Mengurutkan buku berdasarkan warna"
+      ],
+      "answer": 1,
+      "explanation": "Katalogisasi membuat deskripsi bibliografis (judul, pengarang, penerbit, dll) dan menentukan subjek serta notasi klasifikasi."
+    },
+    {
+      "q": "ISBD (International Standard Bibliographic Description) digunakan untuk...",
+      "options": [
+        "Mengklasifikasikan buku",
+        "Standar internasional dalam pembuatan deskripsi bibliografis",
+        "Menentukan harga buku",
+        "Membuat rak buku"
+      ],
+      "answer": 1,
+      "explanation": "ISBD menetapkan standar internasional untuk pencatatan elemen bibliografis secara konsisten."
+    },
+    {
+      "q": "AACR2 (Anglo-American Cataloguing Rules) adalah...",
+      "options": [
+        "Sistem klasifikasi",
+        "Pedoman katalogisasi yang digunakan secara internasional",
+        "Format MARC",
+        "Sistem sirkulasi"
+      ],
+      "answer": 1,
+      "explanation": "AACR2 adalah pedoman katalogisasi yang mengatur cara membuat deskripsi bibliografis dan penentuan tajuk entri."
+    },
+    {
+      "q": "Subjek heading dalam katalogisasi berfungsi untuk...",
+      "options": [
+        "Menentukan harga buku",
+        "Menentukan topik/muatan isi bahan pustaka untuk kemudahan penelusuran",
+        "Menentukan penerbit",
+        "Menentukan ukuran buku"
+      ],
+      "answer": 1,
+      "explanation": "Subject heading mengidentifikasi topik utama bahan pustaka sehingga pengguna dapat menemukan bahan sesuai kebutuhan."
+    },
+    {
+      "q": "Library of Congress Classification (LCC) menggunakan...",
+      "options": [
+        "Angka desimal",
+        "Kombinasi huruf dan angka",
+        "Hanya huruf",
+        "Hanya angka"
+      ],
+      "answer": 1,
+      "explanation": "LCC menggunakan kombinasi huruf (untuk kelas utama) dan angka (untuk subdivisi) — misal: QA76 untuk ilmu komputer."
+    },
+    {
+      "q": "MARC (Machine-Readable Cataloging) adalah...",
+      "options": [
+        "Sistem klasifikasi",
+        "Format standar untuk pertukaran data katalogisasi antar sistem komputer",
+        "Perangkat lunak perpustakaan",
+        "Sistem peminjaman"
+      ],
+      "answer": 1,
+      "explanation": "MARC adalah format data yang memungkinkan data katalogisasi dibaca dan dipertukarkan antar sistem komputer perpustakaan."
+    },
+    {
+      "q": "Call number (nomor panggil) pada buku terdiri dari...",
+      "options": [
+        "Hanya judul buku",
+        "Notasi klasifikasi + tiga huruf pertama nama pengarang",
+        "Harga buku",
+        "Jumlah halaman"
+      ],
+      "answer": 1,
+      "explanation": "Call number = notasi klasifikasi (menunjukkan subjek) + Cutter number (huruf nama pengarang) untuk penempatan di rak."
+    },
+    {
+      "q": "Klasifikasi subjek dalam perpustakaan bertujuan untuk...",
+      "options": [
+        "Mempercantik rak",
+        "Mengelompokkan bahan pustaka berdasarkan subjek agar mudah ditemukan",
+        "Menentukan harga",
+        "Menentukan penerbit"
+      ],
+      "answer": 1,
+      "explanation": "Klasifikasi subjek mengelompokkan bahan pustaka yang sejenis sehingga memudahkan penelusuran dan penempatan di rak."
+    }
+  ],
+  "layanan_informasi": [
+    {
+      "q": "Layanan referensi di perpustakaan adalah...",
+      "options": [
+        "Layanan peminjaman buku",
+        "Layanan bantuan penelusuran informasi dan pertanyaan faktual kepada pengguna",
+        "Layanan fotocopy",
+        "Layanan kebersihan"
+      ],
+      "answer": 1,
+      "explanation": "Layanan referensi membantu pengguna menemukan informasi spesifik melalui wawancara referensi, penelusuran database, dan panduan informasi."
+    },
+    {
+      "q": "Layanan sirkulasi meliputi kegiatan...",
+      "options": [
+        "Katalogisasi buku",
+        "Peminjaman, pengembalian, dan perpanjangan bahan pustaka",
+        "Klasifikasi buku",
+        "Pembelian buku"
+      ],
+      "answer": 1,
+      "explanation": "Layanan sirkulasi mengelola peminjaman, pengembalian, perpanjangan, dan denda bahan pustaka."
+    },
+    {
+      "q": "Wawancara referensi (reference interview) bertujuan untuk...",
+      "options": [
+        "Mewawancarai calon pustakawan",
+        "Mengidentifikasi kebutuhan informasi pengguna secara tepat",
+        "Menjual buku",
+        "Menilai koleksi"
+      ],
+      "answer": 1,
+      "explanation": "Reference interview adalah proses komunikasi antara pustakawan dan pengguna untuk memahami kebutuhan informasi secara spesifik."
+    },
+    {
+      "q": "Layanan bimbingan pemustaka (user education) bertujuan untuk...",
+      "options": [
+        "Menghukum pemustaka",
+        "Mengajarkan pengguna cara memanfaatkan perpustakaan dan sumber informasi secara mandiri",
+        "Mengurangi pengunjung",
+        "Menambah koleksi"
+      ],
+      "answer": 1,
+      "explanation": "User education mengajarkan keterampilan literasi informasi agar pengguna dapat mencari dan menggunakan informasi secara mandiri."
+    },
+    {
+      "q": "SDI (Selective Dissemination of Information) adalah layanan...",
+      "options": [
+        "Menyebar semua informasi tanpa filter",
+        "Menyebarluaskan informasi terbaru yang relevan secara selektif kepada pengguna tertentu",
+        "Menghapus informasi lama",
+        "Menjual informasi"
+      ],
+      "answer": 1,
+      "explanation": "SDI menyediakan informasi terbaru secara selektif kepada pengguna berdasarkan profil kepentingan masing-masing."
+    },
+    {
+      "q": "Layanan akses terbuka (open access) di perpustakaan berarti...",
+      "options": [
+        "Semua koleksi bisa dibawa pulang",
+        "Menyediakan akses gratis ke sumber informasi digital tanpa batasan langganan",
+        "Perpustakaan buka 24 jam",
+        "Tidak ada aturan sama sekali"
+      ],
+      "answer": 1,
+      "explanation": "Layanan OA menyediakan akses gratis ke jurnal, repositori, dan sumber informasi digital tanpa paywall."
+    },
+    {
+      "q": "Evaluasi layanan perpustakaan dilakukan untuk...",
+      "options": [
+        "Menghukum petugas",
+        "Mengukur efektivitas dan kepuasan pengguna terhadap layanan",
+        "Menambah koleksi",
+        "Menutup perpustakaan"
+      ],
+      "answer": 1,
+      "explanation": "Evaluasi layanan mengukur kualitas, efektivitas, dan kepuasan pengguna untuk perbaikan berkelanjutan."
+    },
+    {
+      "q": "Layanan antar perpustakaan (interlibrary loan) memungkinkan...",
+      "options": [
+        "Pinjaman tanpa batas",
+        "Peminjaman bahan pustaka dari perpustakaan lain yang tidak dimiliki",
+        "Penukaran koleksi",
+        "Penjualan koleksi"
+      ],
+      "answer": 1,
+      "explanation": "Interlibrary loan (ILL) memungkinkan pengguna meminjam bahan dari perpustakaan lain melalui kerjasama antar perpustakaan."
+    },
+    {
+      "q": "Statistik perpustakaan mencakup data...",
+      "options": [
+        "Hanya jumlah pengunjung",
+        "Koleksi, pengunjung, sirkulasi, dan kegiatan layanan lainnya",
+        "Gaji pegawai",
+        "Biaya listrik"
+      ],
+      "answer": 1,
+      "explanation": "Statistik perpustakaan mencakup data koleksi, jumlah pengunjung, sirkulasi, referensi, dan indikator layanan lainnya."
+    },
+    {
+      "q": "Kepuasan pengguna perpustakaan dapat diukur melalui...",
+      "options": [
+        "Dugaan pustakawan",
+        "Survei kepuasan pengguna dan analisis keluhan",
+        "Jumlah buku",
+        "Luas gedung"
+      ],
+      "answer": 1,
+      "explanation": "Survei kepuasan, kotak saran, dan analisis keluhan memberikan data langsung tentang persepsi dan kebutuhan pengguna."
+    }
+  ],
+  "ti_perpustakaan": [
+    {
+      "q": "SLiMS (Senayan Library Management System) adalah...",
+      "options": [
+        "Sistem klasifikasi",
+        "Sistem otomasi perpustakaan open source yang populer di Indonesia",
+        "Format katalog",
+        "Jenis rak buku"
+      ],
+      "answer": 1,
+      "explanation": "SLiMS adalah software otomasi perpustakaan berbasis web dan open source yang banyak digunakan perpustakaan di Indonesia."
+    },
+    {
+      "q": "OPAC (Online Public Access Catalog) berfungsi untuk...",
+      "options": [
+        "Mengganti katalog kartu dengan katalog online yang bisa ditelusuri publik",
+        "Menjual buku online",
+        "Membuat website perpustakaan",
+        "Menghitung denda"
+      ],
+      "answer": 0,
+      "explanation": "OPAC adalah katalog online yang memungkinkan pengguna menelusuri koleksi perpustakaan secara digital."
+    },
+    {
+      "q": "RFID (Radio Frequency Identification) di perpustakaan digunakan untuk...",
+      "options": [
+        "Mengganti semua pustakawan",
+        "Identifikasi otomatis bahan pustaka untuk sirkulasi, keamanan, dan inventarisasi",
+        "Menambah koleksi digital",
+        "Membuat website"
+      ],
+      "answer": 1,
+      "explanation": "RFID memungkinkan identifikasi otomatis bahan pustaka tanpa scan barcode, mempercepat proses sirkulasi dan inventarisasi."
+    },
+    {
+      "q": "Institutional Repository (IR) di perpustakaan perguruan tinggi berfungsi untuk...",
+      "options": [
+        "Menyimpan buku bekas",
+        "Menyimpan, mengelola, dan menyebarluaskan karya ilmiah sivitas akademika institusi",
+        "Menjual jurnal",
+        "Menyimpan arsip keuangan"
+      ],
+      "answer": 1,
+      "explanation": "IR (misal: DSpace) menyimpan dan menyediakan akses terbuka terhadap karya ilmiah dosen, mahasiswa, dan staff institusi."
+    },
+    {
+      "q": "Metadata dalam konteks perpustakaan digital adalah...",
+      "options": [
+        "Data tentang data — informasi deskriptif yang mendeskripsikan bahan pustaka digital",
+        "Data yang salah",
+        "Data keuangan",
+        "Data pengunjung"
+      ],
+      "answer": 0,
+      "explanation": "Metadata (Dublin Core, MODS, dll) mendeskripsikan bahan pustaka digital agar dapat ditemukan, diakses, dan dikelola."
+    },
+    {
+      "q": "Digital preservation (pelestarian digital) bertujuan untuk...",
+      "options": [
+        "Menghapus file lama",
+        "Menjamin akses jangka panjang terhadap materi digital",
+        "Mengompresi semua file",
+        "Menjual data"
+      ],
+      "answer": 1,
+      "explanation": "Digital preservation memastikan materi digital tetap dapat diakses dan digunakan dalam jangka panjang melalui strategi migrasi, emulasi, dan backup."
+    },
+    {
+      "q": "Sistem otomasi perpustakaan modern umumnya mencakup modul...",
+      "options": [
+        "Hanya sirkulasi",
+        "Sirkulasi, katalogisasi, OPAC, serials, dan laporan",
+        "Hanya pengadaan",
+        "Hanya keuangan"
+      ],
+      "answer": 1,
+      "explanation": "Sistem otomasi modern mencakup modul sirkulasi, katalogisasi, OPAC, pengelolaan serials, pengadaan, dan pelaporan."
+    },
+    {
+      "q": "URN (Uniform Resource Name) dan URL (Uniform Resource Locator) berbeda karena...",
+      "options": [
+        "Sama saja",
+        "URN mengidentifikasi sumber secara unik, URL menunjukkan lokasi sumber di internet",
+        "URN lebih cepat",
+        "URL lebih permanen"
+      ],
+      "answer": 1,
+      "explanation": "URN adalah identifier permanen untuk sumber, sedangkan URL adalah alamat spesifik yang menunjukkan dimana sumber bisa ditemukan."
+    },
+    {
+      "q": "Dublin Core Metadata Initiative (DCMI) menyediakan standar metadata dengan ... elemen inti",
+      "options": [
+        "5",
+        "10",
+        "15",
+        "20"
+      ],
+      "answer": 2,
+      "explanation": "Dublin Core memiliki 15 elemen inti: Title, Creator, Subject, Description, Publisher, Contributor, Date, Type, Format, Identifier, Source, Language, Relation, Coverage, Rights."
+    },
+    {
+      "q": "Perpustakaan virtual (virtual library) berbeda dari perpustakaan digital karena...",
+      "options": [
+        "Tidak ada perbedaannya",
+        "Menyediakan akses ke koleksi terdistribusi dari berbagai perpustakaan secara virtual melalui satu pintu",
+        "Tidak memiliki koleksi",
+        "Hanya ada di game"
+      ],
+      "answer": 1,
+      "explanation": "Perpustakaan virtual menghubungkan koleksi dari berbagai lokasi/perpustakaan sehingga pengguna mengakses dari satu antarmuka."
+    }
+  ],
+  "manajemen_koleksi": [
+    {
+      "q": "Pengembangan koleksi (collection development) meliputi...",
+      "options": [
+        "Hanya pembelian buku",
+        "Perencanaan, seleksi, pengadaan, evaluasi, dan penyiangan koleksi",
+        "Hanya penolakan buku",
+        "Hanya penyimpanan"
+      ],
+      "answer": 1,
+      "explanation": "Pengembangan koleksi mencakup perencanaan kebijakan, seleksi bahan, pengadaan, evaluasi berkala, dan penyiangan (weeding)."
+    },
+    {
+      "q": "Penyiangan koleksi (weeding) dilakukan untuk...",
+      "options": [
+        "Merusak buku",
+        "Mengeluarkan koleksi yang sudah tidak relevan, rusak, atau usang dari rak",
+        "Menambah koleksi baru",
+        "Memindahkan rak"
+      ],
+      "answer": 1,
+      "explanation": "Weeding mengeluarkan koleksi yang sudah tidak relevan, usang, atau rusak berat agar ruang rak lebih efisien dan koleksi tetap berkualitas."
+    },
+    {
+      "q": "Kebijakan pengembangan koleksi (collection development policy) berisi...",
+      "options": [
+        "Daftar harga buku",
+        "Pedoman seleksi, prioritas subjek, kriteria penolakan, dan evaluasi koleksi",
+        "Jadwal kerja pegawai",
+        "Aturan peminjaman"
+      ],
+      "answer": 1,
+      "explanation": "CDP adalah dokumen formal yang mengatur prinsip, prioritas subjek, kriteria seleksi, dan evaluasi pengembangan koleksi."
+    },
+    {
+      "q": "Preservasi dan konservasi koleksi berbeda karena...",
+      "options": [
+        "Sama saja",
+        "Preservasi mencakup strategi pelestarian secara umum, konservasi adalah tindakan fisik perbaikan bahan",
+        "Konservasi lebih luas",
+        "Tidak ada yang benar"
+      ],
+      "answer": 1,
+      "explanation": "Preservasi = strategi dan kebijakan pelestarian secara umum. Konservasi = tindakan fisik langsung pada bahan (restorasi, perbaikan)."
+    },
+    {
+      "q": "Acquisition (pengadaan) koleksi dapat dilakukan melalui...",
+      "options": [
+        "Hanya pembelian",
+        "Pembelian, hadiah/hibah, tukar-menukar, dan terbitan sendiri",
+        "Hanya sumbangan",
+        "Hanya peminjaman"
+      ],
+      "answer": 1,
+      "explanation": "Pengadaan koleksi melalui berbagai cara: pembelian, hadiah/hibah, tukar-menukar antar perpustakaan, dan terbitan internal."
+    },
+    {
+      "q": "Rasio koleksi terhadap jumlah pemustaka yang ideal adalah...",
+      "options": [
+        "1:1",
+        "Minimal 10 judul per pemustaka (standar nasional)",
+        "100:1",
+        "Tidak ada standar"
+      ],
+      "answer": 1,
+      "explanation": "Standar Perpustakaan Nasional menganjurkan minimal 10 judul koleksi per pemustaka aktif untuk perpustakaan sekolah."
+    },
+    {
+      "q": "Evaluasi koleksi secara kualitatif dilakukan dengan...",
+      "options": [
+        "Menghitung jumlah buku",
+        "Menilai relevansi, mutu, dan kedalaman koleksi terhadap kebutuhan pengguna",
+        "Menimbang buku",
+        "Mengukur rak"
+      ],
+      "answer": 1,
+      "explanation": "Evaluasi kualitatif menilai apakah koleksi relevan, mutakhir, dan memadai untuk memenuhi kebutuhan informasi pengguna."
+    },
+    {
+      "q": "Koleksi referensi (reference collection) biasanya...",
+      "options": [
+        "Boleh dibawa pulang",
+        "Tidak boleh dibawa pulang karena digunakan secara terus-menerus untuk rujukan",
+        "Dijual",
+        "Dibuang setelah dibaca"
+      ],
+      "answer": 1,
+      "explanation": "Koleksi referensi (kamus, ensiklopedia, direktori) umumnya tidak boleh dibawa pulang karena diperlukan terus-menerus."
+    },
+    {
+      "q": "Book selection (seleksi buku) mempertimbangkan...",
+      "options": [
+        "Harga saja",
+        "Relevansi dengan kebutuhan pengguna, kualitas konten, otoritas pengarang, dan anggaran",
+        "Warna sampul",
+        "Tebal buku"
+      ],
+      "answer": 1,
+      "explanation": "Seleksi buku mempertimbangkan relevansi subjek, akurasi konten, otoritas pengarang/penerbit, dan ketersediaan anggaran."
+    },
+    {
+      "q": "Standar Nasional Perpustakaan (SNP) mengatur tentang...",
+      "options": [
+        "Harga buku",
+        "Standar koleksi, sarana prasarana, pelayanan, pengelolaan, dan SDM perpustakaan",
+        "Gaji pustakawan",
+        "Jam buka perpustakaan"
+      ],
+      "answer": 1,
+      "explanation": "SNP (Perpusnas) menetapkan standar minimal untuk koleksi, sarana-prasarana, pelayanan, pengelolaan, dan kompetensi SDM perpustakaan."
+    }
+  ]
+}

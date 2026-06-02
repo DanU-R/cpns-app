@@ -1,0 +1,562 @@
+{
+  "kesehatan_masyarakat": [
+    {
+      "q": "Definisi kesehatan menurut WHO adalah...",
+      "options": [
+        "Tidak adanya penyakit",
+        "Keadaan sejahtera sempurna fisik, mental, dan sosial",
+        "Kemampuan beraktivitas normal",
+        "Tidak cacat secara fisik"
+      ],
+      "answer": 1,
+      "explanation": "WHO mendefinisikan kesehatan sebagai keadaan sejahtera yang sempurna secara fisik, mental, dan sosial, bukan sekadar tidak adanya penyakit."
+    },
+    {
+      "q": "Upaya promotif dalam kesehatan masyarakat bertujuan untuk...",
+      "options": [
+        "Menyembuhkan penyakit",
+        "Meningkatkan derajat kesehatan masyarakat",
+        "Mencegah penyebaran penyakit",
+        "Mengobati penderita"
+      ],
+      "answer": 1,
+      "explanation": "Upaya promotif bertujuan meningkatkan kesehatan melalui penyuluhan, promosi kesehatan, dan pemberdayaan masyarakat."
+    },
+    {
+      "q": "Sanitasi dasar mencakup...",
+      "options": [
+        "Pengobatan massal",
+        "Penyediaan air bersih, jamban, pengelolaan sampah dan limbah",
+        "Vaksinasi rutin",
+        "Pemeriksaan kesehatan berkala"
+      ],
+      "answer": 1,
+      "explanation": "Sanitasi dasar meliputi air bersih, jamban sehat, pengelolaan sampah, dan pengelolaan limbah rumah tangga."
+    },
+    {
+      "q": "Indikator derajat kesehatan masyarakat yang paling umum adalah...",
+      "options": [
+        "Jumlah rumah sakit",
+        "Angka kematian bayi (IMR) dan angka harapan hidup",
+        "Jumlah dokter per kapita",
+        "Biaya kesehatan nasional"
+      ],
+      "answer": 1,
+      "explanation": "IMR dan angka harapan hidup merupakan indikator sensitif yang mencerminkan kualitas kesehatan masyarakat secara keseluruhan."
+    },
+    {
+      "q": "Puskesmas merupakan unit pelaksana teknis dinas kesehatan yang bertanggung jawab di wilayah...",
+      "options": [
+        "Provinsi",
+        "Kabupaten/Kota",
+        "Kecamatan",
+        "Desa/Kelurahan"
+      ],
+      "answer": 2,
+      "explanation": "Puskesmas bertanggung jawab atas penyelenggaraan upaya kesehatan di wilayah kecamatan."
+    },
+    {
+      "q": "Program Posyandu (Pos Pelayanan Terpadu) terutama ditujukan untuk...",
+      "options": [
+        "Lansia",
+        "Ibu hamil, bayi, dan balita",
+        "Remaja",
+        "Pekerja"
+      ],
+      "answer": 1,
+      "explanation": "Posyandu fokus pada pelayanan kesehatan ibu hamil, bayi, balita, dan program KB."
+    },
+    {
+      "q": "Desa siaga adalah desa yang...",
+      "options": [
+        "Memiliki rumah sakit",
+        "Memiliki fasilitas kesehatan yang siap siaga dan masyarakat aktif dalam kesehatan",
+        "Bebas dari semua penyakit",
+        "Memiliki banyak dokter"
+      ],
+      "answer": 1,
+      "explanation": "Desa siaga adalah desa yang penduduknya memiliki kesiapan sumber daya dan kemampuan untuk mencegah dan mengatasi masalah kesehatan."
+    },
+    {
+      "q": "Surveilans epidemiologi bertujuan untuk...",
+      "options": [
+        "Mengobati pasien",
+        "Memantau dan menganalisis kejadian penyakit untuk tindakan pencegahan",
+        "Membuat obat",
+        "Menutup wilayah wabah"
+      ],
+      "answer": 1,
+      "explanation": "Surveilans epidemiologi adalah pengumpulan, analisis, dan interpretasi data kesehatan secara sistematis untuk tindakan pengendalian."
+    },
+    {
+      "q": "Determinan sosial kesehatan meliputi...",
+      "options": [
+        "Hanya faktor genetik",
+        "Kondisi sosial, ekonomi, lingkungan yang mempengaruhi status kesehatan",
+        "Hanya akses ke rumah sakit",
+        "Hanya pola makan"
+      ],
+      "answer": 1,
+      "explanation": "Determinan sosial kesehatan mencakup kondisi dimana orang lahir, tumbuh, bekerja, dan menua yang mempengaruhi kesehatan."
+    },
+    {
+      "q": "Program JKN (Jaminan Kesehatan Nasional) dikelola oleh...",
+      "options": [
+        "Kemenkes",
+        "BPJS Kesehatan",
+        "Dinkes Provinsi",
+        "Puskesmas"
+      ],
+      "answer": 1,
+      "explanation": "BPJS Kesehatan adalah badan penyelenggara JKN yang memberikan jaminan kesehatan bagi seluruh penduduk Indonesia."
+    }
+  ],
+  "farmasi": [
+    {
+      "q": "Farmakokinetik mempelajari...",
+      "options": [
+        "Efek obat pada tubuh",
+        "Nasib obat dalam tubuh (absorpsi, distribusi, metabolisme, ekskresi)",
+        "Interaksi obat",
+        "Efek samping obat"
+      ],
+      "answer": 1,
+      "explanation": "Farmakokinetik (ADME) mempelajari bagaimana tubuh memproses obat dari masuk hingga dikeluarkan."
+    },
+    {
+      "q": "Farmakodinamik mempelajari...",
+      "options": [
+        "Cara tubuh memproses obat",
+        "Efek mekanisme kerja obat pada tubuh",
+        "Dosis obat",
+        "Cara pembuatan obat"
+      ],
+      "answer": 1,
+      "explanation": "Farmakodinamik mempelajari bagaimana obat bekerja pada tubuh, termasuk mekanisme aksi dan efek yang dihasilkan."
+    },
+    {
+      "q": "Rute pemberian obat yang memberikan onset aksi paling cepat adalah...",
+      "options": [
+        "Oral",
+        "Intramuskular",
+        "Intravena",
+        "Topikal"
+      ],
+      "answer": 2,
+      "explanation": "Intravena (IV) memberikan obat langsung ke aliran darah sehingga onset aksi paling cepat."
+    },
+    {
+      "q": "Bioavailabilitas obat adalah...",
+      "options": [
+        "Kecepatan obat rusak",
+        "Fraksi obat yang mencapai sirkulasi sistemik dalam bentuk aktif",
+        "Jumlah obat yang diminum",
+        "Waktu paruh obat"
+      ],
+      "answer": 1,
+      "explanation": "Bioavailabilitas mengukur proporsi obat yang masuk ke sirkulasi sistemik dan tersedia untuk memberikan efek."
+    },
+    {
+      "q": "Antibiotik golongan beta-laktam contohnya adalah...",
+      "options": [
+        "Tetrasiklin",
+        "Amoksisilin",
+        "Eritromisin",
+        "Kloramfenikol"
+      ],
+      "answer": 1,
+      "explanation": "Amoksisilin termasuk beta-laktam bersama penisilin dan sefalosporin. Bekerja dengan menghambat sintesis dinding sel bakteri."
+    },
+    {
+      "q": "Efek samping obat yang tidak diharapkan dan merugikan disebut...",
+      "options": [
+        "Efek terapeutik",
+        "Adverse Drug Reaction (ADR)",
+        "Efek placebo",
+        "Toleransi"
+      ],
+      "answer": 1,
+      "explanation": "ADR adalah respons obat yang merugikan dan tidak diharapkan, terjadi pada dosis normal untuk pencegahan, diagnosis, atau pengobatan."
+    },
+    {
+      "q": "Waktu paruh (half-life) obat adalah waktu yang dibutuhkan untuk...",
+      "options": [
+        "Obat mulai bekerja",
+        "Konsentrasi obat dalam plasma berkurang setengahnya",
+        "Obat diserap seluruhnya",
+        "Obat dikeluarkan seluruhnya dari tubuh"
+      ],
+      "answer": 1,
+      "explanation": "Half-life adalah waktu yang diperlukan agar konsentrasi obat dalam plasma berkurang 50%."
+    },
+    {
+      "q": "Obat generik adalah obat yang...",
+      "options": [
+        "Harganya lebih mahal dari paten",
+        "Memiliki kandungan aktif sama dengan obat paten setelah masa paten habis",
+        "Tidak teruji klinis",
+        "Hanya dijual di rumah sakit"
+      ],
+      "answer": 1,
+      "explanation": "Obat generik memiliki kandungan aktif, dosis, dan keamanan yang sama dengan obat paten namun dengan harga lebih terjangkau."
+    },
+    {
+      "q": "Interaksi obat yang berbahaya terjadi ketika...",
+      "options": [
+        "Dua obat dikonsumsi bersamaan tanpa jeda",
+        "Satu obat mengubah efek obat lain sehingga menimbulkan risiko",
+        "Obat diminum dengan air putih",
+        "Obat disimpan di lemari es"
+      ],
+      "answer": 1,
+      "explanation": "Interaksi obat yang berbahaya dapat meningkatkan atau menurunkan efek obat, menyebabkan toksisitas atau kegagalan terapi."
+    },
+    {
+      "q": "Toleransi obat terjadi ketika...",
+      "options": [
+        "Tubuh kebal terhadap obat sehingga dosis perlu ditingkatkan",
+        "Obat menjadi lebih kuat",
+        "Pasien alergi terhadap obat",
+        "Obat tidak bisa disimpan"
+      ],
+      "answer": 0,
+      "explanation": "Toleransi adalah penurunan respons terhadap obat setelah penggunaan berulang, sehingga memerlukan dosis lebih tinggi untuk efek yang sama."
+    }
+  ],
+  "keperawatan": [
+    {
+      "q": "Proses keperawatan terdiri dari ... tahap",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 2,
+      "explanation": "5 tahap: Pengkajian, Diagnosa Keperawatan, Perencanaan, Pelaksanaan, dan Evaluasi."
+    },
+    {
+      "q": "Tanda vital yang perlu dikaji meliputi...",
+      "options": [
+        "Tekanan darah, nadi, respirasi, suhu",
+        "Berat badan dan tinggi badan",
+        "Golongan darah",
+        "Hasil laboratorium"
+      ],
+      "answer": 0,
+      "explanation": "Tanda vital utama: tekanan darah, nadi (pulse), laju pernapasan (respirasi), dan suhu tubuh."
+    },
+    {
+      "q": "Posisi Fowler dalam keperawatan adalah...",
+      "options": [
+        "Berbaring telentang",
+        "Setengah duduk 45-60 derajat",
+        "Miring ke kiri",
+        "Tengkurap"
+      ],
+      "answer": 1,
+      "explanation": "Posisi Fowler (45-60 derajat) memudahkan pernapasan dan常用于 pasien dengan masalah respirasi."
+    },
+    {
+      "q": "Prinsip asepsis dalam keperawatan bertujuan untuk...",
+      "options": [
+        "Mempercepat penyembuhan",
+        "Mencegah infeksi dan kontaminasi mikroorganisme",
+        "Mengurangi rasa sakit",
+        "Meningkatkan kenyamanan"
+      ],
+      "answer": 1,
+      "explanation": "Asepsis adalah upaya mencegah masuknya mikroorganisme patogen ke dalam tubuh selama prosedur medis."
+    },
+    {
+      "q": "Informed consent dalam keperawatan berarti...",
+      "options": [
+        "Pasien harus setuju tanpa penjelasan",
+        "Persetujuan pasien setelah mendapat penjelasan lengkap tentang prosedur",
+        "Keluarga yang memutuskan untuk pasien",
+        "Dokter yang memutuskan sendiri"
+      ],
+      "answer": 1,
+      "explanation": "Informed consent adalah persetujuan pasien yang diberikan setelah memahami risiko, manfaat, dan alternatif prosedur."
+    },
+    {
+      "q": "Skala nyeri yang sering digunakan adalah...",
+      "options": [
+        "Skala Glasgow",
+        "Skala Numeric Rating Scale (NRS) 0-10",
+        "Skala Apgar",
+        "Skala Mini Mental"
+      ],
+      "answer": 1,
+      "explanation": "NRS 0-10 adalah skala nyeri subjektif dimana 0 = tidak nyeri dan 10 = nyeri terhebat yang pernah dirasakan."
+    },
+    {
+      "q": "Pemberian injeksi intramuskular (IM) yang benar dilakukan pada...",
+      "options": [
+        "Kulit (subkutan)",
+        "Otot (deltoid, vastus lateralis, ventrogluteal)",
+        "Pembuluh darah",
+        "Rongga perut"
+      ],
+      "answer": 1,
+      "explanation": "Injeksi IM diberikan ke otot dengan site utama: deltoid, vastus lateralis, dan ventrogluteal."
+    },
+    {
+      "q": "Dekubitus (luka tekan) sering terjadi pada pasien...",
+      "options": [
+        "Yang sering berjalan",
+        "Yang immobil/bedrest lama",
+        "Yang makan banyak",
+        "Yang tidur nyenyak"
+      ],
+      "answer": 1,
+      "explanation": "Dekubitus terjadi karena tekanan berkepanjangan pada area tulang yang menonjol pada pasien yang immobil."
+    },
+    {
+      "q": "Asuhan keperawatan yang berpusat pada pasien (patient-centered care) menekankan...",
+      "options": [
+        "Perawat menentukan segalanya",
+        "Menghargai preferensi, kebutuhan, dan nilai-nilai pasien",
+        "Keluarga tidak dilibatkan",
+        "Prosedur lebih penting dari pasien"
+      ],
+      "answer": 1,
+      "explanation": "Patient-centered care menempatkan pasien sebagai mitra aktif dengan menghargai preferensi, nilai, dan kebutuhan mereka."
+    },
+    {
+      "q": "Pengkajian keperawatan menggunakan metode HEAD TO TOE berarti...",
+      "options": [
+        "Pengkajian dari kepala hingga kaki secara sistematis",
+        "Pengkajian hanya kepala",
+        "Pengkajian berdasarkan keluhan",
+        "Pengkajian dari kaki ke kepala"
+      ],
+      "answer": 0,
+      "explanation": "HEAD TO TOE adalah pendekatan sistematis pengkajian fisik dari kepala, leher, dada, abdomen, ekstremitas hingga kaki."
+    }
+  ],
+  "gizi": [
+    {
+      "q": "Zat gizi makro meliputi...",
+      "options": [
+        "Vitamin dan mineral",
+        "Karbohidrat, protein, dan lemak",
+        "Air dan serat",
+        "Antioksidan"
+      ],
+      "answer": 1,
+      "explanation": "Zat gizi makro dibutuhkan dalam jumlah besar: karbohidrat, protein, dan lemak sebagai sumber energi."
+    },
+    {
+      "q": "Kebutuhan kalori harian orang dewasa rata-rata adalah...",
+      "options": [
+        "500-800 kkal",
+        "1500-2500 kkal",
+        "4000-5000 kkal",
+        "100-200 kkal"
+      ],
+      "answer": 1,
+      "explanation": "Kebutuhan kalori bervariasi berdasarkan usia, jenis kelamin, dan aktivitas, umumnya 1500-2500 kkal/hari."
+    },
+    {
+      "q": "Kekurangan vitamin A menyebabkan...",
+      "options": [
+        "Sariawan",
+        "Gangguan penglihatan (rabun senja)",
+        "Anemia",
+        "Osteoporosis"
+      ],
+      "answer": 1,
+      "explanation": "Vitamin A penting untuk fungsi retina. Defisiensi menyebabkan rabun senja dan pada kasus berat dapat menyebabkan kebutaan."
+    },
+    {
+      "q": "Protein hewani berasal dari...",
+      "options": [
+        "Kacang-kacangan",
+        "Daging, ikan, telur, dan susu",
+        "Sayuran hijau",
+        "Buah-buahan"
+      ],
+      "answer": 1,
+      "explanation": "Protein hewani berasal dari produk hewan dan mengandung asam amino esensial lengkap."
+    },
+    {
+      "q": "IMT (Indeks Massa Tubuh) dihitung dengan rumus...",
+      "options": [
+        "Berat badan × tinggi badan",
+        "Berat badan (kg) / tinggi badan² (m)",
+        "Tinggi badan / berat badan",
+        "Lingkar lengan atas"
+      ],
+      "answer": 1,
+      "explanation": "IMT = BB(kg) / TB²(m²). Kategori: <18.5 (kurang), 18.5-24.9 (normal), 25-29.9 (overweight), ≥30 (obesitas)."
+    },
+    {
+      "q": "Stunting pada balita disebabkan oleh...",
+      "options": [
+        "Kelebihan gizi jangka pendek",
+        "Kurang gizi kronis dalam waktu lama",
+        "Infeksi akut",
+        "Genetik saja"
+      ],
+      "answer": 1,
+      "explanation": "Stunting (tinggi badan kurang) disebabkan oleh kekurangan gizi kronis terutama pada 1000 hari pertama kehidupan."
+    },
+    {
+      "q": "Zat besi penting untuk mencegah...",
+      "options": [
+        "Gangguan penglihatan",
+        "Anemia defisiensi besi",
+        "Osteoporosis",
+        "Diabetes"
+      ],
+      "answer": 1,
+      "explanation": "Zat besi diperlukan untuk pembentukan hemoglobin. Defisiensi menyebabkan anemia dengan gejala lemas, pucat, dan pusing."
+    },
+    {
+      "q": "ASI eksklusif diberikan selama...",
+      "options": [
+        "1 bulan pertama",
+        "3 bulan pertama",
+        "6 bulan pertama",
+        "12 bulan pertama"
+      ],
+      "answer": 2,
+      "explanation": "WHO dan Kemenkes RI merekomendasikan ASI eksklusif selama 6 bulan pertama kehidupan."
+    },
+    {
+      "q": "Fungsi serat dalam pencernaan adalah...",
+      "options": [
+        "Menambah kalori",
+        "Melancarkan pencernaan dan mencegah konstipasi",
+        "Meningkatkan gula darah",
+        "Menyerap lemak"
+      ],
+      "answer": 1,
+      "explanation": "Serat makanan melancarkan pergerakan usus, mencegah konstipasi, dan membantu menjaga kesehatan pencernaan."
+    },
+    {
+      "q": "Gizi sepiring (Isi Piringku) menganjurkan proporsi...",
+      "options": [
+        "Semua karbohidrat",
+        "1/3 karbohidrat, 1/3 sayuran, 1/3 lauk-pauk + buah",
+        "50% lemak, 50% protein",
+        "Hanya protein"
+      ],
+      "answer": 1,
+      "explanation": "Pedoman Isi Piringku: 1/3 makanan pokok, 1/3 sayuran, 1/3 lauk-pauk, ditambah buah dan air putih."
+    }
+  ],
+  "epidemiologi": [
+    {
+      "q": "Epidemiologi adalah ilmu yang mempelajari...",
+      "options": [
+        "Penyakit menular saja",
+        "Distribusi dan determinan kejadian kesehatan pada populasi",
+        "Pengobatan penyakit",
+        "Anatomi tubuh"
+      ],
+      "answer": 1,
+      "explanation": "Epidemiologi mempelajari frekuensi, distribusi, dan faktor penyebab masalah kesehatan pada populasi."
+    },
+    {
+      "q": "Tiga unsur dalam segitiga epidemiologi (epidemiological triad) adalah...",
+      "options": [
+        "Host, Agent, Environment",
+        "Manusia, Obat, Rumah Sakit",
+        "Genetik, Lingkungan, Nutrisi",
+        "Virus, Bakteri, Jamur"
+      ],
+      "answer": 0,
+      "explanation": "Segitiga epidemiologi: Host (pejamu), Agent (penyebab penyakit), Environment (lingkungan) — interaksi ketiganya menentukan kejadian penyakit."
+    },
+    {
+      "q": "Insidensi mengukur...",
+      "options": [
+        "Total kasus yang ada",
+        "Kasus BARU yang muncul dalam periode tertentu",
+        "Jumlah kematian",
+        "Prevalensi penyakit"
+      ],
+      "answer": 1,
+      "explanation": "Insidensi = jumlah kasus BARU dalam periode waktu tertentu dibagi populasi berisiko."
+    },
+    {
+      "q": "Prevalensi mengukur...",
+      "options": [
+        "Kasus baru",
+        "Total kasus (baru + lama) yang ada pada waktu tertentu",
+        "Tingkat kematian",
+        "Tingkat kesembuhan"
+      ],
+      "answer": 1,
+      "explanation": "Prevalensi = total kasus (baru dan lama) pada waktu tertentu dibagi total populasi."
+    },
+    {
+      "q": "Wabah (outbreak) terjadi ketika...",
+      "options": [
+        "Satu orang sakit",
+        "Jumlah kasus melebihi ekspektasi normal di suatu area dan waktu",
+        "Penyakit sudah eradikasi",
+        "Semua orang sakit"
+      ],
+      "answer": 1,
+      "explanation": "Wabah terjadi ketika terjadi peningkatan jumlah kasus melebihi tingkat yang biasa terjadi di wilayah dan waktu tertentu."
+    },
+    {
+      "q": "Rasio odds (OR) dalam studi kasus-kontrol digunakan untuk...",
+      "options": [
+        "Mengukur insidensi",
+        "Mengukur kekuatan asosiasi antara paparan dan penyakit",
+        "Mengukur prevalensi",
+        "Menghitung biaya pengobatan"
+      ],
+      "answer": 1,
+      "explanation": "Odds Ratio mengukur kekuatan asosiasi antara faktor risiko (paparan) dan outcome (penyakit) pada studi kasus-kontrol."
+    },
+    {
+      "q": "Herd immunity (kekebalan kelompok) tercapai ketika...",
+      "options": [
+        "Semua individu divaksinasi",
+        "Proporsi cukup besar dalam populasi kebal sehingga penyakit tidak mudah menyebar",
+        "Tidak ada penyakit sama sekali",
+        "Karantina dilakukan"
+      ],
+      "answer": 1,
+      "explanation": "Herd immunity terjadi ketika cukup banyak orang dalam populasi kebal (vaksinasi/infeksi sebelumnya) sehingga rantai penularan terputus."
+    },
+    {
+      "q": "Studi kohort dalam epidemiologi bersifat...",
+      "options": [
+        "Retrospektif",
+        "Prospektif — mengikuti kelompok dari paparan hingga outcome",
+        "Cross-sectional",
+        "Eksperimental"
+      ],
+      "answer": 1,
+      "explanation": "Studi kohort mengikuti kelompok yang terpapar dan tidak terpapar secara prospektif untuk melihat perbedaan outcome."
+    },
+    {
+      "q": "Angka kematian kasar (Crude Death Rate) dihitung sebagai...",
+      "options": [
+        "Jumlah kematian / total populasi × 1000",
+        "Jumlah kelahiran / total populasi × 1000",
+        "Jumlah penyakit / total populasi × 100",
+        "Jumlah rumah sakit / wilayah"
+      ],
+      "answer": 0,
+      "explanation": "CDR = (jumlah kematian dalam 1 tahun / jumlah penduduk pertengahan tahun) × 1000."
+    },
+    {
+      "q": "Penyakit endemi adalah penyakit yang...",
+      "options": [
+        "Muncul tiba-tiba dalam jumlah besar",
+        "Selalu ada dengan tingkat yang relatif konstan di suatu wilayah",
+        "Sudah punah",
+        "Hanya terjadi sekali"
+      ],
+      "answer": 1,
+      "explanation": "Endemi = penyakit yang secara konstan ada di suatu wilayah dengan tingkat yang dapat diprediksi (misal: malaria di Papua)."
+    }
+  ]
+}

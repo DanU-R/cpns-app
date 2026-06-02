@@ -1,0 +1,562 @@
+{
+  "pedagogik": [
+    {
+      "q": "Kompetensi pedagogik guru meliputi kemampuan...",
+      "options": [
+        "Mengelola pembelajaran dan memahami peserta didik",
+        "Menguasai materi pelajaran secara mendalam",
+        "Berinteraksi dengan masyarakat",
+        "Menyusun anggaran sekolah"
+      ],
+      "answer": 0,
+      "explanation": "Kompetensi pedagogik adalah kemampuan guru dalam mengelola pembelajaran peserta didik, meliputi pemahaman peserta didik, perancangan pembelajaran, pelaksanaan pembelajaran, dan evaluasi."
+    },
+    {
+      "q": "Teori belajar yang menekankan bahwa pengetahuan dibangun oleh peserta didik sendiri disebut...",
+      "options": [
+        "Behaviorisme",
+        "Konstruktivisme",
+        "Kognitivisme",
+        "Humanisme"
+      ],
+      "answer": 1,
+      "explanation": "Konstruktivisme menyatakan bahwa peserta didik secara aktif membangun pemahaman mereka sendiri melalui pengalaman dan refleksi."
+    },
+    {
+      "q": "Prinsip pembelajaran yang berpusat pada peserta didik disebut...",
+      "options": [
+        "Teacher-centered learning",
+        "Student-centered learning",
+        "Curriculum-centered learning",
+        "Content-centered learning"
+      ],
+      "answer": 1,
+      "explanation": "Student-centered learning menempatkan peserta didik sebagai subjek aktif dalam proses pembelajaran, bukan hanya penerima pasif."
+    },
+    {
+      "q": "Assessment yang dilakukan selama proses pembelajaran berlangsung disebut...",
+      "options": [
+        "Sumatif",
+        "Formatif",
+        "Diagnostik",
+        "Normatif"
+      ],
+      "answer": 1,
+      "explanation": "Penilaian formatif dilakukan selama pembelajaran untuk memberikan feedback dan memperbaiki proses belajar."
+    },
+    {
+      "q": "RPP (Rencana Pelaksanaan Pembelajaran) dikembangkan dari...",
+      "options": [
+        "Silabus",
+        "Buku teks",
+        "Kurikulum nasional",
+        "Keputusan kepala sekolah"
+      ],
+      "answer": 0,
+      "explanation": "RPP dikembangkan dari silabus yang merupakan penjabaran lebih lanjut dari standar isi kurikulum."
+    },
+    {
+      "q": "Pendekatan pembelajaran yang mengaitkan materi dengan kehidupan nyata disebut...",
+      "options": [
+        "Contextual Teaching and Learning (CTL)",
+        "Pembelajaran langsung",
+        "Pembelajaran kooperatif",
+        "Pembelajaran ekspositori"
+      ],
+      "answer": 0,
+      "explanation": "CTL menghubungkan materi pelajaran dengan situasi dunia nyata sehingga peserta didik dapat melihat relevansi pembelajaran."
+    },
+    {
+      "q": "Bloom's Taxonomy versi revisi (Anderson & Krathwohl) memiliki tingkatan tertinggi yaitu...",
+      "options": [
+        "Menganalisis",
+        "Mengevaluasi",
+        "Mencipta (C6)",
+        "Memahami"
+      ],
+      "answer": 2,
+      "explanation": "Taksonomi Bloom revisi: C1 Mengingat, C2 Memahami, C3 Menerapkan, C4 Menganalisis, C5 Mengevaluasi, C6 Mencipta."
+    },
+    {
+      "q": "Media pembelajaran yang paling efektif untuk menjelaskan proses yang tidak bisa diamati langsung adalah...",
+      "options": [
+        "Buku cetak",
+        "Simulasi/animasi",
+        "Whiteboard",
+        "Ceramah"
+      ],
+      "answer": 1,
+      "explanation": "Simulasi dan animasi dapat memvisualisasikan proses abstrak atau yang tidak terlihat secara langsung."
+    },
+    {
+      "q": "Pembelajaran diferensial bertujuan untuk...",
+      "options": [
+        "Menyamakan kemampuan semua siswa",
+        "Menyesuaikan pembelajaran dengan kebutuhan dan kemampuan individual",
+        "Membedakan nilai siswa",
+        "Membagi kelas berdasarkan nilai"
+      ],
+      "answer": 1,
+      "explanation": "Pembelajaran diferensial menyesuaikan konten, proses, dan produk pembelajaran sesuai kebutuhan, minat, dan profil belajar siswa."
+    },
+    {
+      "q": "Model pembelajaran yang membagi siswa menjadi kelompok kecil dengan kemampuan heterogen disebut...",
+      "options": [
+        "Problem-based learning",
+        "Cooperative learning",
+        "Discovery learning",
+        "Project-based learning"
+      ],
+      "answer": 1,
+      "explanation": "Cooperative learning menempatkan siswa dalam kelompok heterogen untuk saling membantu mencapai tujuan bersama."
+    }
+  ],
+  "kepribadian_guru": [
+    {
+      "q": "Guru yang menampilkan diri sebagai teladan bagi peserta didik menunjukkan kompetensi...",
+      "options": [
+        "Pedagogik",
+        "Kepribadian",
+        "Sosial",
+        "Profesional"
+      ],
+      "answer": 1,
+      "explanation": "Kompetensi kepribadian mencakup kemampuan guru menjadi teladan dalam perilaku, sikap, dan moral."
+    },
+    {
+      "q": "Sikap guru yang stabil dan dewasa dalam menghadapi peserta didik mencerminkan...",
+      "options": [
+        "Kematangan emosional",
+        "Kecerdasan intelektual",
+        "Keterampilan mengajar",
+        "Penguasaan materi"
+      ],
+      "answer": 0,
+      "explanation": "Kematangan emosional memungkinkan guru tetap tenang dan bijaksana dalam berbagai situasi di kelas."
+    },
+    {
+      "q": "Guru yang memiliki integritas tinggi akan...",
+      "options": [
+        "Memberikan nilai sesuai kemampuan siswa",
+        "Memberikan nilai tinggi agar disukai",
+        "Mengabaikan tugas administratif",
+        "Menghindari interaksi dengan orang tua"
+      ],
+      "answer": 0,
+      "explanation": "Integritas guru tercermin dari kejujuran dalam penilaian dan pelaksanaan tugas profesional."
+    },
+    {
+      "q": "Etika profesi guru diatur dalam...",
+      "options": [
+        "UU Sisdiknas",
+        "Kode Etik Guru Indonesia",
+        "Peraturan daerah",
+        "Kontrak kerja"
+      ],
+      "answer": 1,
+      "explanation": "Kode Etik Guru Indonesia mengatur norma dan nilai yang harus dipatuhi setiap guru dalam menjalankan profesinya."
+    },
+    {
+      "q": "Pengembangan diri guru melalui kegiatan MGMP termasuk dalam...",
+      "options": [
+        "Pengembangan kepribadian",
+        "Pengembangan profesional berkelanjutan",
+        "Pengembangan sosial",
+        "Pengembangan administratif"
+      ],
+      "answer": 1,
+      "explanation": "MGMP (Musyawarah Guru Mata Pelajaran) merupakan wadah pengembangan profesional berkelanjutan bagi guru."
+    },
+    {
+      "q": "Guru yang reflektif adalah guru yang...",
+      "options": [
+        "Selalu merasa benar",
+        "Mengevaluasi dan memperbaiki praktik mengajarnya",
+        "Mengikuti semua tren pendidikan",
+        "Mengajar sesuai buku teks"
+      ],
+      "answer": 1,
+      "explanation": "Guru reflektif secara kritis mengevaluasi praktik mengajar dan mencari cara untuk terus meningkatkan kualitas pembelajaran."
+    },
+    {
+      "q": "Sikap profesional guru ditunjukkan dengan...",
+      "options": [
+        "Datang terlambat ke sekolah",
+        "Menyiapkan perangkat pembelajaran dengan baik",
+        "Mengeluh tentang beban kerja",
+        "Menghindari tanggung jawab tambahan"
+      ],
+      "answer": 1,
+      "explanation": "Profesionalisme guru tercermin dari kesiapan mengajar, kedisiplinan, dan tanggung jawab terhadap tugas."
+    },
+    {
+      "q": "Guru yang menghargai keberagaman siswa menunjukkan sikap...",
+      "options": [
+        "Diskriminatif",
+        "Inklusif",
+        "Eksklusif",
+        "Selektif"
+      ],
+      "answer": 1,
+      "explanation": "Sikap inklusif menghargai perbedaan latar belakang, kemampuan, dan budaya setiap peserta didik."
+    },
+    {
+      "q": "Kompetensi kepribadian guru yang berkaitan dengan kewibawaan adalah...",
+      "options": [
+        "Karisma",
+        "Berwibawa dan disenangi peserta didik",
+        "Otoriter",
+        "Pasif"
+      ],
+      "answer": 1,
+      "explanation": "Kewibawaan guru bukan berarti otoriter, tapi mampu dihormati dan disegani peserta didik secara positif."
+    },
+    {
+      "q": "Guru yang terus belajar dan mengikuti perkembangan ilmu pengetahuan menunjukkan...",
+      "options": [
+        "Life-long learning",
+        "Kehilangan identitas",
+        "Ketidakpuasan",
+        "Ambisi politik"
+      ],
+      "answer": 0,
+      "explanation": "Life-long learning adalah sikap profesional yang selalu mencari pengetahuan baru dan mengembangkan diri."
+    }
+  ],
+  "sosial": [
+    {
+      "q": "Kompetensi sosial guru meliputi kemampuan berkomunikasi dengan...",
+      "options": [
+        "Hanya peserta didik",
+        "Peserta didik, sesama guru, orang tua, dan masyarakat",
+        "Hanya kepala sekolah",
+        "Hanya pengawas"
+      ],
+      "answer": 1,
+      "explanation": "Kompetensi sosial mencakup kemampuan berkomunikasi efektif dengan seluruh stakeholder pendidikan."
+    },
+    {
+      "q": "Komunikasi efektif antara guru dan orang tua penting untuk...",
+      "options": [
+        "Menyalahkan orang tua atas perilaku siswa",
+        "Membangun kolaborasi dalam mendukung perkembangan siswa",
+        "Meminta sumbangan dana",
+        "Menunjukkan keunggulan guru"
+      ],
+      "answer": 1,
+      "explanation": "Komunikasi guru-orang tua membangun kemitraan yang mendukung perkembangan akademik dan karakter siswa."
+    },
+    {
+      "q": "Guru yang adaptif terhadap perubahan teknologi pendidikan menunjukkan kompetensi sosial yang baik karena...",
+      "options": [
+        "Bisa mengajar lebih cepat",
+        "Dapat berkolaborasi dan berbagi sumber daya secara digital",
+        "Tidak perlu mengajar lagi",
+        "Menggantikan peran siswa"
+      ],
+      "answer": 1,
+      "explanation": "Kemampuan adaptasi teknologi memungkinkan guru berkolaborasi dan berbagi praktik baik dengan komunitas guru secara luas."
+    },
+    {
+      "q": "Peran guru sebagai agen perubahan sosial berarti...",
+      "options": [
+        "Guru harus aktif berpolitik",
+        "Guru berkontribusi membentuk karakter dan kesadaran sosial siswa",
+        "Guru menggantikan peran pemerintah",
+        "Guru menentukan kebijakan negara"
+      ],
+      "answer": 1,
+      "explanation": "Guru membentuk generasi yang sadar sosial, kritis, dan bertanggung jawab melalui pendidikan."
+    },
+    {
+      "q": "Kemampuan guru menyelesaikan konflik antar siswa termasuk kompetensi...",
+      "options": [
+        "Pedagogik",
+        "Kepribadian",
+        "Sosial",
+        "Profesional"
+      ],
+      "answer": 2,
+      "explanation": "Menyelesaikan konflik memerlukan keterampilan sosial dalam komunikasi, mediasi, dan empati."
+    },
+    {
+      "q": "Guru yang berpartisipasi dalam kegiatan masyarakat sekitar sekolah menunjukkan...",
+      "options": [
+        "Mengabaikan tugas utama",
+        "Keterlibatan sosial yang positif",
+        "Pencitraan diri",
+        "Pelanggaran etika"
+      ],
+      "answer": 1,
+      "explanation": "Keterlibatan guru dalam masyarakat memperkuat hubungan sekolah-komunitas dan menjadi contoh positif."
+    },
+    {
+      "q": "Kolaborasi antar guru dalam satu sekolah untuk meningkatkan kualitas pembelajaran disebut...",
+      "options": [
+        "Kompetisi",
+        "Komunitas Praktik (Community of Practice)",
+        "Hierarki",
+        "Delegasi"
+      ],
+      "answer": 1,
+      "explanation": "Community of Practice adalah kolaborasi profesional dimana guru berbagi pengalaman dan saling belajar."
+    },
+    {
+      "q": "Guru yang mampu memfasilitasi diskusi kelompok dengan baik menunjukkan kemampuan...",
+      "options": [
+        "Otoritarianisme",
+        "Fasilitasi dan komunikasi",
+        "Dominasi kelas",
+        "Pengabaian"
+      ],
+      "answer": 1,
+      "explanation": "Fasilitasi diskusi yang baik memerlukan kemampuan komunikasi, mendengarkan aktif, dan manajemen dinamika kelompok."
+    },
+    {
+      "q": "Interaksi positif guru dengan masyarakat sekitar berdampak pada...",
+      "options": [
+        "Penurunan kualitas pendidikan",
+        "Peningkatan dukungan masyarakat terhadap sekolah",
+        "Hambatan proses belajar",
+        "Konflik kepentingan"
+      ],
+      "answer": 1,
+      "explanation": "Hubungan baik guru-masyarakat menciptakan lingkungan yang mendukung dan sumber daya tambahan untuk sekolah."
+    },
+    {
+      "q": "Guru yang menghargai pendapat siswa dalam diskusi kelas menunjukkan sikap...",
+      "options": [
+        "Kehilangan kendali kelas",
+        "Demokratis dan menghargai perbedaan",
+        "Lemah dalam memimpin",
+        "Tidak kompeten"
+      ],
+      "answer": 1,
+      "explanation": "Sikap demokratis dalam kelas menciptakan lingkungan belajar yang terbuka dan mendukung berpikir kritis."
+    }
+  ],
+  "profesional": [
+    {
+      "q": "Kompetensi profesional guru mencakup penguasaan...",
+      "options": [
+        "Materi pelajaran secara luas dan mendalam",
+        "Cara berkomunikasi dengan orang tua",
+        "Administrasi sekolah",
+        "Teknologi informasi dasar"
+      ],
+      "answer": 0,
+      "explanation": "Kompetensi profesional adalah penguasaan materi pembelajaran secara luas dan mendalam sesuai bidang studi."
+    },
+    {
+      "q": "Standar Nasional Pendidikan (SNP) terdiri dari ... standar",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": 2,
+      "explanation": "SNP memiliki 8 standar: Isi, Proses, Kompetensi Lulusan, Pendidik & Tenaga Kependidikan, Sarana & Prasarana, Pengelolaan, Pembiayaan, Penilaian."
+    },
+    {
+      "q": "Kurikulum Merdeka menekankan pada...",
+      "options": [
+        "Standarisasi nasional yang kaku",
+        "Pembelajaran berbasis proyek dan diferensiasi",
+        "Ujian nasional sebagai satu-satunya penilaian",
+        "Penghapusan semua mata pelajaran"
+      ],
+      "answer": 1,
+      "explanation": "Kurikulum Merdeka memberikan kebebasan pada guru untuk menyesuaikan pembelajaran dengan kebutuhan siswa melalui pembelajaran berbasis proyek."
+    },
+    {
+      "q": "Capaian Pembelajaran (CP) dalam Kurikulum Merdeka menggantikan...",
+      "options": [
+        "Silabus",
+        "Kompetensi Dasar (KD)",
+        "RPP",
+        "KKM"
+      ],
+      "answer": 1,
+      "explanation": "CP menggantikan KD sebagai kompetensi yang harus dicapai peserta didik pada setiap fase pembelajaran."
+    },
+    {
+      "q": "Tujuan Pendidikan Nasional menurut UU No. 20 Tahun 2003 adalah mengembangkan potensi peserta didik agar menjadi manusia yang...",
+      "options": [
+        "Pandai dan kaya",
+        "Beriman, bertakwa, berakhlak mulia, sehat, berilmu, cakap, kreatif, mandiri",
+        "Patuh dan taat",
+        "Siap kerja saja"
+      ],
+      "answer": 1,
+      "explanation": "UU Sisdiknas merumuskan tujuan pendidikan nasional secara komprehensif mencakup aspek spiritual, intelektual, dan keterampilan."
+    },
+    {
+      "q": "Guru profesional harus menguasai konsep dan struktur keilmuan bidang studinya, yang berarti...",
+      "options": [
+        "Hafal semua buku teks",
+        "Memahami esensi, hubungan antar konsep, dan aplikasi ilmu dalam kehidupan",
+        "Bisa menjawab semua soal ujian",
+        "Menulis buku teks sendiri"
+      ],
+      "answer": 1,
+      "explanation": "Penguasaan konsep keilmuan melampaui hafalan — guru harus memahami struktur, hubungan antar konsep, dan relevansinya."
+    },
+    {
+      "q": "Penelitian Tindakan Kelas (PTK) bertujuan untuk...",
+      "options": [
+        "Memenuhi syarat kenaikan pangkat",
+        "Memperbaiki praktik pembelajaran melalui refleksi dan tindakan",
+        "Mempublikasikan jurnal internasional",
+        "Menyaingi guru lain"
+      ],
+      "answer": 1,
+      "explanation": "PTK adalah penelitian reflektif yang dilakukan guru untuk mengidentifikasi dan memecahkan masalah pembelajaran di kelasnya."
+    },
+    {
+      "q": "Literasi digital bagi guru profesional mencakup kemampuan...",
+      "options": [
+        "Hanya menggunakan WhatsApp",
+        "Memilih, menggunakan, dan mengevaluasi teknologi pembelajaran secara kritis",
+        "Membuat website sendiri",
+        "Menginstal semua aplikasi"
+      ],
+      "answer": 1,
+      "explanation": "Literasi digital bukan sekadar bisa menggunakan tools, tapi mampu memilih dan mengevaluasi teknologi yang tepat untuk pembelajaran."
+    },
+    {
+      "q": "Prinsip asesmen yang adil (fair) dalam pendidikan berarti...",
+      "options": [
+        "Semua siswa mendapat nilai sama",
+        "Asesmen mengakomodasi keberagaman siswa dan mengukur kompetensi secara valid",
+        "Soal ujian dibuat sangat sulit",
+        "Penilaian hanya berdasarkan ujian akhir"
+      ],
+      "answer": 1,
+      "explanation": "Asesmen yang adil menggunakan berbagai metode penilaian yang valid, reliabel, dan mengakomodasi keragaman peserta didik."
+    },
+    {
+      "q": "Guru yang menguasai teori belajar dapat...",
+      "options": [
+        "Menulis buku teori",
+        "Merancang pembelajaran yang sesuai dengan cara belajar siswa",
+        "Menjadi dosen",
+        "Membuat aplikasi edukasi"
+      ],
+      "answer": 1,
+      "explanation": "Penguasaan teori belajar membantu guru merancang strategi pembelajaran yang efektif sesuai karakteristik peserta didik."
+    }
+  ],
+  "kurikulum": [
+    {
+      "q": "Kurikulum Merdeka belajar menekankan pembelajaran berbasis...",
+      "options": [
+        "Hafalan",
+        "Proyek (P5)",
+        "Ujian tertulis",
+        "Ceramah"
+      ],
+      "answer": 1,
+      "explanation": "Kurikulum Merdeka menerapkan Projek Penguatan Profil Pelajar Pancasila (P5) sebagai pendekatan pembelajaran lintas mata pelajaran."
+    },
+    {
+      "q": "Fase dalam Kurikulum Merdeka untuk kelas 7-9 SMP adalah...",
+      "options": [
+        "Fase A",
+        "Fase B",
+        "Fase D",
+        "Fase E"
+      ],
+      "answer": 2,
+      "explanation": "Fase D mencakup kelas 7-9 SMP, Fase E untuk kelas 10 SMA, Fase F untuk kelas 11-12 SMA."
+    },
+    {
+      "q": "Alur Tujuan Pembelajaran (ATP) dalam Kurikulum Merdeka berfungsi sebagai...",
+      "options": [
+        "Pengganti RPP",
+        "Rangkaian tujuan pembelajaran yang disusun secara sistematis dan logis",
+        "Jadwal pelajaran",
+        "Daftar kehadiran siswa"
+      ],
+      "answer": 1,
+      "explanation": "ATP adalah rangkaian tujuan pembelajaran yang diurutkan secara sistematis untuk mencapai Capaian Pembelajaran."
+    },
+    {
+      "q": "Modul ajar dalam Kurikulum Merdeka merupakan penjabaran dari...",
+      "options": [
+        "Buku paket",
+        "Alur Tujuan Pembelajaran (ATP)",
+        "Silabus lama",
+        "Kisi-kisi UN"
+      ],
+      "answer": 1,
+      "explanation": "Modul ajar dikembangkan guru sebagai penjabaran ATP yang berisi langkah pembelajaran, asesmen, dan media."
+    },
+    {
+      "q": "Profil Pelajar Pancasila memiliki ... dimensi utama",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "answer": 2,
+      "explanation": "6 dimensi: Beriman & Bertakwa, Berkebinekaan Global, Bergotong Royong, Mandiri, Bernalar Kritis, Kreatif."
+    },
+    {
+      "q": "Pembelajaran berdiferensiasi dalam Kurikulum Merdeka berarti guru...",
+      "options": [
+        "Memberikan soal berbeda untuk tiap siswa",
+        "Menyesuaikan konten, proses, dan produk sesuai kebutuhan siswa",
+        "Membagi kelas berdasarkan nilai",
+        "Mengabaikan siswa yang lambat"
+      ],
+      "answer": 1,
+      "explanation": "Diferensiasi bukan berarti memberikan perlakuan berbeda secara diskriminatif, tapi menyesuaikan pendekatan pembelajaran."
+    },
+    {
+      "q": "Asesmen diagnostik dilakukan untuk...",
+      "options": [
+        "Menentukan nilai akhir",
+        "Mengidentifikasi kemampuan awal dan kebutuhan belajar siswa",
+        "Menentukan ranking kelas",
+        "Mengevaluasi kinerja guru"
+      ],
+      "answer": 1,
+      "explanation": "Asesmen diagnostik dilakukan di awal pembelajaran untuk memetakan kesiapan belajar dan kebutuhan peserta didik."
+    },
+    {
+      "q": "Pendekatan holistik dalam kurikulum berarti...",
+      "options": [
+        "Hanya fokus pada akademik",
+        "Mengembangkan seluruh aspek: spiritual, emosional, sosial, kognitif, fisik",
+        "Menghapus pelajaran non-akademik",
+        "Menyekolahkan siswa ke banyak tempat"
+      ],
+      "answer": 1,
+      "explanation": "Holistik artinya memandang peserta didik secara utuh, mengembangkan semua dimensi potensi mereka."
+    },
+    {
+      "q": "Intrakurikuler, kokurikuler, dan ekstrakurikuler dalam Kurikulum Merdeka adalah...",
+      "options": [
+        "Tiga jenis ujian berbeda",
+        "Tiga komponen kegiatan pembelajaran yang saling melengkapi",
+        "Tiga jenis buku teks",
+        "Tiga tingkatan kelas"
+      ],
+      "answer": 1,
+      "explanation": "Ketiga komponen ini membentuk pengalaman belajar yang komprehensif: intrakurikuler (pembelajaran formal), kokurikuler (P5), ekstrakurikuler."
+    },
+    {
+      "q": "KKM (Kriteria Ketuntasan Minimal) dalam Kurikulum Merdeka digantikan oleh...",
+      "options": [
+        "Tidak ada pengganti",
+        "KKTP (Kriteria Ketercapaian Tujuan Pembelajaran)",
+        "Nilai passing grade nasional",
+        "Nilai minimum dari guru"
+      ],
+      "answer": 1,
+      "explanation": "KKTP menggantikan KKM sebagai indikator ketercapaian tujuan pembelajaran yang lebih fleksibel dan formatif."
+    }
+  ]
+}

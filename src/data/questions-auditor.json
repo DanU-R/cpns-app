@@ -1,0 +1,562 @@
+{
+  "audit_keuangan": [
+    {
+      "q": "Audit keuangan bertujuan untuk memberikan opini atas...",
+      "options": [
+        "Kinerja manajemen",
+        "Kewajaran laporan keuangan sesuai standar akuntansi yang berlaku",
+        "Kepatuhan terhadap hukum pidana",
+        "Strategi bisnis"
+      ],
+      "answer": 1,
+      "explanation": "Audit keuangan memberikan opini apakah laporan keuangan disajikan secara wajar sesuai dengan standar akuntansi yang berlaku."
+    },
+    {
+      "q": "Opini audit WTP (Wajar Tanpa Pengecualian) berarti...",
+      "options": [
+        "Laporan keuangan salah",
+        "Laporan keuangan disajikan secara wajar dalam semua hal yang material",
+        "Ada pengecualian penting",
+        "Auditor tidak bisa memberikan pendapat"
+      ],
+      "answer": 1,
+      "explanation": "WTP adalah opini terbaik — laporan keuangan disajikan secara wajar sesuai SA tanpa pengecualian material."
+    },
+    {
+      "q": "Materialitas dalam audit adalah...",
+      "options": [
+        "Ketidakakuratan yang tidak penting",
+        "Besarnya kesalahan atau kelalaian yang dapat mempengaruhi keputusan pengguna laporan keuangan",
+        "Jumlah total aset",
+        "Biaya audit"
+      ],
+      "answer": 1,
+      "explanation": "Materialitas menentukan batas kesalahan yang signifikan — jika dilampaui, dapat mempengaruhi keputusan pengguna laporan keuangan."
+    },
+    {
+      "q": "Evidence (bukti audit) yang paling dapat diandalkan adalah...",
+      "options": [
+        "Pernyataan lisan manajemen",
+        "Dokumen asli dari pihak ketiga",
+        "Catatan internal perusahaan",
+        "Email karyawan"
+      ],
+      "answer": 1,
+      "explanation": "Bukti dari pihak ketiga independen (konfirmasi bank, supplier) lebih dapat diandalkan dibanding dokumen internal."
+    },
+    {
+      "q": "Audit trail adalah...",
+      "options": [
+        "Jalur menuju kantor auditor",
+        "Jejak dokumentasi yang memungkinkan penelusuran transaksi dari awal hingga laporan keuangan",
+        "Laporan audit",
+        "Daftar temuan audit"
+      ],
+      "answer": 1,
+      "explanation": "Audit trail memungkinkan penelusuran setiap angka dalam laporan keuangan kembali ke transaksi sumbernya."
+    },
+    {
+      "q": "Substantive testing dalam audit bertujuan untuk...",
+      "options": [
+        "Menguji pengendalian internal",
+        "Mendeteksi salah saji material pada angka-angka laporan keuangan",
+        "Menguji kepatuhan pajak",
+        "Menilai kinerja karyawan"
+      ],
+      "answer": 1,
+      "explanation": "Substantive testing menguji validitas dan keakuratan transaksi dan saldo akun untuk mendeteksi salah saji material."
+    },
+    {
+      "q": "Going concern dalam audit mengacu pada...",
+      "options": [
+        "Perusahaan akan bangkrut",
+        "Asumsi bahwa entitas akan melanjutkan usahanya di masa yang akan datang",
+        "Perusahaan akan merger",
+        "Perusahaan akan IPO"
+      ],
+      "answer": 1,
+      "explanation": "Going concern adalah asumsi bahwa entitas akan terus beroperasi dalam waktu yang wajar tanpa niat atau kebutuhan likuidasi."
+    },
+    {
+      "q": "Risk-based auditing berarti...",
+      "options": [
+        "Mengaudit semua transaksi",
+        "Memfokuskan audit pada area dengan risiko salah saji material tertinggi",
+        "Tidak melakukan audit",
+        "Mengaudit secara acak"
+      ],
+      "answer": 1,
+      "explanation": "Risk-based audit mengidentifikasi dan memprioritaskan area berisiko tinggi untuk alokasi sumber daya audit yang efisien."
+    },
+    {
+      "q": "Working papers (kertas kerja audit) berfungsi sebagai...",
+      "options": [
+        "Catatan pribadi auditor",
+        "Dokumentasi prosedur audit, bukti, dan kesimpulan yang mendukung opini auditor",
+        "Laporan keuangan",
+        "Surat perjanjian"
+      ],
+      "answer": 1,
+      "explanation": "Working papers mendokumentasikan semua prosedur, bukti, analisis, dan kesimpulan yang mendukung opini audit."
+    },
+    {
+      "q": "Fraud audit (audit kecurangan) berbeda dari audit keuangan biasa karena...",
+      "options": [
+        "Tidak ada perbedaan",
+        "Secara spesifik mencari indikasi kecurangan, bukan hanya salah saji tidak disengaja",
+        "Lebih murah",
+        "Lebih cepat"
+      ],
+      "answer": 1,
+      "explanation": "Fraud audit secara khusus dirancang untuk mendeteksi kecurangan yang disengaja, bukan hanya kesalahan akuntansi biasa."
+    }
+  ],
+  "audit_kinerja": [
+    {
+      "q": "Audit kinerja (performance audit) menilai...",
+      "options": [
+        "Hanya kepatuhan hukum",
+        "Efektivitas, efisiensi, dan ekonomis (3E) suatu program/kegiatan",
+        "Hanya keuangan",
+        "Hanya jumlah pegawai"
+      ],
+      "answer": 1,
+      "explanation": "Audit kinerja menilai 3E: Ekonomis (penggunaan sumber daya), Efisiensi (output/input), Efektivitas (pencapaian tujuan)."
+    },
+    {
+      "q": "Ekonomis dalam audit kinerja berarti...",
+      "options": [
+        "Pengeluaran paling banyak",
+        "Memperoleh sumber daya dengan kualitas dan kuantitas tepat pada harga terendah",
+        "Tidak ada pengeluaran",
+        "Mengabaikan kualitas"
+      ],
+      "answer": 1,
+      "explanation": "Ekonomis = memperoleh input (sumber daya) dengan kualitas dan kuantitas yang tepat pada harga terbaik."
+    },
+    {
+      "q": "Efisiensi dalam audit kinerja mengukur...",
+      "options": [
+        "Apakah tujuan tercapai",
+        "Rasio output terhadap input — apakah hasil maksimal dengan sumber daya minimal",
+        "Kepatuhan terhadap hukum",
+        "Jumlah laporan"
+      ],
+      "answer": 1,
+      "explanation": "Efisiensi = apakah output yang dihasilkan optimal relatif terhadap input yang digunakan."
+    },
+    {
+      "q": "Efektivitas dalam audit kinerja mengukur...",
+      "options": [
+        "Biaya yang dikeluarkan",
+        "Sejauh mana tujuan dan sasaran program tercapai",
+        "Jumlah pegawai yang terlibat",
+        "Lama pelaksanaan"
+      ],
+      "answer": 1,
+      "explanation": "Efektivitas = apakah program/kegiatan mencapai tujuan dan sasaran yang telah ditetapkan."
+    },
+    {
+      "q": "Benchmarking dalam audit kinerja adalah...",
+      "options": [
+        "Menandai dokumen",
+        "Membandingkan kinerja dengan standar terbaik atau praktik terbaik (best practice)",
+        "Membuat bangku kerja",
+        "Menentukan anggaran"
+      ],
+      "answer": 1,
+      "explanation": "Benchmarking membandingkan kinerja entitas dengan standar industri, entitas sejenis, atau praktik terbaik."
+    },
+    {
+      "q": "Key Performance Indicator (KPI) dalam audit kinerja berfungsi sebagai...",
+      "options": [
+        "Hukuman",
+        "Alat ukur kuantitatif untuk menilai pencapaian kinerja terhadap target",
+        "Jadwal kerja",
+        "Daftar inventaris"
+      ],
+      "answer": 1,
+      "explanation": "KPI adalah indikator terukur yang menunjukkan sejauh mana tujuan dan target kinerja telah tercapai."
+    },
+    {
+      "q": "Logframe (logical framework) dalam audit kinerja digunakan untuk...",
+      "options": [
+        "Menghitung biaya",
+        "Memetakan hubungan antara input, aktivitas, output, outcome, dan impact program",
+        "Membuat laporan keuangan",
+        "Menentukan gaji"
+      ],
+      "answer": 1,
+      "explanation": "Logframe memetakan kerangka logis program dari input hingga dampak yang diharapkan."
+    },
+    {
+      "q": "Temuan audit kinerja biasanya menyajikan...",
+      "options": [
+        "Hanya angka keuangan",
+        "Kondisi, kriteria, penyebab, dan dampak (condition, criteria, cause, effect)",
+        "Hanya foto",
+        "Hanya nama pejabat"
+      ],
+      "answer": 1,
+      "explanation": "Struktur temuan: Kondisi (fakta), Kriteria (standar yang seharusnya), Penyebab (mengapa terjadi), Dampak (akibat)."
+    },
+    {
+      "q": "Value for Money (VfM) audit merupakan sinonim dari...",
+      "options": [
+        "Audit keuangan",
+        "Audit kinerja",
+        "Audit investigasi",
+        "Audit IT"
+      ],
+      "answer": 1,
+      "explanation": "Value for Money audit = audit kinerja yang menilai apakah dana publik digunakan dengan cara yang memberikan nilai terbaik."
+    },
+    {
+      "q": "Outcome evaluation dalam audit kinerja berbeda dari output evaluation karena...",
+      "options": [
+        "Sama saja",
+        "Outcome mengukur dampak/perubahan yang terjadi, output mengukur hasil langsung kegiatan",
+        "Output lebih penting",
+        "Outcome lebih mudah diukur"
+      ],
+      "answer": 1,
+      "explanation": "Output = hasil langsung kegiatan (misal: 1000 orang dilatih). Outcome = dampak/perubahan (misal: 80% peserta mendapat pekerjaan)."
+    }
+  ],
+  "spip": [
+    {
+      "q": "SPIP (Sistem Pengendalian Internal Pemerintah) adalah...",
+      "options": [
+        "Sistem akuntansi",
+        "Proses yang integrale pada tindakan dan kegiatan untuk memberikan keyakinan memadai atas pencapaian tujuan pemerintahan",
+        "Sistem penggajian",
+        "Sistem informasi"
+      ],
+      "answer": 1,
+      "explanation": "SPIP adalah proses yang melekat pada penyelenggaraan pemerintahan untuk memberikan keyakinan memadai atas efektivitas, efisiensi, keandalan pelaporan, dan kepatuhan."
+    },
+    {
+      "q": "Lima unsur pengendalian internal menurut COSO framework adalah...",
+      "options": [
+        "Hanya lingkungan pengendalian",
+        "Lingkungan pengendalian, penilaian risiko, aktivitas pengendalian, informasi & komunikasi, dan pemantauan",
+        "Hanya audit",
+        "Hanya kebijakan"
+      ],
+      "answer": 1,
+      "explanation": "COSO: (1) Control Environment, (2) Risk Assessment, (3) Control Activities, (4) Information & Communication, (5) Monitoring."
+    },
+    {
+      "q": "Lingkungan pengendalian (control environment) mencakup...",
+      "options": [
+        "Hanya struktur organisasi",
+        "Integritas, nilai etika, kompetensi SDM, dan gaya kepemimpinan organisasi",
+        "Hanya teknologi",
+        "Hanya anggaran"
+      ],
+      "answer": 1,
+      "explanation": "Lingkungan pengendalian adalah fondasi SPIP yang mencakup integritas, etika, kompetensi, struktur organisasi, dan gaya manajemen."
+    },
+    {
+      "q": "Penilaian risiko (risk assessment) dalam SPIP bertujuan untuk...",
+      "options": [
+        "Menghindari semua risiko",
+        "Mengidentifikasi dan menganalisis risiko yang dapat menghambat pencapaian tujuan",
+        "Menghilangkan pegawai",
+        "Menambah anggaran"
+      ],
+      "answer": 1,
+      "explanation": "Risk assessment mengidentifikasi, menganalisis, dan mengelola risiko yang dapat menghambat pencapaian tujuan organisasi."
+    },
+    {
+      "q": "Aktivitas pengendalian (control activities) meliputi...",
+      "options": [
+        "Hanya persetujuan manajer",
+        "Persetujuan, otorisasi, verifikasi, rekonsiliasi, review kinerja, pengamanan aset, dan pemisahan tugas",
+        "Hanya audit",
+        "Hanya laporan"
+      ],
+      "answer": 1,
+      "explanation": "Control activities mencakup berbagai prosedur: otorisasi, verifikasi, rekonsiliasi, review, pengamanan aset, dan segregasi duties."
+    },
+    {
+      "q": "Pemisahan tugas (segregation of duties) dalam SPIP bertujuan untuk...",
+      "options": [
+        "Membuat pekerjaan lebih sulit",
+        "Mencegah fraud dan error dengan memisahkan fungsi otorisasi, pencatatan, dan penyimpanan",
+        "Mengurangi pegawai",
+        "Menambah biaya"
+      ],
+      "answer": 1,
+      "explanation": "Segregasi duties mencegah fraud dan error dengan memastikan tidak satu orang yang menguasai seluruh siklus transaksi."
+    },
+    {
+      "q": "Pemantauan (monitoring) dalam SPIP dilakukan melalui...",
+      "options": [
+        "Hanya audit eksternal",
+        "Evaluasi berkala dan monitoring berkelanjutan untuk memastikan SPIP berfungsi efektif",
+        "Tidak perlu dilakukan",
+        "Hanya laporan tahunan"
+      ],
+      "answer": 1,
+      "explanation": "Monitoring mencakup evaluasi berkala dan monitoring real-time untuk memastikan SPIP berjalan efektif dan diperbaiki jika perlu."
+    },
+    {
+      "q": "Peraturan Pemerintah yang mengatur SPIP adalah...",
+      "options": [
+        "PP No. 60/2008",
+        "PP No. 58/2005",
+        "UU No. 17/2003",
+        "UU No. 15/2004"
+      ],
+      "answer": 0,
+      "explanation": "PP No. 60/2008 tentang Sistem Pengendalian Internal Pemerintah mengatur kerangka SPIP di lingkungan pemerintah."
+    },
+    {
+      "q": "Whistleblowing System (WBS) dalam SPIP berfungsi untuk...",
+      "options": [
+        "Meniup peluit",
+        "Saluran pelaporan pelanggaran oleh pegawai/insider secara aman dan terlindungi",
+        "Sistem alarm kebakaran",
+        "Sistem notifikasi email"
+      ],
+      "answer": 1,
+      "explanation": "WBS memungkinkan pelaporan pelanggaran secara anonim/terlindungi untuk mendeteksi kecurangan dan penyimpangan lebih dini."
+    },
+    {
+      "q": "Kelemahan pengendalian internal yang signifikan (significant deficiency) adalah...",
+      "options": [
+        "Kekurangan pegawai",
+        "Kelemahan yang kurang dari material weakness namun cukup penting untuk mendapat perhatian pengawas",
+        "Kesalahan kecil",
+        "Tidak ada masalah"
+      ],
+      "answer": 1,
+      "explanation": "Significant deficiency adalah kelemahan SPIP yang kurang serius dari material weakness namun masih penting untuk diperhatikan."
+    }
+  ],
+  "peraturan_bpkp": [
+    {
+      "q": "BPKP (Badan Pengawasan Keuangan dan Pembangunan) bertugas...",
+      "options": [
+        "Mengadili koruptor",
+        "Melakukan pengawasan keuangan dan pembangunan di lingkungan pemerintah",
+        "Menentukan pajak",
+        "Membuat undang-undang"
+      ],
+      "answer": 1,
+      "explanation": "BPKP adalah lembaga pemerintah non-kementerian yang bertugas melaksanakan pengawasan keuangan dan pembangunan atas permintaan Presiden."
+    },
+    {
+      "q": "Standar Pemeriksaan Keuangan Negara (SPKN) diterbitkan oleh...",
+      "options": [
+        "BPKP",
+        "BPK (Badan Pemeriksa Keuangan)",
+        "Kemenkeu",
+        "KemenPANRB"
+      ],
+      "answer": 1,
+      "explanation": "SPKN ditetapkan oleh BPK sebagai pedoman pemeriksaan keuangan negara di Indonesia."
+    },
+    {
+      "q": "Peraturan BPKP tentang tata cara pemeriksaan mengatur...",
+      "options": [
+        "Cara menghitung pajak",
+        "Tahapan, metodologi, dan prosedur pemeriksaan yang harus diikuti auditor",
+        "Cara membuat laporan keuangan",
+        "Cara merekrut pegawai"
+      ],
+      "answer": 1,
+      "explanation": "Peraturan BPKP mengatur tahapan pemeriksaan: perencanaan, pelaksanaan, pelaporan, dan tindak lanjut."
+    },
+    {
+      "q": "LHP (Laporan Hasil Pemeriksaan) BPKP memuat...",
+      "options": [
+        "Hanya temuan positif",
+        "Temuan, kesimpulan, dan rekomendasi atas hasil pemeriksaan",
+        "Hanya data keuangan",
+        "Hanya nama pejabat"
+      ],
+      "answer": 1,
+      "explanation": "LHP berisi temuan pemeriksaan, kesimpulan, dan rekomendasi perbaikan yang harus ditindaklanjuti oleh entitas yang diperiksa."
+    },
+    {
+      "q": "Tindak lanjut rekomendasi hasil pemeriksaan adalah kewajiban...",
+      "options": [
+        "Auditor",
+        "Entitas yang diperiksa (K/L/Pemda) untuk memperbaiki temuan",
+        "Masyarakat",
+        "Pers"
+      ],
+      "answer": 1,
+      "explanation": "Entitas yang diperiksa wajib menindaklanjuti rekomendasi dalam LHP dan melaporkan hasilnya kepada BPKP/BPK."
+    },
+    {
+      "q": "Pemeriksaan investigatif BPKP dilakukan ketika...",
+      "options": [
+        "Setiap tahun",
+        "Terduga adanya indikasi kerugian negara, kecurangan, atau pelanggaran hukum",
+        "Diminta masyarakat",
+        "Saat ada perubahan pejabat"
+      ],
+      "answer": 1,
+      "explanation": "Pemeriksaan investigatif dilakukan untuk mengungkap indikasi kerugian negara, fraud, atau pelanggaran hukum."
+    },
+    {
+      "q": "Kode Etik Auditor BPKP mewajibkan auditor untuk bersikap...",
+      "options": [
+        "Subjektif",
+        "Independen, objektif, integritas, kompeten, dan rahasia",
+        "Pihak yang diperiksa",
+        "Tidak profesional"
+      ],
+      "answer": 1,
+      "explanation": "Kode etik auditor: independen, objektif, berintegritas, kompeten, menjaga kerahasiaan, dan berperilaku profesional."
+    },
+    {
+      "q": "Perbedaan BPK dan BPKP adalah...",
+      "options": [
+        "Sama saja",
+        "BPK adalah lembaga negara independen (eksaminatif), BPKP adalah lembaga pemerintah di bawah Presiden (pengawasan internal)",
+        "BPKP lebih tinggi dari BPK",
+        "Tidak ada perbedaan"
+      ],
+      "answer": 1,
+      "explanation": "BPK = lembaga negara independen (Pasal 23E UUD 1945). BPKP = lembaga pemerintah yang membantu Presiden dalam pengawasan internal."
+    },
+    {
+      "q": "Peraturan Menteri Keuangan tentang pengelolaan keuangan negara mengatur...",
+      "options": [
+        "Hanya APBN",
+        "Tata cara perencanaan, pelaksanaan, penatausahaan, dan pertanggungjawaban keuangan negara",
+        "Hanya pajak",
+        "Hanya bea cukai"
+      ],
+      "answer": 1,
+      "explanation": "PMK mengatur pengelolaan keuangan negara mulai dari perencanaan (APBN), pelaksanaan, penatausahaan, hingga pertanggungjawaban."
+    },
+    {
+      "q": "Penyimpanan dan pemusnahan dokumen keuangan negara diatur dalam...",
+      "options": [
+        "Keputusan direktur perusahaan",
+        "Peraturan tentang kearsipan dan retensi dokumen keuangan negara",
+        "Tidak ada aturan",
+        "Keputusan pribadi bendahara"
+      ],
+      "answer": 1,
+      "explanation": "Penyimpanan dan pemusnahan dokumen keuangan mengikuti peraturan kearsipan nasional dan peraturan keuangan negara terkait retensi."
+    }
+  ],
+  "standar_audit": [
+    {
+      "q": "Standar Profesional Akuntan Publik (SPAP) di Indonesia diterbitkan oleh...",
+      "options": [
+        "Pemerintah",
+        "IAPI (Institut Akuntan Publik Indonesia)",
+        "BPK",
+        "OJK"
+      ],
+      "answer": 1,
+      "explanation": "IAPI menerbitkan SPAP yang mengatur standar auditing, atestasi, dan konsultansi untuk akuntan publik di Indonesia."
+    },
+    {
+      "q": "Standar Audit (SA) 200 membahas tentang...",
+      "options": [
+        "Bukti audit",
+        "Tujuan keseluruhan auditor independen dan pelaksanaan audit sesuai SA",
+        "Dokumentasi audit",
+        "Komunikasi dengan manajemen"
+      ],
+      "answer": 1,
+      "explanation": "SA 200 menetapkan tujuan keseluruhan auditor dan kerangka dasar pelaksanaan audit berdasarkan Standar Audit."
+    },
+    {
+      "q": "Independensi auditor berarti...",
+      "options": [
+        "Auditor tidak memiliki hubungan yang dapat mempengaruhi objektivitas",
+        "Auditor tidak perlu bekerja",
+        "Auditor bebas menentukan gaji",
+        "Auditor tidak perlu kompetensi"
+      ],
+      "answer": 0,
+      "explanation": "Independensi = tidak adanya hubungan keuangan, bisnis, atau personal yang dapat mempengaruhi objektivitas auditor."
+    },
+    {
+      "q": "Professional skepticism dalam audit adalah...",
+      "options": [
+        "Tidak mempercayai siapapun",
+        "Sikap yang mencakup pikiran questioning dan evaluasi kritis terhadap bukti audit",
+        "Selalu setuju dengan klien",
+        "Mengabaikan bukti"
+      ],
+      "answer": 1,
+      "explanation": "Professional skepticism: sikap waspada, questioning mind, dan evaluasi kritis bukti audit tanpa mengasumsikan klien jujur atau tidak jujur."
+    },
+    {
+      "q": "Audit planning (perencanaan audit) mencakup...",
+      "options": [
+        "Hanya menentukan tanggal audit",
+        "Pemahaman entitas, penilaian risiko, penentuan materialitas, dan penyusunan strategi audit",
+        "Hanya menghitung biaya",
+        "Hanya menentukan tim"
+      ],
+      "answer": 1,
+      "explanation": "Perencanaan audit: memahami entitas dan lingkungannya, menilai risiko, menentukan materialitas, dan menyusun strategi audit."
+    },
+    {
+      "q": "Sampling audit digunakan ketika...",
+      "options": [
+        "Memeriksa semua transaksi tidak mungkin/tidak efisien",
+        "Auditor malas bekerja",
+        "Klien meminta",
+        "Tidak ada waktu"
+      ],
+      "answer": 0,
+      "explanation": "Audit sampling menerapkan prosedur audit pada sebagian elemen populasi untuk menarik kesimpulan tentang seluruh populasi."
+    },
+    {
+      "q": "Material weakness (kelemahan pengendalian material) adalah...",
+      "options": [
+        "Kelemahan kecil",
+        "Kelemahan pengendalian yang dapat menyebabkan salah saji material tidak terdeteksi",
+        "Kelemahan yang tidak penting",
+        "Kelemahan pada fisik gedung"
+      ],
+      "answer": 1,
+      "explanation": "Material weakness adalah kelemahan SPIP yang cukup serius sehingga salah saji material dapat tidak terdeteksi dan tidak dicegah."
+    },
+    {
+      "q": "Audit report (laporan audit) standar berisi...",
+      "options": [
+        "Hanya opini",
+        "Pendahuluan, lingkup, opini, dan basis opini",
+        "Hanya temuan",
+        "Hanya rekomendasi"
+      ],
+      "answer": 1,
+      "explanation": "Laporan audit standar: paragraf pendahuluan (objek audit), lingkup, basis opini, dan paragraf opini auditor."
+    },
+    {
+      "q": "Due professional care (kehati-hatian profesional) dalam audit berarti...",
+      "options": [
+        "Bekerja sembarangan",
+        "Melaksanakan audit dengan kompetensi, ketelitian, dan skeptisisme profesional yang layak",
+        "Tidak perlu perencanaan",
+        "Mengandalkan intuisi"
+      ],
+      "answer": 1,
+      "explanation": "Due professional care: auditor melaksanakan tugas dengan kompetensi, ketelitian, dan skeptisisme yang diharapkan dari profesional."
+    },
+    {
+      "q": "Peer review dalam profesi audit bertujuan untuk...",
+      "options": [
+        "Menghukum auditor",
+        "Menilai kualitas praktik audit sesama akuntan publik untuk memastikan kepatuhan standar",
+        "Menentukan gaji",
+        "Menentukan promosi"
+      ],
+      "answer": 1,
+      "explanation": "Peer review adalah evaluasi independen terhadap praktik audit KAP untuk memastikan kepatuhan terhadap standar profesional."
+    }
+  ]
+}

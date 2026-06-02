@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { useSearchParams } from "next/navigation";
-import { questionBank, getTopicName, shuffleArray } from "@/lib/questions";
+import { getQuestionBank, getTopicName, shuffleArray } from "@/lib/questions";
+import { getFormasi } from "@/lib/formasi";
 import { addResult as addLocalResult } from "@/lib/storage";
 import Link from "next/link";
 
@@ -10,10 +11,13 @@ const TIME_PER_QUESTION = 90;
 
 export default function QuizClient() {
   const searchParams = useSearchParams();
+  const formasiId = searchParams.get("formasi") || "pranata-komputer";
   const topic = searchParams.get("topic");
   const mode = searchParams.get("mode");
   const urlEmail = searchParams.get("email");
   const email = urlEmail || (typeof window !== "undefined" ? localStorage.getItem("cpns-email") || "" : "");
+
+  const formasi = getFormasi(formasiId);
 
   const [questions, setQuestions] = useState<
     { q: string; options: string[]; answer: number; explanation: string; topic: string }[]
@@ -27,23 +31,24 @@ export default function QuizClient() {
   const [results, setResults] = useState<{ topic: string; correct: boolean; question: string }[]>([]);
 
   useEffect(() => {
+    const qBank = getQuestionBank(formasiId);
     let allQuestions: { q: string; options: string[]; answer: number; explanation: string; topic: string }[] = [];
 
     if (mode === "all") {
-      for (const [topicKey, qs] of Object.entries(questionBank)) {
+      for (const [topicKey, qs] of Object.entries(qBank)) {
         for (const q of qs) {
           allQuestions.push({ ...q, topic: topicKey });
         }
       }
       allQuestions = shuffleArray(allQuestions);
-    } else if (topic && questionBank[topic]) {
-      allQuestions = questionBank[topic].map((q) => ({ ...q, topic }));
+    } else if (topic && qBank[topic]) {
+      allQuestions = qBank[topic].map((q) => ({ ...q, topic }));
       allQuestions = shuffleArray(allQuestions);
     }
 
     setQuestions(allQuestions);
     setTimeLeft(TIME_PER_QUESTION);
-  }, [topic, mode]);
+  }, [formasiId, topic, mode]);
 
   useEffect(() => {
     if (isFinished || showResult || questions.length === 0) return;
@@ -85,8 +90,9 @@ export default function QuizClient() {
         const resultData = {
           id: Date.now().toString(),
           email: email || undefined,
+          formasi: formasiId,
           date: new Date().toLocaleString("id-ID"),
-          mode: mode === "all" ? "Simulasi Lengkap" : getTopicName(topic || ""),
+          mode: mode === "all" ? "Simulasi Lengkap" : (formasi ? getTopicName(topic || "") : ""),
           topic: topic || undefined,
           total: questions.length,
           correct,
@@ -104,7 +110,7 @@ export default function QuizClient() {
       setCurrentIndex((i) => i + 1);
       setTimeLeft(TIME_PER_QUESTION);
     },
-    [currentIndex, questions, correct, showResult, selectedAnswer, results, topic, mode, email]
+    [currentIndex, questions, correct, showResult, selectedAnswer, results, topic, mode, email, formasiId, formasi]
   );
 
   const formatTime = (seconds: number) => {
@@ -125,6 +131,9 @@ export default function QuizClient() {
           <div className={`w-20 h-20 mx-auto rounded-full flex items-center justify-center text-4xl mb-6 ${passed ? "bg-[var(--success-light)]" : "bg-[var(--danger-light)]"}`}>
             {passed ? "✅" : "❌"}
           </div>
+          <p className="text-xs text-[var(--muted)] uppercase tracking-wider mb-1">
+            {formasi?.icon} {formasi?.name || "Latihan"}
+          </p>
           <h1 className="text-2xl font-bold mb-2">
             {passed ? "Lulus!" : "Belum Lulus"}
           </h1>
@@ -190,10 +199,11 @@ export default function QuizClient() {
       <div className="flex items-center justify-between mb-6">
         <div>
           <p className="text-xs text-[var(--muted)] uppercase tracking-wider font-medium">
-            {mode === "all" ? "Simulasi Lengkap" : getTopicName(topic || "")}
+            {formasi?.icon} {formasi?.name || ""}
           </p>
           <p className="text-sm font-medium mt-0.5">
-            Soal {currentIndex + 1} <span className="text-[var(--muted)]">/ {questions.length}</span>
+            {mode === "all" ? "Simulasi Lengkap" : getTopicName(topic || "")}
+            <span className="text-[var(--muted)]"> — Soal {currentIndex + 1} / {questions.length}</span>
           </p>
         </div>
         <div className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-mono font-medium ${timeLeft <= 10 ? "bg-[var(--danger-light)] text-[var(--danger)]" : timeLeft <= 30 ? "bg-[var(--warning-light)] text-[var(--warning)]" : "bg-[var(--success-light)] text-[var(--success)]"}`}>
