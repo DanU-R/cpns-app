@@ -1,9 +1,18 @@
-import { createClient } from "@libsql/client";
+import { createClient, Client } from "@libsql/client";
 
-export const db = createClient({
-  url: process.env.TURSO_URL!,
-  authToken: process.env.TURSO_TOKEN!,
-});
+let _db: Client | null = null;
+
+function getDb(): Client {
+  if (!_db) {
+    const url = process.env.TURSO_URL;
+    const token = process.env.TURSO_TOKEN;
+    if (!url || !token) {
+      throw new Error("Turso credentials not configured. Set TURSO_URL and TURSO_TOKEN environment variables.");
+    }
+    _db = createClient({ url, authToken: token });
+  }
+  return _db;
+}
 
 export async function saveResult(data: {
   id: string;
@@ -15,6 +24,7 @@ export async function saveResult(data: {
   correct: number;
   questions: { topic: string; correct: boolean; question: string }[];
 }) {
+  const db = getDb();
   await db.execute({
     sql: `INSERT INTO quiz_results (id, email, date, mode, topic, total, correct)
           VALUES (?, ?, ?, ?, ?, ?, ?)`,
@@ -31,6 +41,7 @@ export async function saveResult(data: {
 }
 
 export async function getStats(email?: string) {
+  const db = getDb();
   const whereClause = email ? "WHERE email = ?" : "";
   const args = email ? [email] : [];
 
@@ -88,6 +99,7 @@ export async function getStats(email?: string) {
 }
 
 export async function clearData(email?: string) {
+  const db = getDb();
   if (email) {
     const results = await db.execute({
       sql: "SELECT id FROM quiz_results WHERE email = ?",

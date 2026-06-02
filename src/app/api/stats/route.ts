@@ -7,8 +7,15 @@ export async function GET(req: Request) {
     const email = searchParams.get("email") || undefined;
     const stats = await getStats(email);
     return NextResponse.json(stats);
-  } catch (error) {
-    console.error("Get stats error:", error);
-    return NextResponse.json({ error: "Failed to get stats" }, { status: 500 });
+  } catch (error: any) {
+    console.error("Get stats error:", error?.message || error);
+    return NextResponse.json({
+      totalSessions: 0,
+      totalQuestions: 0,
+      totalCorrect: 0,
+      topicStats: [],
+      recentSessions: [],
+      note: "DB unavailable",
+    });
   }
 }
