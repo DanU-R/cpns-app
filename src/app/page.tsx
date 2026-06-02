@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { formasiList, type FormasiConfig } from "@/lib/formasi";
+import { formasiList, skdList, skbList, type FormasiConfig } from "@/lib/formasi";
 import { getQuestionBank } from "@/lib/questions";
 
 export default function Home() {
@@ -31,32 +31,22 @@ export default function Home() {
     else localStorage.removeItem("cpns-formasi");
   };
 
-  const totalQuestions = selectedFormasi
-    ? Object.values(getQuestionBank(selectedFormasi.id)).reduce((s, q) => s + q.length, 0)
-    : formasiList.reduce((total, f) => {
-        return total + Object.values(getQuestionBank(f.id)).reduce((s, q) => s + q.length, 0);
-      }, 0);
-
-  const totalTopics = formasiList.reduce(
-    (total, f) => total + f.topics.length, 0
-  );
-
   return (
     <div className="space-y-10">
       {/* Hero */}
       <section className="text-center py-8 animate-fadeIn">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[var(--primary-light)] text-[var(--primary)] rounded-full text-sm font-medium mb-6">
           <span className="w-1.5 h-1.5 bg-[var(--primary)] rounded-full animate-pulse" />
-          Simulasi CAT SKB CPNS
+          Simulasi CAT CPNS
         </div>
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-3">
-          Latihan SKB CPNS
+          Latihan SKD & SKB
         </h1>
         <p className="text-lg text-[var(--muted)] max-w-md mx-auto mb-2">
-          Pilih formasi, latihan sesuai bidang
+          SKD: TWK • TIU • TKP | SKB: Sesuai Formasi
         </p>
         <p className="text-sm text-[var(--muted)]">
-          {formasiList.length} formasi • {totalTopics} topik • {totalQuestions} soal
+          {formasiList.length} kategori • {formasiList.reduce((t, f) => t + f.topics.length, 0)} topik • {formasiList.reduce((t, f) => t + Object.values(getQuestionBank(f.id)).reduce((s, q) => s + q.length, 0), 0)} soal
         </p>
       </section>
 
@@ -75,11 +65,9 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="flex items-center gap-2">
-            <button onClick={saveEmail} className="btn-primary">
-              {email ? "✓" : "Connect"}
-            </button>
-          </div>
+          <button onClick={saveEmail} className="btn-primary">
+            {email ? "✓" : "Connect"}
+          </button>
         </div>
         {email && (
           <p className="text-xs text-[var(--muted)] mt-2 ml-12 font-mono">
@@ -88,13 +76,61 @@ export default function Home() {
         )}
       </section>
 
-      {/* Formasi Selection */}
+      {/* SKD Section */}
       <section>
-        <h2 className="font-semibold text-lg mb-4">Pilih Formasi</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {formasiList.map((f) => {
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-7 h-7 bg-blue-100 rounded-lg flex items-center justify-center text-xs">📝</div>
+          <h2 className="font-semibold text-lg">SKD — Seleksi Kompetensi Dasar</h2>
+          <span className="text-xs text-[var(--muted)] bg-[var(--muted-light)] px-2 py-0.5 rounded-full">Wajib semua peserta</span>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+          {skdList.map((f) => {
             const qBank = getQuestionBank(f.id);
-            const topicCount = f.topics.length;
+            const questionCount = Object.values(qBank).reduce((s, q) => s + q.length, 0);
+            const isSelected = selectedFormasi?.id === f.id;
+            const colors: Record<string, string> = { twk: "text-blue-600 bg-blue-50", tiu: "text-purple-600 bg-purple-50", tkp: "text-rose-600 bg-rose-50" };
+
+            return (
+              <button
+                key={f.id}
+                onClick={() => selectFormasi(f)}
+                className={`card p-5 text-left group transition-all duration-300 cursor-pointer ${
+                  isSelected ? "border-[var(--primary)] ring-2 ring-[var(--primary)]/20 shadow-lg" : "hover:border-[var(--primary)] hover:shadow-md"
+                }`}
+              >
+                <div className="flex items-start gap-3">
+                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0 ${colors[f.id] || "bg-[var(--muted-light)]"}`}>
+                    {f.icon}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-medium text-sm">{f.name}</h3>
+                    <p className="text-xs text-[var(--muted)] mt-0.5 line-clamp-2">{f.description}</p>
+                    <div className="flex items-center gap-2 mt-2">
+                      <span className="text-xs text-[var(--muted)]">{f.topics.length} topik</span>
+                      <span className="text-xs text-[var(--muted)]">•</span>
+                      <span className="text-xs text-[var(--muted)]">{questionCount} soal</span>
+                    </div>
+                  </div>
+                  <span className={`text-lg transition-all ${isSelected ? "text-[var(--primary)] rotate-90" : "text-[var(--muted)] group-hover:text-[var(--primary)]"}`}>
+                    →
+                  </span>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* SKB Section */}
+      <section>
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-7 h-7 bg-emerald-100 rounded-lg flex items-center justify-center text-xs">🎯</div>
+          <h2 className="font-semibold text-lg">SKB — Seleksi Kompetensi Bidang</h2>
+          <span className="text-xs text-[var(--muted)] bg-[var(--muted-light)] px-2 py-0.5 rounded-full">Sesuai formasi</span>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {skbList.map((f) => {
+            const qBank = getQuestionBank(f.id);
             const questionCount = Object.values(qBank).reduce((s, q) => s + q.length, 0);
             const isSelected = selectedFormasi?.id === f.id;
 
@@ -103,9 +139,7 @@ export default function Home() {
                 key={f.id}
                 onClick={() => selectFormasi(f)}
                 className={`card p-5 text-left group transition-all duration-300 cursor-pointer ${
-                  isSelected
-                    ? "border-[var(--primary)] ring-2 ring-[var(--primary)]/20 shadow-lg"
-                    : "hover:border-[var(--primary)] hover:shadow-md"
+                  isSelected ? "border-[var(--primary)] ring-2 ring-[var(--primary)]/20 shadow-lg" : "hover:border-[var(--primary)] hover:shadow-md"
                 }`}
               >
                 <div className="flex items-start gap-3">
@@ -116,7 +150,7 @@ export default function Home() {
                     <h3 className="font-medium text-sm">{f.name}</h3>
                     <p className="text-xs text-[var(--muted)] mt-0.5 line-clamp-2">{f.description}</p>
                     <div className="flex items-center gap-2 mt-2">
-                      <span className="text-xs text-[var(--muted)]">{topicCount} topik</span>
+                      <span className="text-xs text-[var(--muted)]">{f.topics.length} topik</span>
                       <span className="text-xs text-[var(--muted)]">•</span>
                       <span className="text-xs text-[var(--muted)]">{questionCount} soal</span>
                     </div>
@@ -136,7 +170,7 @@ export default function Home() {
         <section className="animate-fadeIn">
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-semibold text-lg">
-              Topik — {selectedFormasi.name}
+              {selectedFormasi.icon} Topik — {selectedFormasi.name}
             </h2>
             <Link
               href={`/quiz?formasi=${selectedFormasi.id}&mode=all${email ? `&email=${encodeURIComponent(email)}` : ""}`}
@@ -171,19 +205,6 @@ export default function Home() {
                 </Link>
               );
             })}
-          </div>
-        </section>
-      )}
-
-      {/* CTA */}
-      {!selectedFormasi && (
-        <section className="animate-fadeIn" style={{ animationDelay: "0.2s" }}>
-          <div className="card p-8 text-center border-2 border-dashed border-[var(--card-border)]">
-            <div className="text-3xl mb-3">👆</div>
-            <h2 className="text-xl font-bold mb-1.5">Pilih formasi di atas</h2>
-            <p className="text-sm text-[var(--muted)]">
-              Klik salah satu formasi untuk melihat topik latihan
-            </p>
           </div>
         </section>
       )}

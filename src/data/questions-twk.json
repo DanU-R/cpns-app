@@ -1,0 +1,562 @@
+{
+  "pancasila": [
+    {
+      "q": "Pancasila sebagai dasar negara Indonesia tercantum dalam...",
+      "options": [
+        "UUD 1945 Pembukaan alinea ke-1",
+        "UUD 1945 Pembukaan alinea ke-4",
+        "UUD 1945 Pasal 1",
+        "Tap MPR No. I/MPR/2003"
+      ],
+      "answer": 1,
+      "explanation": "Pancasila tercantum dalam Pembukaan UUD 1945 alinea ke-4 sebagai dasar negara."
+    },
+    {
+      "q": "Sila pertama Pancasila dilambangkan dengan...",
+      "options": [
+        "Rantai",
+        "Pohon beringin",
+        "Bintang",
+        "Kepala banteng"
+      ],
+      "answer": 2,
+      "explanation": "Sila pertama (Ketuhanan Yang Maha Esa) dilambangkan dengan bintang emas bersegi lima."
+    },
+    {
+      "q": "Bunyi sila ke-3 Pancasila adalah...",
+      "options": [
+        "Kemanusiaan yang adil dan beradab",
+        "Persatuan Indonesia",
+        "Kerakyatan yang dipimpin oleh hikmat kebijaksanaan",
+        "Keadilan sosial bagi seluruh rakyat Indonesia"
+      ],
+      "answer": 1,
+      "explanation": "Sila ke-3: Persatuan Indonesia, dilambangkan dengan pohon beringin."
+    },
+    {
+      "q": "Rumusan Pancasila yang sah dan resmi terdapat dalam...",
+      "options": [
+        "Piagam Jakarta",
+        "Pembukaan UUD 1945",
+        "Batang Tubuh UUD 1945",
+        "Dekrit Presiden 1959"
+      ],
+      "answer": 1,
+      "explanation": "Rumusan resmi Pancasila terdapat dalam Pembukaan UUD 1945 alinea ke-4, bukan Piagam Jakarta."
+    },
+    {
+      "q": "Sila ke-4 Pancasila dilambangkan dengan...",
+      "options": [
+        "Bintang",
+        "Pohon beringin",
+        "Kepala banteng",
+        "Padi dan kapas"
+      ],
+      "answer": 2,
+      "explanation": "Sila ke-4 (Kerakyatan yang dipimpin oleh hikmat kebijaksanaan) dilambangkan dengan kepala banteng."
+    },
+    {
+      "q": "Nilai inti Pancasila yang berkaitan dengan musyawarah mufakat terdapat pada sila ke...",
+      "options": [
+        "Sila ke-2",
+        "Sila ke-3",
+        "Sila ke-4",
+        "Sila ke-5"
+      ],
+      "answer": 2,
+      "explanation": "Sila ke-4 menekankan musyawarah mufakat sebagai cara pengambilan keputusan dalam kehidupan bermasyarakat."
+    },
+    {
+      "q": "Piagam Jakarta (Jakarta Charter) dirumuskan pada tanggal...",
+      "options": [
+        "17 Agustus 1945",
+        "22 Juni 1945",
+        "1 Juni 1945",
+        "18 Agustus 1945"
+      ],
+      "answer": 1,
+      "explanation": "Piagam Jakarta dirumuskan pada 22 Juni 1945 oleh Panitia Kecil (9 orang) dalam sidang BPUPKI."
+    },
+    {
+      "q": "Tokoh yang mengusulkan nama 'Pancasila' sebagai dasar negara pada 1 Juni 1945 adalah...",
+      "options": [
+        "Mohammad Hatta",
+        "Soepomo",
+        "Ir. Soekarno",
+        "Mohammad Yamin"
+      ],
+      "answer": 2,
+      "explanation": "Ir. Soekarno mengusulkan nama Pancasila pada sidang BPUPKI tanggal 1 Juni 1945."
+    },
+    {
+      "q": "Makna sila ke-2 Pancasila 'Kemanusiaan yang adil dan beradab' menekankan...",
+      "options": [
+        "Supremasi hukum",
+        "Pengakuan martabat dan hak asasi manusia",
+        "Kedaulatan rakyat",
+        "Persatuan bangsa"
+      ],
+      "answer": 1,
+      "explanation": "Sila ke-2 menekankan pengakuan terhadap martabat manusia, persamaan derajat, dan hak asasi manusia."
+    },
+    {
+      "q": "Pancasila sebagai pandangan hidup bangsa berarti...",
+      "options": [
+        "Pancasila hanya untuk upacara",
+        "Pancasila menjadi pedoman dalam kehidupan sehari-hari",
+        "Pancasila hanya di sekolah",
+        "Pancasila tidak relevan lagi"
+      ],
+      "answer": 1,
+      "explanation": "Pancasila sebagai pandangan hidup (way of life) berarti menjadi pedoman dalam berpikir dan bertindak sehari-hari."
+    }
+  ],
+  "uud_1945": [
+    {
+      "q": "UUD 1945 telah mengalami amandemen sebanyak...",
+      "options": [
+        "1 kali",
+        "2 kali",
+        "3 kali",
+        "4 kali"
+      ],
+      "answer": 3,
+      "explanation": "UUD 1945 telah diamandemen 4 kali: 1999, 2000, 2001, dan 2002."
+    },
+    {
+      "q": "Lembaga negara yang berwenang mengubah UUD menurut UUD 1945 adalah...",
+      "options": [
+        "Presiden",
+        "DPR",
+        "MPR",
+        "MK"
+      ],
+      "answer": 2,
+      "explanation": "MPR berwenang mengubah dan menetapkan UUD (Pasal 3 UUD 1945 setelah amandemen)."
+    },
+    {
+      "q": "Menurut UUD 1945, bentuk negara Indonesia adalah...",
+      "options": [
+        "Kerajaan",
+        "Republik",
+        "Federasi",
+        "Kesatuan berbentuk republik"
+      ],
+      "answer": 3,
+      "explanation": "Pasal 1 ayat (1) UUD 1945: 'Negara Indonesia ialah negara kesatuan yang berbentuk republik.'"
+    },
+    {
+      "q": "Hak asasi manusia dalam UUD 1945 diatur dalam...",
+      "options": [
+        "Bab I",
+        "Bab X",
+        "Bab XA",
+        "Bab XV"
+      ],
+      "answer": 2,
+      "explanation": "HAM diatur dalam Bab XA (Pasal 28A-28J) yang ditambahkan dalam amandemen kedua (2000)."
+    },
+    {
+      "q": "Kekuasaan kehakiman menurut UUD 1945 dilakukan oleh...",
+      "options": [
+        "Hanya MA",
+        "MA dan MK",
+        "MA, MK, dan KY",
+        "Hanya MK"
+      ],
+      "answer": 2,
+      "explanation": "Pasal 24 ayat (2): Kekuasaan kehakiman dilakukan oleh MA, MK, dan badan-badan lain (KY)."
+    },
+    {
+      "q": "Presiden dan Wakil Presiden dipilih oleh...",
+      "options": [
+        "MPR",
+        "DPR",
+        "Rakyat secara langsung",
+        "Majelis Permusyawaratan"
+      ],
+      "answer": 2,
+      "explanation": "Setelah amandemen ke-3 (2001), Presiden dan Wapres dipilih langsung oleh rakyat (Pasal 6A)."
+    },
+    {
+      "q": "Masa jabatan Presiden menurut UUD 1945 adalah...",
+      "options": [
+        "4 tahun, bisa dipilih kembali 1 kali",
+        "5 tahun, bisa dipilih kembali 1 kali",
+        "6 tahun, tidak bisa dipilih kembali",
+        "5 tahun, bisa dipilih kembali 2 kali"
+      ],
+      "answer": 1,
+      "explanation": "Pasal 7: Presiden memegang jabatan selama 5 tahun dan dapat dipilih kembali dalam jabatan yang sama hanya untuk satu kali masa jabatan."
+    },
+    {
+      "q": "Lembaga yang berwenang menguji undang-undang terhadap UUD adalah...",
+      "options": [
+        "MA",
+        "MPR",
+        "MK",
+        "DPR"
+      ],
+      "answer": 2,
+      "explanation": "Mahkamah Konstitusi (MK) berwenang menguji UU terhadap UUD (judicial review)."
+    },
+    {
+      "q": "Pemerintahan daerah menurut UUD 1945 menganut asas...",
+      "options": [
+        "Sentralisasi penuh",
+        "Desentralisasi, dekonsentrasi, dan tugas pembantuan",
+        "Otonomi penuh",
+        "Federalisme"
+      ],
+      "answer": 1,
+      "explanation": "Pasal 18 UUD 1945: NKRI dibagi atas daerah provinsi, kabupaten/kota yang bersifat otonom dengan asas desentralisasi, dekonsentrasi, dan tugas pembantuan."
+    },
+    {
+      "q": "Agama yang diakui negara menurut UUD 1945 adalah...",
+      "options": [
+        "Hanya Islam",
+        "Hanya 6 agama resmi",
+        "Semua agama dan kepercayaan",
+        "Tidak ada yang diakui"
+      ],
+      "answer": 2,
+      "explanation": "Pasal 29 ayat (2): 'Negara menjamin kemerdekaan tiap-tiap penduduk untuk memeluk agamanya masing-masing dan beribadat menurut agamanya.'"
+    }
+  ],
+  "nkri": [
+    {
+      "q": "Konsep Wawasan Nusantara menekankan...",
+      "options": [
+        "Pemisahan pulau-pulau",
+        "Persatuan dan kesatuan bangsa dalam keragaman",
+        "Dominasi Jawa",
+        "Sentralisasi kekuasaan"
+      ],
+      "answer": 1,
+      "explanation": "Wawasan Nusantara adalah cara pandang bangsa Indonesia tentang diri dan lingkungannya sebagai satu kesatuan."
+    },
+    {
+      "q": "Bhinneka Tunggal Ika berasal dari kitab...",
+      "options": [
+        "Negarakertagama",
+        "Sutasoma",
+        "Pararaton",
+        "Arjunawiwaha"
+      ],
+      "answer": 1,
+      "explanation": "Bhinneka Tunggal Ika berasal dari kitab Sutasoma karya Mpu Tantular, artinya 'Berbeda-beda tetapi tetap satu.'"
+    },
+    {
+      "q": "Laut teritorial Indonesia adalah sejauh...",
+      "options": [
+        "3 mil laut",
+        "12 mil laut",
+        "24 mil laut",
+        "200 mil laut"
+      ],
+      "answer": 1,
+      "explanation": "Laut teritorial Indonesia adalah 12 mil laut dari garis pantai (Deklarasi Djuanda 1957, UNCLOS 1982)."
+    },
+    {
+      "q": "Zona Ekonomi Eksklusif (ZEE) Indonesia adalah sejauh...",
+      "options": [
+        "12 mil laut",
+        "24 mil laut",
+        "200 mil laut",
+        "350 mil laut"
+      ],
+      "answer": 2,
+      "explanation": "ZEE Indonesia adalah 200 mil laut dari garis pantai, dimana Indonesia memiliki hak berdaulat atas sumber daya."
+    },
+    {
+      "q": "NKRI menganut sistem pemerintahan...",
+      "options": [
+        "Presidensial",
+        "Parlementer",
+        "Semi-presidensial",
+        "Monarki konstitusional"
+      ],
+      "answer": 0,
+      "explanation": "Indonesia menganut sistem pemerintahan presidensial dimana presiden sebagai kepala negara dan kepala pemerintahan."
+    },
+    {
+      "q": "Lambang negara Indonesia adalah...",
+      "options": [
+        "Harimau",
+        "Garuda Pancasila",
+        "Elang",
+        "Komodo"
+      ],
+      "answer": 1,
+      "explanation": "Garuda Pancasila adalah lambang negara Indonesia, dengan semboyan Bhinneka Tunggal Ika pada pita yang dicengkeram."
+    },
+    {
+      "q": "Sumpah Pemuda diperingati pada tanggal...",
+      "options": [
+        "17 Agustus",
+        "28 Oktober",
+        "1 Juni",
+        "10 November"
+      ],
+      "answer": 1,
+      "explanation": "Sumpah Pemuda diikrarkan pada 28 Oktober 1928, berisi satu nusa, satu bangsa, dan satu bahasa: Indonesia."
+    },
+    {
+      "q": "Proklamasi Kemerdekaan Indonesia dibacakan pada...",
+      "options": [
+        "17 Agustus 1945",
+        "18 Agustus 1945",
+        "22 Juni 1945",
+        "1 Juni 1945"
+      ],
+      "answer": 0,
+      "explanation": "Proklamasi Kemerdekaan Indonesia dibacakan oleh Soekarno-Hatta pada 17 Agustus 1945 di Jl. Pegangsaan Timur No. 56."
+    },
+    {
+      "q": "Konsep ketahanan nasional Indonesia meliputi aspek...",
+      "options": [
+        "Hanya militer",
+        "Ideologi, politik, ekonomi, sosial budaya, pertahanan keamanan",
+        "Hanya ekonomi",
+        "Hanya budaya"
+      ],
+      "answer": 1,
+      "explanation": "Ketahanan nasional mencakup seluruh aspek kehidupan bangsa: ideologi, politik, ekonomi, sosial budaya, dan hankam."
+    },
+    {
+      "q": "Dasar hukum NKRI terdapat dalam UUD 1945 Pasal...",
+      "options": [
+        "Pasal 1 ayat (1)",
+        "Pasal 2 ayat (1)",
+        "Pasal 3 ayat (1)",
+        "Pasal 4 ayat (1)"
+      ],
+      "answer": 0,
+      "explanation": "Pasal 1 ayat (1) UUD 1945: 'Negara Indonesia ialah negara kesatuan yang berbentuk republik.'"
+    }
+  ],
+  "sejarah_indonesia": [
+    {
+      "q": "Perjanjian Linggarjati (1947) antara Indonesia dan Belanda menghasilkan...",
+      "options": [
+        "Kemerdekaan penuh",
+        "Pengakuan de facto RI atas Jawa, Madura, dan Sumatera",
+        "Pembentukan RIS",
+        "Pembubaran RI"
+      ],
+      "answer": 1,
+      "explanation": "Perjanjian Linggarjati: Belanda mengakui secara de facto wilayah RI meliputi Jawa, Madura, dan Sumatera."
+    },
+    {
+      "q": "Agresi Militer Belanda II terjadi pada...",
+      "options": [
+        "21 Juli 1947",
+        "19 Desember 1948",
+        "1 Maret 1949",
+        "27 Desember 1949"
+      ],
+      "answer": 1,
+      "explanation": "Agresi Militer Belanda II pada 19 Desember 1948 menyerang Yogyakarta dan menangkap para pemimpin RI."
+    },
+    {
+      "q": "Serangan Umum 1 Maret 1949 dipimpin oleh...",
+      "options": [
+        "Soedirman",
+        "Sri Sultan HB IX",
+        "Letkol Soeharto",
+        "AH Nasution"
+      ],
+      "answer": 2,
+      "explanation": "Serangan Umum 1 Maret 1949 di Yogyakarta dipimpin oleh Letkol Soeharto untuk menunjukkan RI masih ada."
+    },
+    {
+      "q": "Konferensi Meja Bundar (KMB) menghasilkan...",
+      "options": [
+        "Kemerdekaan RI",
+        "Pengakuan kedaulatan RI oleh Belanda dalam bentuk RIS",
+        "Perjanjian Renville",
+        "Perjanjian Linggarjati"
+      ],
+      "answer": 1,
+      "explanation": "KMB di Den Haag (1949) menghasilkan pengakuan kedaulatan oleh Belanda dalam bentuk Republik Indonesia Serikat."
+    },
+    {
+      "q": "G30S/PKI terjadi pada tahun...",
+      "options": [
+        "1962",
+        "1965",
+        "1966",
+        "1969"
+      ],
+      "answer": 1,
+      "explanation": "Peristiwa G30S/PKI terjadi pada malam 30 September - 1 Oktober 1965."
+    },
+    {
+      "q": "Supersemar dikeluarkan pada tahun...",
+      "options": [
+        "1965",
+        "1966",
+        "1967",
+        "1968"
+      ],
+      "answer": 1,
+      "explanation": "Surat Perintah Sebelas Maret (Supersemar) dikeluarkan pada 11 Maret 1966 oleh Soekarno kepada Soeharto."
+    },
+    {
+      "q": "Orde Baru berlangsung dari tahun...",
+      "options": [
+        "1945-1965",
+        "1966-1998",
+        "1998-2004",
+        "1950-1965"
+      ],
+      "answer": 1,
+      "explanation": "Orde Baru berlangsung dari 1966 (setelah Supersemar) hingga 1998 (Soeharto mundur)."
+    },
+    {
+      "q": "Reformasi 1998 ditandai dengan...",
+      "options": [
+        "Pemilu pertama",
+        "Turunnya Soeharto dari jabatan presiden",
+        "Kemerdekaan Timor Leste",
+        "Amandemen UUD"
+      ],
+      "answer": 1,
+      "explanation": "Reformasi 1998 ditandai dengan mundurnya Soeharto pada 21 Mei 1998 setelah 32 tahun berkuasa."
+    },
+    {
+      "q": "Vereenigde Oostindische Compagnie (VOC) didirikan pada tahun...",
+      "options": [
+        "1596",
+        "1602",
+        "1619",
+        "1800"
+      ],
+      "answer": 1,
+      "explanation": "VOC didirikan pada 20 Maret 1602 sebagai perusahaan dagang Belanda di Hindia Timur."
+    },
+    {
+      "q": "Perang Diponegoro (Perang Jawa) berlangsung pada tahun...",
+      "options": [
+        "1825-1830",
+        "1905-1910",
+        "1942-1945",
+        "1830-1835"
+      ],
+      "answer": 0,
+      "explanation": "Perang Diponegoro/Perang Jawa berlangsung 1825-1830, dipimpin Pangeran Diponegoro melawan Belanda."
+    }
+  ],
+  "tata_negara": [
+    {
+      "q": "Lembaga legislatif Indonesia terdiri dari...",
+      "options": [
+        "Hanya DPR",
+        "DPR dan DPD",
+        "DPR, DPD, dan MPR",
+        "Hanya MPR"
+      ],
+      "answer": 1,
+      "explanation": "Lembaga legislatif (kekuasaan membentuk UU) terdiri dari DPR dan DPD. MPR bukan lembaga legislatif murni."
+    },
+    {
+      "q": "MK (Mahkamah Konstitusi) memiliki ... hakim konstitusi",
+      "options": [
+        "5 orang",
+        "7 orang",
+        "9 orang",
+        "12 orang"
+      ],
+      "answer": 2,
+      "explanation": "MK terdiri dari 9 hakim: 3 diusulkan DPR, 3 oleh MA, dan 3 oleh Presiden."
+    },
+    {
+      "q": "Komisi Yudisial (KY) berfungsi untuk...",
+      "options": [
+        "Mengadili kasus pidana",
+        "Mengusulkan pengangkatan hakim agung dan menegakkan kehormatan hakim",
+        "Membuat undang-undang",
+        "Memilih presiden"
+      ],
+      "answer": 1,
+      "explanation": "KY berwenang mengusulkan pengangkatan hakim agung dan menjaga kehormatan/keluhuran martabat hakim."
+    },
+    {
+      "q": "BPK (Badan Pemeriksa Keuangan) bertugas...",
+      "options": [
+        "Membuat APBN",
+        "Memeriksa pengelolaan dan tanggung jawab keuangan negara",
+        "Mengadili korupsi",
+        "Menentukan pajak"
+      ],
+      "answer": 1,
+      "explanation": "BPK memeriksa pengelolaan dan tanggung jawab keuangan negara secara bebas dan mandiri (Pasal 23E UUD 1945)."
+    },
+    {
+      "q": "Hak interpelasi DPR adalah hak untuk...",
+      "options": [
+        "Mengajukan RUU",
+        "Meminta keterangan kepada pemerintah tentang kebijakan penting",
+        "Menjatuhkan presiden",
+        "Membubarkan partai"
+      ],
+      "answer": 1,
+      "explanation": "Hak interpelasi adalah hak DPR untuk meminta keterangan kepada pemerintah mengenai kebijakan yang penting dan strategis."
+    },
+    {
+      "q": "Peraturan daerah (Perda) dibuat oleh...",
+      "options": [
+        "Presiden",
+        "Kepala Daerah bersama DPRD",
+        "Menteri Dalam Negeri",
+        "Gubernur saja"
+      ],
+      "answer": 1,
+      "explanation": "Perda dibuat oleh Kepala Daerah (Bupati/Walikota/Gubernur) bersama DPRD."
+    },
+    {
+      "q": "Hierarki peraturan perundang-undangan yang tertinggi setelah UUD 1945 adalah...",
+      "options": [
+        "Peraturan Pemerintah",
+        "UU/Perppu",
+        "Peraturan Presiden",
+        "Keputusan Presiden"
+      ],
+      "answer": 1,
+      "explanation": "UU No. 12/2011: UUD 1945 > TAP MPR > UU/Perppu > PP > Perpres > Perda Provinsi > Perda Kabupaten/Kota."
+    },
+    {
+      "q": "Presiden dapat membekukan/membubarkan DPRD?",
+      "options": [
+        "Ya, selalu",
+        "Tidak, tidak ada kewenangan itu",
+        "Ya, dengan persetujuan DPR",
+        "Ya, dengan alasan keamanan"
+      ],
+      "answer": 1,
+      "explanation": "Presiden TIDAK memiliki kewenangan membekukan atau membubarkan DPRD berdasarkan UUD 1945."
+    },
+    {
+      "q": "DPR memiliki 3 fungsi utama yaitu...",
+      "options": [
+        "Legislasi, budgeting, dan pengawasan",
+        "Eksekutif, legislatif, dan yudikatif",
+        "Perencanaan, pelaksanaan, dan evaluasi",
+        "Legislasi, eksekusi, dan adjudikasi"
+      ],
+      "answer": 0,
+      "explanation": "Fungsi DPR: Legislasi (membuat UU), Budgeting (anggaran), dan Pengawasan (mengawasi pelaksanaan UU)."
+    },
+    {
+      "q": "Perppu (Peraturan Pemerintah Pengganti UU) dapat dikeluarkan presiden dalam keadaan...",
+      "options": [
+        "Kapan saja",
+        "Kepentingan memaksa (kegentingan)",
+        "Saat DPR libur",
+        "Saat pemilu"
+      ],
+      "answer": 1,
+      "explanation": "Pasal 22 UUD 1945: Presiden berhak menetapkan Perppu dalam hal kegentingan yang memaksa."
+    }
+  ]
+}

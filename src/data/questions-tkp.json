@@ -1,0 +1,562 @@
+{
+  "pelayanan_publik": [
+    {
+      "q": "Seorang warga datang ke kantor kelurahan untuk mengurus surat keterangan dengan emosi karena sudah bolak-balik. Sikap Anda:",
+      "options": [
+        "Mengabaikannya karena dia tidak sabaran",
+        "Menenangkannya dan membantu proses pengurusan dengan sabar",
+        "Memintanya pulang dan datang lagi besok",
+        "Memarahinya karena membuat keributan"
+      ],
+      "answer": 1,
+      "explanation": "Pelayan publik harus bersikap sabar dan profesional menghadapi warga yang emosi, membantu menyelesaikan masalah."
+    },
+    {
+      "q": "Anda mengetahui rekan kerja Anda sering meninggalkan meja kerja saat jam pelayanan. Tindakan Anda:",
+      "options": [
+        "Membicarakan di belakang",
+        "Menegurnya secara personal dan mengingatkan kewajiban pelayanan",
+        "Melaporkan langsung ke atasan tanpa bicara dulu",
+        "Ikut-ikutan meninggalkan meja"
+      ],
+      "answer": 1,
+      "explanation": "Teguran personal terlebih dahulu menunjukkan sikap profesional dan menjaga hubungan kolegial."
+    },
+    {
+      "q": "Warga miskin meminta bantuan namun tidak memenuhi syarat administrasi. Anda:",
+      "options": [
+        "Menolaknya mentah-mentah",
+        "Menjelaskan persyaratan dengan empati dan membantu mencari solusi alternatif",
+        "Mengabaikannya",
+        "Memberikan bantuan secara diam-diam"
+      ],
+      "answer": 1,
+      "explanation": "Pelayan publik harus transparan dan empatik, menjelaskan aturan sambil membantu mencari jalan keluar."
+    },
+    {
+      "q": "Sistem komputer kantor sedang down saat ada antrian warga. Sikap Anda:",
+      "options": [
+        "Menutup pelayanan",
+        "Melayani secara manual sambil memperbaiki sistem",
+        "Menyuruh warga datang besok",
+        "Menyalahkan IT"
+      ],
+      "answer": 1,
+      "explanation": "Pelayanan tidak boleh berhenti total. Solusi manual sementara menunjukkan dedikasi pelayanan."
+    },
+    {
+      "q": "Anda mendapat keluhan bahwa pelayanan di unit Anda lambat. Respon Anda:",
+      "options": [
+        "Menyangkal dan menyalahkan warga",
+        "Mengevaluasi proses dan mencari cara meningkatkan efisiensi",
+        "Mengabaikan keluhan",
+        "Menyalahkan rekan kerja"
+      ],
+      "answer": 1,
+      "explanation": "ASN yang baik menerima kritik dan melakukan perbaikan untuk meningkatkan kualitas pelayanan."
+    },
+    {
+      "q": "Warga meminta informasi yang sebenarnya tidak menjadi wewenang Anda. Anda:",
+      "options": [
+        "Mengatakan 'bukan urusan saya'",
+        "Mengarahkan ke unit yang berwenang dengan sopan",
+        "Memberikan informasi yang tidak pasti",
+        "Menyuruhnya mencari sendiri"
+      ],
+      "answer": 1,
+      "explanation": "Mengarahkan ke pihak yang tepat menunjukkan pelayanan prima dan rasa tanggung jawab."
+    },
+    {
+      "q": "Atasan Anda meminta Anda melayani keluarga pribadinya di luar jam kerja. Sikap Anda:",
+      "options": [
+        "Langsung menolak kasar",
+        "Menjelaskan dengan sopan bahwa pelayanan mengikuti prosedur dan jam kerja",
+        "Melayani karena perintah atasan",
+        "Pura-pura tidak mendengar"
+      ],
+      "answer": 1,
+      "explanation": "ASN harus profesional: melayani sesuai prosedur dan jam kerja, namun menolak dengan sopan."
+    },
+    {
+      "q": "Anda melihat rekan kerja menerima 'uang kopi' dari warga. Sikap Anda:",
+      "options": [
+        "Diam saja",
+        "Mengingatkan bahwa hal itu melanggar aturan dan melaporkan jika berlanjut",
+        "Ikut meminta",
+        "Menyebarkannya ke media sosial"
+      ],
+      "answer": 1,
+      "explanation": "ASN harus berintegritas dan mengingatkan rekan yang melakukan pelanggaran, serta melaporkan jika diperlukan."
+    },
+    {
+      "q": "Dalam melayani lansia, Anda sebaiknya...",
+      "options": [
+        "Mempercepat proses agar tidak antri",
+        "Memberikan perhatian khusus, penjelasan yang jelas, dan bantuan lebih",
+        "Menyuruhnya diantar keluarga",
+        "Melayani seperti biasa tanpa penyesuaian"
+      ],
+      "answer": 1,
+      "explanation": "Pelayanan publik yang inklusif memberikan perhatian khusus kepada kelompok rentan seperti lansia."
+    },
+    {
+      "q": "Warga memberikan hadiah sebagai ucapan terima kasih atas pelayanan Anda. Sikap Anda:",
+      "options": [
+        "Menerima dengan senang hati",
+        "Menolak dengan sopan dan menjelaskan bahwa itu bagian dari tugas",
+        "Menyuruhnya memberikan ke kas negara",
+        "Menerima dan menyimpannya"
+      ],
+      "answer": 1,
+      "explanation": "ASN tidak boleh menerima hadiah dari masyarakat yang dilayani sesuai kode etik dan peraturan anti gratifikasi."
+    }
+  ],
+  "integritas": [
+    {
+      "q": "Anda menemukan kesalahan dalam laporan keuangan yang menguntungkan Anda. Tindakan Anda:",
+      "options": [
+        "Diam saja karena menguntungkan",
+        "Melaporkan dan memperbaiki kesalahan tersebut",
+        "Menyembunyikan bukti",
+        "Menyalahkan orang lain"
+      ],
+      "answer": 1,
+      "explanation": "Integritas berarti jujur dan bertanggung jawab, bahkan ketika kebenaran tidak menguntungkan diri sendiri."
+    },
+    {
+      "q": "Rekan kerja Anda menawarkan jawaban saat ujian seleksi internal. Sikap Anda:",
+      "options": [
+        "Menerima karena semua orang melakukannya",
+        "Menolak dan mengerjakan sendiri dengan jujur",
+        "Menolak tapi diam saja",
+        "Melaporkan saat itu juga"
+      ],
+      "answer": 1,
+      "explanation": "Integritas menolak kecurangan dalam bentuk apapun dan mengerjakan dengan kemampuan sendiri."
+    },
+    {
+      "q": "Anda dijanjikan promosi jika mendukung calon tertentu dalam pemilihan internal. Sikap Anda:",
+      "options": [
+        "Menerima karena menguntungkan karir",
+        "Menolak dan tetap bersikap objektif",
+        "Pura-pura mendukung",
+        "Mencari informasi lebih lanjut"
+      ],
+      "answer": 1,
+      "explanation": "ASN harus bersikap profesional dan objektif, tidak boleh menukar integritas dengan kepentingan pribadi."
+    },
+    {
+      "q": "Anda mengetahui ada proyek pemerintah yang mark-up harganya. Anda:",
+      "options": [
+        "Diam karena bukan urusan",
+        "Melaporkan melalui saluran yang tepat",
+        "Minta bagian",
+        "Menyebarkan di media sosial"
+      ],
+      "answer": 1,
+      "explanation": "ASN berkewajiban melaporkan dugaan korupsi melalui saluran yang tepat (WBS, KPK, inspektorat)."
+    },
+    {
+      "q": "Atasan meminta Anda memanipulasi data untuk kepentingan laporan. Sikap Anda:",
+      "options": [
+        "Menuruti perintah atasan",
+        "Menolak dengan sopan dan menjelaskan konsekuensi hukum",
+        "Memanipulasi dengan berat hati",
+        "Pura-pura tidak mengerti"
+      ],
+      "answer": 1,
+      "explanation": "Memalsukan data adalah pelanggaran hukum. ASN harus menolak dengan sopan dan menjelaskan konsekuensinya."
+    },
+    {
+      "q": "Anda mendapat tawaran kerja di swasta dengan gaji 3x lipat saat masa percobaan CPNS. Sikap Anda:",
+      "options": [
+        "Langsung keluar",
+        "Menyelesaikan masa percobaan dan mempertimbangkan dengan bijak",
+        "Tidak masuk kerja lagi",
+        "Minta cuti panjang"
+      ],
+      "answer": 1,
+      "explanation": "Profesionalisme berarti menyelesaikan komitmen yang sudah dibuat sebelum mengambil keputusan besar."
+    },
+    {
+      "q": "Seorang teman meminta Anda mempercepat proses permohonannya secara ilegal. Sikap Anda:",
+      "options": [
+        "Membantu karena teman",
+        "Menjelaskan bahwa prosedur harus diikuti semua orang",
+        "Meminta uang sebagai imbalan",
+        "Mengabaikan teman"
+      ],
+      "answer": 1,
+      "explanation": "Integritas berarti adil terhadap semua orang dan tidak memberikan perlakuan khusus yang melanggar prosedur."
+    },
+    {
+      "q": "Anda menemukan dokumen penting yang hilang di kantor. Anda:",
+      "options": [
+        "Menyimpannya sendiri",
+        "Menyerahkannya ke atasan/unit terkait",
+        "Membuangnya",
+        "Menjualnya"
+      ],
+      "answer": 1,
+      "explanation": "Integritas berarti bertanggung jawab terhadap aset dan dokumen negara, menyerahkannya ke pihak berwenang."
+    },
+    {
+      "q": "Dalam rapat, Anda tidak setuju dengan keputusan mayoritas. Anda:",
+      "options": [
+        "Diam dan menuruti",
+        "Menyampaikan pendapat dengan argumen yang jelas secara profesional",
+        "Membangkang diam-diam",
+        "Menyebarkan ketidaksetujuan ke media"
+      ],
+      "answer": 1,
+      "explanation": "Profesionalisme menyampaikan pendapat secara konstruktif dan menghargai proses demokrasi."
+    },
+    {
+      "q": "Anda diminta menandatangani dokumen yang belum Anda verifikasi isinya. Anda:",
+      "options": [
+        "Langsung tanda tangan",
+        "Memverifikasi isi terlebih dahulu sebelum menandatangani",
+        "Menolak mentah-mentah",
+        "Menyuruh orang lain yang tanda tangan"
+      ],
+      "answer": 1,
+      "explanation": "ASN harus bertanggung jawab atas setiap tanda tangan. Verifikasi sebelum menandatangani adalah kewajiban profesional."
+    }
+  ],
+  "anti_korupsi": [
+    {
+      "q": "Gratifikasi yang diterima ASN wajib dilaporkan ke KPK dalam waktu ... hari",
+      "options": [
+        "7 hari",
+        "14 hari",
+        "30 hari",
+        "60 hari"
+      ],
+      "answer": 2,
+      "explanation": "UU Tipikor: gratifikasi wajib dilaporkan ke KPK paling lambat 30 hari kerja sejak diterima."
+    },
+    {
+      "q": "Bentuk gratifikasi yang TIDAK perlu dilaporkan adalah...",
+      "options": [
+        "Uang tunai dari pihak terkait",
+        "Hadiah dalam rangka pernikahan keluarga",
+        "Fasilitas perjalanan dari rekanan",
+        "Diskon khusus dari vendor"
+      ],
+      "answer": 1,
+      "explanation": "Hadiah dalam rangka adat/kebiasaan (pernikahan, kelahiran) bukan gratifikasi asalkan wajar dan tidak terkait jabatan."
+    },
+    {
+      "q": "Tindakan yang termasuk korupsi adalah...",
+      "options": [
+        "Menerima gaji sesuai jabatan",
+        "Menggunakan fasilitas kantor untuk kepentingan pribadi",
+        "Bekerja lembur dengan izin",
+        "Mengikuti pelatihan dari pemerintah"
+      ],
+      "answer": 1,
+      "explanation": "Menggunakan fasilitas negara untuk kepentingan pribadi termasuk penyalahgunaan wewenang (korupsi)."
+    },
+    {
+      "q": "Suap (bribery) berbeda dari gratifikasi karena...",
+      "options": [
+        "Sama saja",
+        "Suap ada kesepakatan/imbalan atas tindakan tertentu, gratifikasi bersifat sepihak",
+        "Gratifikasi lebih berat",
+        "Suap hanya di sektor swasta"
+      ],
+      "answer": 1,
+      "explanation": "Suap: ada quid pro quo (imbal balik). Gratifikasi: pemberian sepihak yang bisa menjadi suap jika terkait jabatan."
+    },
+    {
+      "q": "Whistleblowing System (WBS) bertujuan untuk...",
+      "options": [
+        "Menjatuhkan pejabat",
+        "Memberikan saluran aman untuk melaporkan dugaan korupsi",
+        "Menyebarkan gosip",
+        "Mencari kesalahan kecil"
+      ],
+      "answer": 1,
+      "explanation": "WBS melindungi pelapor dan memberikan saluran aman untuk melaporkan dugaan korupsi secara bertanggung jawab."
+    },
+    {
+      "q": "ASN yang menolak gratifikasi dari pihak terkait mendapat...",
+      "options": [
+        "Sanksi",
+        "Perlindungan hukum dan penghargaan integritas",
+        "Dipindahtugaskan",
+        "Dipecat"
+      ],
+      "answer": 1,
+      "explanation": "ASN yang menolak dan melaporkan gratifikasi mendapat perlindungan hukum sesuai UU Tipikor."
+    },
+    {
+      "q": "Mark-up anggaran proyek termasuk jenis korupsi...",
+      "options": [
+        "Penyuapan",
+        "Penggelapan",
+        "Kecurangan",
+        "Pemerasan"
+      ],
+      "answer": 2,
+      "explanation": "Mark-up (penggelembungan) anggaran termasuk tindak pidana korupsi berupa kecurangan."
+    },
+    {
+      "q": "LHKPN (Laporan Harta Kekayaan Penyelenggara Negara) wajib diisi oleh...",
+      "options": [
+        "Semua PNS",
+        "Pejabat negara dan pejabat eselon tertentu",
+        "Hanya menteri",
+        "Hanya presiden"
+      ],
+      "answer": 1,
+      "explanation": "LHKPN wajib diisi oleh pejabat negara, pejabat eselon I dan II, dan jabatan tertentu lainnya."
+    },
+    {
+      "q": "Penyitaan aset koruptor dilakukan berdasarkan...",
+      "options": [
+        "Keputusan presiden",
+        "Putusan pengadilan yang telah berkekuatan hukum tetap",
+        "Permintaan masyarakat",
+        "Peraturan daerah"
+      ],
+      "answer": 1,
+      "explanation": "Penyitaan dan perampasan aset koruptor harus berdasarkan putusan pengadilan yang telah berkekuatan hukum tetap."
+    },
+    {
+      "q": "Pencegahan korupsi yang paling efektif adalah...",
+      "options": [
+        "Hukuman berat",
+        "Pendidikan anti-korupsi, transparansi, dan penguatan sistem pengendalian internal",
+        "Memecat semua PNS",
+        "Menghapus semua anggaran"
+      ],
+      "answer": 1,
+      "explanation": "Pencegahan korupsi memerlukan pendekatan komprehensif: pendidikan, transparansi, dan SPI yang kuat."
+    }
+  ],
+  "kerjasama": [
+    {
+      "q": "Dalam kerja tim, Anda mendapat tugas yang bukan keahlian utama Anda. Sikap Anda:",
+      "options": [
+        "Menolak tugas tersebut",
+        "Mempelajari dan berusaha menyelesaikannya dengan bantuan rekan",
+        "Menyerahkan ke orang lain",
+        "Mengerjakan asal jadi"
+      ],
+      "answer": 1,
+      "explanation": "ASN yang baik mau belajar dan berkembang, serta berkolaborasi dengan rekan untuk menyelesaikan tugas."
+    },
+    {
+      "q": "Rekan satu tim tidak berkontribusi dalam proyek bersama. Sikap Anda:",
+      "options": [
+        "Mengerjakan semuanya sendiri",
+        "Mengajak bicara untuk memahami kendala dan mencari solusi bersama",
+        "Mengeluh ke atasan",
+        "Mengucilkannya"
+      ],
+      "answer": 1,
+      "explanation": "Komunikasi terbuka dan empati adalah kunci kerjasama tim. Pahami kendala dan cari solusi bersama."
+    },
+    {
+      "q": "Dalam rapat, ide Anda ditolak oleh tim. Sikap Anda:",
+      "options": [
+        "Marah dan keluar rapat",
+        "Menerima dengan lapang dada dan mendukung keputusan tim",
+        "Mengulangi terus-menerus",
+        "Menyabotase keputusan"
+      ],
+      "answer": 1,
+      "explanation": "Profesionalisme menerima keputusan kolektif dan tetap mendukung meskipun ide pribadi tidak dipilih."
+    },
+    {
+      "q": "Anda dan rekan memiliki pendapat berbeda tentang cara menyelesaikan tugas. Anda:",
+      "options": [
+        "Memaksakan pendapat sendiri",
+        "Mendengarkan, berdiskusi, dan mencari solusi terbaik bersama",
+        "Mengabaikan rekan",
+        "Menyerah dan tidak mengerjakan"
+      ],
+      "answer": 1,
+      "explanation": "Diskusi terbuka dan menghargai perbedaan pendapat menghasilkan solusi yang lebih baik."
+    },
+    {
+      "q": "Tim Anda mendapat deadline yang sangat ketat. Sikap Anda:",
+      "options": [
+        "Menyerah karena tidak mungkin",
+        "Membagi tugas secara adil dan bekerja ekstra bersama tim",
+        "Mengerjakan sendiri",
+        "Menyalahkan atasan"
+      ],
+      "answer": 1,
+      "explanation": "Kerjasama tim yang baik membagi beban kerja dan berkomitmen menyelesaikan target bersama."
+    },
+    {
+      "q": "Rekan Anda berhasil menyelesaikan tugas dengan cara yang tidak biasa namun efektif. Sikap Anda:",
+      "options": [
+        "Mengkritik caranya",
+        "Menghargai dan mempelajari pendekatannya",
+        "Iri dan menjelekkan",
+        "Mengabaikan"
+      ],
+      "answer": 1,
+      "explanation": "ASN yang baik terbuka terhadap inovasi dan menghargai cara-cara baru yang efektif."
+    },
+    {
+      "q": "Dalam proyek lintas unit, Anda ditunjuk sebagai koordinator. Langkah pertama Anda:",
+      "options": [
+        "Memberikan perintah ke semua orang",
+        "Menyelaraskan pemahaman tujuan dan membagi peran dengan jelas",
+        "Mengerjakan sendiri",
+        "Menunda rapat"
+      ],
+      "answer": 1,
+      "explanation": "Koordinator yang baik memastikan semua anggota memahami tujuan dan peran masing-masing."
+    },
+    {
+      "q": "Anda mendapat pujian atas kerja tim. Sikap Anda:",
+      "options": [
+        "Mengklaim semua功劳",
+        "Mengakui kontribusi seluruh tim",
+        "Diam saja",
+        "Menyalahkan orang lain"
+      ],
+      "answer": 1,
+      "explanation": "Integritas dan kerendahan hati mengakui bahwa keberhasilan adalah hasil kerja bersama."
+    },
+    {
+      "q": "Anggota tim baru belum paham tugas. Sikap Anda:",
+      "options": [
+        "Membiarkannya belajar sendiri",
+        "Membimbing dan memberikan arahan yang jelas",
+        "Mengeluh tentang anggota baru",
+        "Menyingkirkan dari tim"
+      ],
+      "answer": 1,
+      "explanation": "Mentoring dan bimbingan kepada anggota baru meningkatkan efektivitas tim secara keseluruhan."
+    },
+    {
+      "q": "Tim Anda mengalami kegagalan dalam proyek. Sikap Anda:",
+      "options": [
+        "Menyalahkan orang lain",
+        "Evaluasi bersama, ambil pelajaran, dan perbaiki untuk berikutnya",
+        "Menyerah",
+        "Keluar dari tim"
+      ],
+      "answer": 1,
+      "explanation": "ASN yang profesional belajar dari kegagalan dan menggunakan sebagai peluang perbaikan."
+    }
+  ],
+  "manajemen_diri": [
+    {
+      "q": "Anda mendapat banyak tugas dengan deadline bersamaan. Anda:",
+      "options": [
+        "Panik dan mengerjakan sembarangan",
+        "Memprioritaskan berdasarkan urgensi dan kepentingan",
+        "Menolak semua tugas",
+        "Mengerjakan yang paling mudah saja"
+      ],
+      "answer": 1,
+      "explanation": "Manajemen waktu yang baik memprioritaskan tugas berdasarkan matriks urgensi-importansi."
+    },
+    {
+      "q": "Anda merasa stres akibat beban kerja. Sikap Anda:",
+      "options": [
+        "Mengeluh ke semua orang",
+        "Mengelola stres dengan istirahat yang cukup dan mencari dukungan",
+        "Mengabaikan dan terus memaksakan",
+        "Keluar dari pekerjaan"
+      ],
+      "answer": 1,
+      "explanation": "Manajemen stres yang sehat meliputi istirahat, olahraga, dan mencari dukungan profesional jika diperlukan."
+    },
+    {
+      "q": "Anda mendapat kritik membangun dari atasan. Sikap Anda:",
+      "options": [
+        "Merasa tersinggung",
+        "Menerima sebagai peluang pengembangan diri",
+        "Membela diri habis-habisan",
+        "Membenci atasan"
+      ],
+      "answer": 1,
+      "explanation": "ASN yang baik menerima kritik sebagai masukan untuk pengembangan kompetensi dan kinerja."
+    },
+    {
+      "q": "Anda ingin meningkatkan kompetensi kerja. Langkah Anda:",
+      "options": [
+        "Menunggu pelatihan dari kantor",
+        "Proaktif mencari pelatihan, membaca, dan belajar mandiri",
+        "Tidak perlu belajar lagi",
+        "Hanya belajar saat dipaksa"
+      ],
+      "answer": 1,
+      "explanation": "ASN yang profesional proaktif dalam pengembangan diri melalui berbagai sumber belajar."
+    },
+    {
+      "q": "Anda gagal dalam ujian sertifikasi profesional. Sikap Anda:",
+      "options": [
+        "Menyerah dan tidak mencoba lagi",
+        "Mengevaluasi kekurangan dan mempersiapkan diri lebih baik",
+        "Menyalahkan soal yang sulit",
+        "Menuduh ada kecurangan"
+      ],
+      "answer": 1,
+      "explanation": "Resiliensi: belajar dari kegagalan, mengevaluasi, dan mempersiapkan diri lebih baik untuk kesempatan berikutnya."
+    },
+    {
+      "q": "Anda ditawari pekerjaan yang menarik namun bertentangan dengan nilai pribadi. Anda:",
+      "options": [
+        "Menerima karena gaji besar",
+        "Menolak dengan tegas sesuai prinsip pribadi",
+        "Menerima dan berpura-pura",
+        "Mencuri data perusahaan"
+      ],
+      "answer": 1,
+      "explanation": "Integritas pribadi berarti tidak mengorbankan nilai-nilai dasar demi keuntungan materi."
+    },
+    {
+      "q": "Dalam situasi darurat, Anda harus membuat keputusan cepat tanpa informasi lengkap. Anda:",
+      "options": [
+        "Menunda keputusan",
+        "Menggunakan pertimbangan terbaik dan bertanggung jawab atas keputusan",
+        "Menyerahkan ke orang lain",
+        "Membuat keputusan asal-asalan"
+      ],
+      "answer": 1,
+      "explanation": "ASN yang baik mampu membuat keputusan terbaik dengan informasi yang tersedia dan bertanggung jawab."
+    },
+    {
+      "q": "Anda merasa jenuh dengan rutinitas kerja. Sikap Anda:",
+      "options": [
+        "Bekerja seadanya",
+        "Mencari cara baru untuk membuat pekerjaan lebih menarik dan bermakna",
+        "Mengeluh setiap hari",
+        "Sering tidak masuk"
+      ],
+      "answer": 1,
+      "explanation": "ASN yang proaktif mencari inovasi dan makna dalam pekerjaan untuk menjaga motivasi."
+    },
+    {
+      "q": "Anda mendapat kesempatan untuk presentasi di depan pejabat tinggi. Persiapan Anda:",
+      "options": [
+        "Langsung tampil tanpa persiapan",
+        "Mempersiapkan materi dengan matang dan berlatih",
+        "Menyerahkan ke orang lain",
+        "Menghindari kesempatan"
+      ],
+      "answer": 1,
+      "explanation": "Profesionalisme berarti mempersiapkan diri dengan matang untuk setiap kesempatan dan tanggung jawab."
+    },
+    {
+      "q": "Kesehatan Anda terganggu akibat pola kerja yang buruk. Anda:",
+      "options": [
+        "Mengabaikannya",
+        "Mengatur ulang pola kerja, olahraga, dan menjaga kesehatan",
+        "Mengonsumsi obat terus-menerus",
+        "Mengeluh tanpa tindakan"
+      ],
+      "answer": 1,
+      "explanation": "Kesehatan adalah aset utama. ASN harus menjaga keseimbangan kerja dan kesehatan secara proaktif."
+    }
+  ]
+}

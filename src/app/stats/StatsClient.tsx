@@ -16,6 +16,11 @@ interface CloudStats {
 }
 
 const topicIcons: Record<string, string> = {
+  // SKD
+  pancasila: "⭐", uud_1945: "📜", nkri: "🏛️", sejarah_indonesia: "📖", tata_negara: "⚖️",
+  verbal: "📝", numerik: "🔢", logika: "🔍", figural: "🔷", analisis: "📊",
+  pelayanan_publik: "🤝", integritas: "🛡️", anti_korupsi: "⚖️", kerjasama: "👥", manajemen_diri: "🎯",
+  // SKB
   jaringan_komputer: "🌐", database: "🗄️", keamanan_informasi: "🔒",
   sistem_operasi: "⚙️", pemrograman_teori: "📝", hardware: "🔧",
   pedagogik: "📚", kepribadian_guru: "🧠", sosial: "🤝",

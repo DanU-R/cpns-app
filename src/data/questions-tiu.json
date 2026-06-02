@@ -1,0 +1,562 @@
+{
+  "verbal": [
+    {
+      "q": "Sinonim dari kata 'AKURAT' adalah...",
+      "options": [
+        "Meleset",
+        "Tepat",
+        "Kurang",
+        "Salah"
+      ],
+      "answer": 1,
+      "explanation": "Akurat = tepat, benar, cermat. Lawan katanya (antonim): meleset, kurang tepat."
+    },
+    {
+      "q": "Antonim dari kata 'DERAS' adalah...",
+      "options": [
+        "Kencang",
+        "Lambat",
+        "Cepat",
+        "Pandai"
+      ],
+      "answer": 1,
+      "explanation": "Deras = kencang, cepat (tentang aliran). Antonim: lambat, pelan."
+    },
+    {
+      "q": "ANALOGI: Kertas : Buku = Kayu : ...",
+      "options": [
+        "Hutan",
+        "Meja",
+        "Pohon",
+        "Serat"
+      ],
+      "answer": 1,
+      "explanation": "Kertas adalah bahan baku buku, kayu adalah bahan baku meja (bahan : produk)."
+    },
+    {
+      "q": "ANALOGI: Dokter : Stetoskop = Petani : ...",
+      "options": [
+        "Sawah",
+        "Cangkul",
+        "Panen",
+        "Padi"
+      ],
+      "answer": 1,
+      "explanation": "Dokter menggunakan stetoskop sebagai alat kerja, petani menggunakan cangkul sebagai alat kerja."
+    },
+    {
+      "q": "Sinonim dari kata 'VOKASI' adalah...",
+      "options": [
+        "Akademik",
+        "Kejuruan/Praktik",
+        "Teori",
+        "Administrasi"
+      ],
+      "answer": 1,
+      "explanation": "Vokasi = pendidikan kejuruan yang menekankan pada keterampilan praktik."
+    },
+    {
+      "q": "Antonim dari kata 'PLURALIS' adalah...",
+      "options": [
+        "Beragam",
+        "Tunggal",
+        "Bervariasi",
+        "Majemuk"
+      ],
+      "answer": 1,
+      "explanation": "Pluralis = jamak, banyak. Antonim: tunggal, singular."
+    },
+    {
+      "q": "ANALOGI: Air : Haus = Makanan : ...",
+      "options": [
+        "Minum",
+        "Lapar",
+        "Masak",
+        "Makan"
+      ],
+      "answer": 1,
+      "explanation": "Air menghilangkan haus, makanan menghilangkan lapar (sesuatu : kebutuhan yang dipenuhinya)."
+    },
+    {
+      "q": "Sinonim dari kata 'IMPLIKASI' adalah...",
+      "options": [
+        "Penjelasan",
+        "Konsekuensi",
+        "Pengurangan",
+        "Pemisahan"
+      ],
+      "answer": 1,
+      "explanation": "Implikasi = konsekuensi, dampak, akibat yang terkandung dalam sesuatu."
+    },
+    {
+      "q": "ANALOGI: Mata : Melihat = Telinga : ...",
+      "options": [
+        "Mendengar",
+        "Hidung",
+        "Mulut",
+        "Berbicara"
+      ],
+      "answer": 0,
+      "explanation": "Mata berfungsi untuk melihat, telinga berfungsi untuk mendengar (organ : fungsi)."
+    },
+    {
+      "q": "Antonim dari kata 'AMBIGU' adalah...",
+      "options": [
+        "Ragu",
+        "Jelas",
+        "Samar",
+        "Tidak pasti"
+      ],
+      "answer": 1,
+      "explanation": "Ambigu = bermakna ganda, tidak jelas. Antonim: jelas, tegas, pasti."
+    }
+  ],
+  "numerik": [
+    {
+      "q": "Deret angka: 2, 6, 18, 54, ... Angka berikutnya adalah...",
+      "options": [
+        "108",
+        "162",
+        "72",
+        "216"
+      ],
+      "answer": 1,
+      "explanation": "Pola: ×3 setiap langkah. 54 × 3 = 162."
+    },
+    {
+      "q": "Jika 3x + 7 = 22, maka x = ...",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 2,
+      "explanation": "3x + 7 = 22 → 3x = 15 → x = 5."
+    },
+    {
+      "q": "Deret angka: 1, 1, 2, 3, 5, 8, ... Angka berikutnya adalah...",
+      "options": [
+        "10",
+        "11",
+        "13",
+        "15"
+      ],
+      "answer": 2,
+      "explanation": "Deret Fibonacci: setiap angka = jumlah dua angka sebelumnya. 5 + 8 = 13."
+    },
+    {
+      "q": "25% dari 480 adalah...",
+      "options": [
+        "100",
+        "110",
+        "120",
+        "130"
+      ],
+      "answer": 2,
+      "explanation": "25% × 480 = 0.25 × 480 = 120."
+    },
+    {
+      "q": "Deret angka: 100, 95, 85, 70, 50, ... Angka berikutnya adalah...",
+      "options": [
+        "35",
+        "30",
+        "25",
+        "20"
+      ],
+      "answer": 2,
+      "explanation": "Pola selisih: -5, -10, -15, -20, -25. Jadi 50 - 25 = 25."
+    },
+    {
+      "q": "Harga barang Rp200.000 didiskon 15%. Harga setelah diskon adalah...",
+      "options": [
+        "Rp170.000",
+        "Rp175.000",
+        "Rp180.000",
+        "Rp185.000"
+      ],
+      "answer": 0,
+      "explanation": "Diskon = 15% × 200.000 = 30.000. Harga setelah diskon = 200.000 - 30.000 = 170.000."
+    },
+    {
+      "q": "Jika A = 3 dan B = 4, maka A² + B² = ...",
+      "options": [
+        "7",
+        "12",
+        "25",
+        "49"
+      ],
+      "answer": 2,
+      "explanation": "A² + B² = 9 + 16 = 25."
+    },
+    {
+      "q": "Deret angka: 4, 9, 16, 25, 36, ... Angka berikutnya adalah...",
+      "options": [
+        "42",
+        "45",
+        "49",
+        "64"
+      ],
+      "answer": 2,
+      "explanation": "Pola: kuadrat bilangan berurutan: 2², 3², 4², 5², 6², 7² = 49."
+    },
+    {
+      "q": "Rasio 180 : 45 dalam bentuk paling sederhana adalah...",
+      "options": [
+        "3 : 1",
+        "4 : 1",
+        "5 : 1",
+        "6 : 1"
+      ],
+      "answer": 1,
+      "explanation": "180 ÷ 45 = 4. Jadi rasio = 4 : 1."
+    },
+    {
+      "q": "Sebuah toko memberi untung 20% dari modal Rp500.000. Harga jualnya adalah...",
+      "options": [
+        "Rp550.000",
+        "Rp600.000",
+        "Rp650.000",
+        "Rp700.000"
+      ],
+      "answer": 1,
+      "explanation": "Untung = 20% × 500.000 = 100.000. Harga jual = 500.000 + 100.000 = 600.000."
+    }
+  ],
+  "logika": [
+    {
+      "q": "Premis 1: Semua kucing berkaki empat. Premis 2: Milo adalah kucing. Kesimpulan: ...",
+      "options": [
+        "Milo berkaki dua",
+        "Milo berkaki empat",
+        "Milo bukan kucing",
+        "Milo bisa terbang"
+      ],
+      "answer": 1,
+      "explanation": "Silogisme: Semua A adalah B, C adalah A, maka C adalah B. Milo adalah kucing, semua kucing berkaki empat → Milo berkaki empat."
+    },
+    {
+      "q": "Jika hujan, maka jalanan basah. Jalanan tidak basah. Kesimpulan: ...",
+      "options": [
+        "Hujan",
+        "Tidak hujan",
+        "Jalanan kering",
+        "Tidak bisa disimpulkan"
+      ],
+      "answer": 1,
+      "explanation": "Modus Tollens: Jika P maka Q. Tidak Q, maka tidak P. Jalanan tidak basah → tidak hujan."
+    },
+    {
+      "q": "Semua PNS bekerja di kantor. Sebagian PNS adalah wanita. Kesimpulan yang pasti benar: ...",
+      "options": [
+        "Semua wanita bekerja di kantor",
+        "Sebagian yang bekerja di kantor adalah wanita",
+        "Semua wanita adalah PNS",
+        "Tidak ada PNS di luar kantor"
+      ],
+      "answer": 1,
+      "explanation": "Sebagian PNS adalah wanita dan semua PNS bekerja di kantor → sebagian yang bekerja di kantor adalah wanita."
+    },
+    {
+      "q": "Tidak ada ikan yang bisa terbang. Semua burung bisa terbang. Kesimpulan: ...",
+      "options": [
+        "Semua ikan adalah burung",
+        "Tidak ada ikan yang merupakan burung",
+        "Sebagian burung adalah ikan",
+        "Ikan bisa berenang"
+      ],
+      "answer": 1,
+      "explanation": "Tidak ada A yang B. Semua C adalah B → Tidak ada A yang C. Tidak ada ikan yang merupakan burung."
+    },
+    {
+      "q": "Jika Budi rajin belajar, maka ia lulus ujian. Budi tidak lulus ujian. Kesimpulan: ...",
+      "options": [
+        "Budi rajin belajar",
+        "Budi tidak rajin belajar",
+        "Ujian terlalu sulit",
+        "Budi pintar"
+      ],
+      "answer": 1,
+      "explanation": "Modus Tollens: Jika P maka Q. Tidak Q → tidak P. Budi tidak lulus → Budi tidak rajin belajar."
+    },
+    {
+      "q": "Semua dokter lulusan kedokteran. Dr. Andi adalah dokter. Maka ...",
+      "options": [
+        "Dr. Andi tidak lulus kedokteran",
+        "Dr. Andi lulusan kedokteran",
+        "Dr. Andi bukan dokter",
+        "Tidak bisa disimpulkan"
+      ],
+      "answer": 1,
+      "explanation": "Semua A adalah B. C adalah A → C adalah B. Dr. Andi adalah dokter, semua dokter lulusan kedokteran → Dr. Andi lulusan kedokteran."
+    },
+    {
+      "q": "Jika nilai > 70 maka lulus. Ani nilai 65. Kesimpulan: ...",
+      "options": [
+        "Ani lulus",
+        "Ani tidak lulus",
+        "Ani nilai 70",
+        "Tidak bisa disimpulkan"
+      ],
+      "answer": 1,
+      "explanation": "Syarat lulus: nilai > 70. Ani nilai 65 (tidak > 70) → Ani tidak lulus."
+    },
+    {
+      "q": "Sebagian mahasiswa pintar. Semua yang pintar rajin. Kesimpulan: ...",
+      "options": [
+        "Semua mahasiswa rajin",
+        "Sebagian mahasiswa rajin",
+        "Tidak ada mahasiswa rajin",
+        "Semua yang rajin adalah mahasiswa"
+      ],
+      "answer": 1,
+      "explanation": "Sebagian A adalah B. Semua B adalah C → Sebagian A adalah C. Sebagian mahasiswa rajin."
+    },
+    {
+      "q": "Premis: Jika lampu merah, kendaraan berhenti. Kendaraan tidak berhenti. Kesimpulan: ...",
+      "options": [
+        "Lampu merah",
+        "Lampu tidak merah",
+        "Kendaraan rusak",
+        "Tidak bisa disimpulkan"
+      ],
+      "answer": 1,
+      "explanation": "Modus Tollens: Jika P maka Q. Tidak Q → tidak P. Kendaraan tidak berhenti → lampu tidak merah."
+    },
+    {
+      "q": "Semua burung punya sayap. Penguin adalah burung. Maka ...",
+      "options": [
+        "Penguin tidak punya sayap",
+        "Penguin punya sayap",
+        "Penguin bukan burung",
+        "Penguin bisa terbang"
+      ],
+      "answer": 1,
+      "explanation": "Semua A adalah B. C adalah A → C adalah B. Penguin adalah burung, semua burung punya sayap → penguin punya sayap."
+    }
+  ],
+  "figural": [
+    {
+      "q": "Jika pola: □, △, ○, □, △, ○, ... Bentuk ke-7 adalah...",
+      "options": [
+        "□",
+        "△",
+        "○",
+        "Tidak ada"
+      ],
+      "answer": 0,
+      "explanation": "Pola berulang setiap 3: □△○, □△○, □... Bentuk ke-7 = □."
+    },
+    {
+      "q": "Dalam deret gambar: segitiga(3 sisi), segiempat(4), segilima(5), ... Bentuk berikutnya memiliki ... sisi",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": 1,
+      "explanation": "Pola: jumlah sisi bertambah 1. Segilima(5) → segienam(6)."
+    },
+    {
+      "q": "Jika A > B dan B > C, maka hubungan A dan C adalah...",
+      "options": [
+        "A = C",
+        "A < C",
+        "A > C",
+        "Tidak bisa ditentukan"
+      ],
+      "answer": 2,
+      "explanation": "Sifat transitif: jika A > B dan B > C, maka A > C."
+    },
+    {
+      "q": "Pola angka: 1, 4, 9, 16, 25. Bentuk berikutnya adalah...",
+      "options": [
+        "30",
+        "36",
+        "49",
+        "35"
+      ],
+      "answer": 1,
+      "explanation": "Pola kuadrat: 1², 2², 3², 4², 5², 6² = 36."
+    },
+    {
+      "q": "Jika sebuah kubus memiliki 6 sisi, maka dua kubus memiliki ... sisi total",
+      "options": [
+        "6",
+        "10",
+        "12",
+        "14"
+      ],
+      "answer": 2,
+      "explanation": "1 kubus = 6 sisi. 2 kubus = 12 sisi (masing-masing kubus tetap punya 6 sisi)."
+    },
+    {
+      "q": "Dalam pola: ▲, ▲▼, ▲▼▲, ▲▼▲▼, ... Suku ke-5 adalah...",
+      "options": [
+        "▲▼▲",
+        "▲▼▲▼▲",
+        "▼▲▼▲▼",
+        "▲▲▲▲▲"
+      ],
+      "answer": 1,
+      "explanation": "Pola bergantian menambah ▲ lalu ▼: ▲, ▲▼, ▲▼▲, ▲▼▲▼, ▲▼▲▼▲."
+    },
+    {
+      "q": "Jika 3 kotak berisi 12 bola, maka 5 kotak berisi ... bola",
+      "options": [
+        "15",
+        "18",
+        "20",
+        "24"
+      ],
+      "answer": 2,
+      "explanation": "Perbandingan: 3 kotak = 12 bola → 1 kotak = 4 bola. 5 kotak = 20 bola."
+    },
+    {
+      "q": "Pola: 2, 5, 10, 17, 26, ... Angka berikutnya adalah...",
+      "options": [
+        "33",
+        "35",
+        "37",
+        "40"
+      ],
+      "answer": 2,
+      "explanation": "Selisih: +3, +5, +7, +9, +11. Jadi 26 + 11 = 37."
+    },
+    {
+      "q": "Jika sebuah persegi panjang memiliki panjang 8 cm dan lebar 5 cm, maka luasnya adalah...",
+      "options": [
+        "13 cm²",
+        "26 cm²",
+        "40 cm²",
+        "80 cm²"
+      ],
+      "answer": 2,
+      "explanation": "Luas persegi panjang = p × l = 8 × 5 = 40 cm²."
+    },
+    {
+      "q": "Dalam pola rotasi: ↑, →, ↓, ←, ↑, ... Arah berikutnya setelah ↑ ke-2 adalah...",
+      "options": [
+        "→",
+        "↓",
+        "←",
+        "↑"
+      ],
+      "answer": 0,
+      "explanation": "Pola rotasi 90° searah jarum jam: ↑ → ↓ ← ↑ → ... Arah setelah ↑ adalah →."
+    }
+  ],
+  "analisis": [
+    {
+      "q": "Rata-rata dari 4, 8, 12, 16, 20 adalah...",
+      "options": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "answer": 1,
+      "explanation": "Mean = (4+8+12+16+20) / 5 = 60 / 5 = 12."
+    },
+    {
+      "q": "Median dari data: 3, 7, 1, 9, 5 adalah...",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "answer": 1,
+      "explanation": "Urutkan: 1, 3, 5, 7, 9. Median (nilai tengah) = 5."
+    },
+    {
+      "q": "Jika 5 orang menyelesaikan pekerjaan dalam 10 hari, maka 10 orang menyelesaikan dalam ... hari",
+      "options": [
+        "5",
+        "10",
+        "20",
+        "50"
+      ],
+      "answer": 0,
+      "explanation": "Perbandingan berbalik: 5 orang × 10 hari = 50 orang-hari. 50 / 10 orang = 5 hari."
+    },
+    {
+      "q": "Sebuah toko menjual 200 barang/hari. Dalam seminggu (7 hari) terjual ... barang",
+      "options": [
+        "1.200",
+        "1.400",
+        "1.600",
+        "2.000"
+      ],
+      "answer": 1,
+      "explanation": "200 × 7 = 1.400 barang."
+    },
+    {
+      "q": "Dari 40 siswa, 25 suka matematika dan 20 suka IPA. Minimal ... siswa suka keduanya",
+      "options": [
+        "0",
+        "5",
+        "10",
+        "15"
+      ],
+      "answer": 1,
+      "explanation": "Prinsip inklusi-eksklusi: |A∪B| = |A| + |B| - |A∩B|. Max |A∪B| = 40. 25 + 20 - x ≤ 40 → x ≥ 5."
+    },
+    {
+      "q": "Perbandingan umur Ani dan Budi 3:5. Jika umur Budi 25 tahun, umur Ani adalah...",
+      "options": [
+        "10 tahun",
+        "15 tahun",
+        "20 tahun",
+        "30 tahun"
+      ],
+      "answer": 1,
+      "explanation": "3:5 = x:25 → x = (3×25)/5 = 15 tahun."
+    },
+    {
+      "q": "Kecepatan mobil 60 km/jam. Waktu yang dibutuhkan untuk menempuh 150 km adalah...",
+      "options": [
+        "1,5 jam",
+        "2 jam",
+        "2,5 jam",
+        "3 jam"
+      ],
+      "answer": 2,
+      "explanation": "Waktu = Jarak / Kecepatan = 150 / 60 = 2,5 jam."
+    },
+    {
+      "q": "Modus dari data: 2, 3, 3, 5, 7, 3, 8 adalah...",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "7"
+      ],
+      "answer": 1,
+      "explanation": "Modus = nilai yang paling sering muncul. Angka 3 muncul 3 kali (paling banyak)."
+    },
+    {
+      "q": "Jika diskon 30% dan harga setelah diskon Rp350.000, maka harga awal adalah...",
+      "options": [
+        "Rp400.000",
+        "Rp500.000",
+        "Rp450.000",
+        "Rp550.000"
+      ],
+      "answer": 1,
+      "explanation": "70% dari harga awal = 350.000 → Harga awal = 350.000 / 0.7 = 500.000."
+    },
+    {
+      "q": "Sebuah kelas memiliki rata-rata 75. Jika 3 siswa mendapat nilai 90, rata-rata naik jadi 78. Jumlah siswa semula adalah...",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "20"
+      ],
+      "answer": 1,
+      "explanation": "Misal n siswa. 75n + 270 = 78(n+3) → 75n + 270 = 78n + 234 → 3n = 36 → n = 12."
+    }
+  ]
+}
