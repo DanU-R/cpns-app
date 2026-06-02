@@ -1,0 +1,539 @@
+{
+  "jaringan_komputer": [
+    {
+      "q": "Model referensi OSI memiliki berapa layer?",
+      "options": ["4 layer", "5 layer", "6 layer", "7 layer"],
+      "answer": 3,
+      "explanation": "OSI (Open Systems Interconnection) memiliki 7 layer: Physical, Data Link, Network, Transport, Session, Presentation, Application."
+    },
+    {
+      "q": "Protokol yang digunakan untuk mentransfer halaman web adalah...",
+      "options": ["FTP", "SMTP", "HTTP", "SSH"],
+      "answer": 2,
+      "explanation": "HTTP (HyperText Transfer Protocol) digunakan untuk mentransfer halaman web antara browser dan server."
+    },
+    {
+      "q": "Alamat IP 192.168.1.0/24 memiliki berapa host yang bisa digunakan?",
+      "options": ["254 host", "256 host", "512 host", "128 host"],
+      "answer": 0,
+      "explanation": "/24 berarti 8 bit untuk host = 2^8 = 256. Dikurangi network address dan broadcast = 254 host usable."
+    },
+    {
+      "q": "Subnet mask untuk CIDR /26 adalah...",
+      "options": ["255.255.255.0", "255.255.255.128", "255.255.255.192", "255.255.255.224"],
+      "answer": 2,
+      "explanation": "/26 = 255.255.255.192 (11111111.11111111.11111111.11000000)."
+    },
+    {
+      "q": "Serangan Man-in-the-Middle (MITM) terjadi pada layer OSI...",
+      "options": ["Layer 2 (Data Link)", "Layer 3 (Network)", "Layer 4 (Transport)", "Layer 7 (Application)"],
+      "answer": 2,
+      "explanation": "MITM umumnya terjadi di Layer 4 (Transport) atau Layer 7 (Application), tergantung jenis serangan. Namun serangan ARP spoofing yang umum terjadi di Layer 2. Dalam konteks CAT CPNS, jawaban yang sering benar adalah Layer 4."
+    },
+    {
+      "q": "Protokol DHCP berfungsi untuk...",
+      "options": ["Mengamankan jaringan", "Memberikan IP address otomatis", "Menerjemahkan nama domain", "Mengenkripsi data"],
+      "answer": 1,
+      "explanation": "DHCP (Dynamic Host Configuration Protocol) memberikan IP address, subnet mask, gateway, dan DNS secara otomatis ke client."
+    },
+    {
+      "q": "Perangkat jaringan yang menghubungkan dua jaringan berbeda dan melakukan routing adalah...",
+      "options": ["Switch", "Hub", "Router", "Repeater"],
+      "answer": 2,
+      "explanation": "Router menghubungkan jaringan berbeda dan melakukan routing paket data berdasarkan IP address tujuan."
+    },
+    {
+      "q": "Port default untuk protokol SSH adalah...",
+      "options": ["21", "22", "23", "80"],
+      "answer": 1,
+      "explanation": "SSH menggunakan port 22. Port 21 untuk FTP, 23 untuk Telnet, 80 untuk HTTP."
+    },
+    {
+      "q": "VLAN (Virtual LAN) bekerja pada layer OSI...",
+      "options": ["Layer 1 - Physical", "Layer 2 - Data Link", "Layer 3 - Network", "Layer 4 - Transport"],
+      "answer": 1,
+      "explanation": "VLAN bekerja di Layer 2 (Data Link) menggunakan MAC address dan tagging 802.1Q."
+    },
+    {
+      "q": "Protokol yang digunakan untuk menerjemahkan nama domain ke IP address adalah...",
+      "options": ["DHCP", "DNS", "ARP", "SNMP"],
+      "answer": 1,
+      "explanation": "DNS (Domain Name System) menerjemahkan nama domain (contoh: google.com) ke IP address."
+    },
+    {
+      "q": "IPv6 memiliki panjang alamat...",
+      "options": ["32 bit", "64 bit", "128 bit", "256 bit"],
+      "answer": 2,
+      "explanation": "IPv6 menggunakan 128 bit address, sedangkan IPv4 hanya 32 bit."
+    },
+    {
+      "q": "Perangkat yang bekerja pada Layer 1 OSI dan hanya memperkuat sinyal adalah...",
+      "options": ["Switch", "Router", "Hub", "Bridge"],
+      "answer": 2,
+      "explanation": "Hub/Repeater bekerja di Layer 1 (Physical) dan hanya memperkuat/mengulang sinyal tanpa filtering."
+    },
+    {
+      "q": "Protokol NAT (Network Address Translation) berfungsi untuk...",
+      "options": ["Mengenkripsi data", "Menerjemahkan IP privat ke publik", "Mengatur bandwidth", "Memfilter traffic"],
+      "answer": 1,
+      "explanation": "NAT menerjemahkan IP address privat (lokal) ke IP address publik (internet) dan sebaliknya."
+    },
+    {
+      "q": "Kabel UTP kategori 5e memiliki kecepatan maksimum...",
+      "options": ["10 Mbps", "100 Mbps", "1 Gbps", "10 Gbps"],
+      "answer": 2,
+      "explanation": "Cat 5e mendukung Gigabit Ethernet (1 Gbps) hingga 100 meter. Cat 6 mendukung 10 Gbps."
+    },
+    {
+      "q": "Firewall berfungsi untuk...",
+      "options": ["Mempercepat koneksi internet", "Memfilter traffic masuk/keluar jaringan", "Memberikan IP otomatis", "Menghubungkan WiFi"],
+      "answer": 1,
+      "explanation": "Firewall memfilter traffic jaringan berdasarkan aturan (rule) yang ditetapkan untuk keamanan."
+    }
+  ],
+  "database": [
+    {
+      "q": "Normalisasi database hingga bentuk ke-3 (3NF) berarti...",
+      "options": [
+        "Tidak ada duplikasi data sama sekali",
+        "Tidak ada ketergantungan transitif pada kunci utama",
+        "Semua kolom bertipe data sama",
+        "Tabel memiliki minimal 3 kolom"
+      ],
+      "answer": 1,
+      "explanation": "3NF berarti tidak ada ketergantungan transitif (non-key attribute tidak bergantung pada non-key attribute lain)."
+    },
+    {
+      "q": "Perintah SQL untuk mengambil data dari tabel adalah...",
+      "options": ["GET", "FETCH", "SELECT", "RETRIEVE"],
+      "answer": 2,
+      "explanation": "SELECT adalah perintah SQL standar untuk mengambil data dari tabel."
+    },
+    {
+      "q": "Primary key dalam tabel database berfungsi untuk...",
+      "options": [
+        "Menghubungkan dua tabel",
+        "Mengidentifikasi setiap baris secara unik",
+        "Mengurutkan data",
+        "Menyimpan data cadangan"
+      ],
+      "answer": 1,
+      "explanation": "Primary key mengidentifikasi setiap record secara unik dan tidak boleh ada nilai yang sama atau NULL."
+    },
+    {
+      "q": "JOIN yang mengembalikan semua baris dari tabel kiri dan yang cocok dari tabel kanan adalah...",
+      "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL JOIN"],
+      "answer": 1,
+      "explanation": "LEFT JOIN mengembalikan semua baris dari tabel kiri + baris yang cocok dari tabel kanan (NULL jika tidak cocok)."
+    },
+    {
+      "q": "Perintah SQL untuk menambahkan data baru ke tabel adalah...",
+      "options": ["ADD", "INSERT", "APPEND", "CREATE"],
+      "answer": 1,
+      "explanation": "INSERT INTO digunakan untuk menambahkan record baru ke tabel."
+    },
+    {
+      "q": "Foreign key berfungsi untuk...",
+      "options": [
+        "Mengidentifikasi record unik",
+        "Menghubungkan dua tabel berdasarkan primary key",
+        "Mengamankan data",
+        "Mengindeks tabel"
+      ],
+      "answer": 1,
+      "explanation": "Foreign key menghubungkan dua tabel dengan merujuk ke primary key tabel lain."
+    },
+    {
+      "q": "Tipe data yang paling efisien untuk menyimpan status 'AKTIF' atau 'NONAKTIF' adalah...",
+      "options": ["VARCHAR(50)", "INT", "BOOLEAN/TINYINT", "TEXT"],
+      "answer": 2,
+      "explanation": "BOOLEAN atau TINYINT paling efisien untuk data biner (2 kemungkinan nilai)."
+    },
+    {
+      "q": "Perintah SQL untuk menghapus tabel beserta strukturnya adalah...",
+      "options": ["DELETE TABLE", "REMOVE TABLE", "DROP TABLE", "ERASE TABLE"],
+      "answer": 2,
+      "explanation": "DROP TABLE menghapus tabel beserta struktur, data, dan indeks. DELETE hanya menghapus data."
+    },
+    {
+      "q": "Index pada database berfungsi untuk...",
+      "options": [
+        "Mengamankan data",
+        "Mempercepat proses pencarian/query",
+        "Menghemat ruang penyimpanan",
+        "Menggandakan data"
+      ],
+      "answer": 1,
+      "explanation": "Index mempercepat proses pencarian data namun menambah overhead pada operasi INSERT/UPDATE."
+    },
+    {
+      "q": "Perintah SQL untuk mengubah data yang sudah ada adalah...",
+      "options": ["CHANGE", "MODIFY", "UPDATE", "ALTER"],
+      "answer": 2,
+      "explanation": "UPDATE mengubah data existing. ALTER mengubah struktur tabel."
+    },
+    {
+      "q": "ACID dalam transaksi database singkatan dari...",
+      "options": [
+        "Atomicity, Consistency, Isolation, Durability",
+        "Access, Control, Integrity, Data",
+        "Automatic, Consistent, Independent, Dynamic",
+        "Authentication, Compression, Integration, Distribution"
+      ],
+      "answer": 0,
+      "explanation": "ACID = Atomicity (semua atau tidak sama sekali), Consistency (data tetap valid), Isolation (transaksi terpisah), Durability (permanen setelah commit)."
+    },
+    {
+      "q": "Perbedaan utama antara SQL dan NoSQL adalah...",
+      "options": [
+        "SQL lebih cepat dari NoSQL",
+        "SQL menggunakan tabel relasional, NoSQL fleksibel (dokumen, key-value, dll)",
+        "NoSQL tidak bisa menyimpan data",
+        "SQL hanya untuk data kecil"
+      ],
+      "answer": 1,
+      "explanation": "SQL berbasis tabel relasional dengan skema tetap. NoSQL lebih fleksibel (dokumen, key-value, column-family, graph)."
+    }
+  ],
+  "keamanan_informasi": [
+    {
+      "q": "Enkripsi yang menggunakan kunci yang sama untuk enkripsi dan dekripsi disebut...",
+      "options": ["Asymmetric encryption", "Symmetric encryption", "Hash encryption", "Public key encryption"],
+      "answer": 1,
+      "explanation": "Symmetric encryption menggunakan satu kunci yang sama untuk enkripsi dan dekripsi (contoh: AES, DES)."
+    },
+    {
+      "q": "Serangan DDoS bertujuan untuk...",
+      "options": [
+        "Mencuri data pengguna",
+        "Membuat server tidak bisa diakses (down)",
+        "Mengubah data di database",
+        "Mendengarkan komunikasi"
+      ],
+      "answer": 1,
+      "explanation": "DDoS (Distributed Denial of Service) membanjiri server dengan traffic sehingga tidak bisa melayani user legitimate."
+    },
+    {
+      "q": "SSL/TLS digunakan untuk...",
+      "options": [
+        "Mengompresi data",
+        "Mengamankan komunikasi antara client dan server",
+        "Mempercepat loading website",
+        "Menyimpan password"
+      ],
+      "answer": 1,
+      "explanation": "SSL/TLS mengenkripsi komunikasi antara browser dan server (ditandai dengan https dan gembok)."
+    },
+    {
+      "q": "Phishing adalah serangan yang bertujuan untuk...",
+      "options": [
+        "Menghancurkan server",
+        "Menipu pengguna agar memberikan informasi sensitif",
+        "Menginstal virus otomatis",
+        "Memblokir akses internet"
+      ],
+      "answer": 1,
+      "explanation": "Phishing menggunakan email/website palsu untuk menipu pengguna agar memberikan password, data kartu kredit, dll."
+    },
+    {
+      "q": "Hash function dalam keamanan data bersifat...",
+      "options": [
+        "Bisa dikembalikan (reversible)",
+        "Satu arah (one-way), tidak bisa dikembalikan",
+        "Menggunakan kunci publik",
+        "Hanya untuk file kecil"
+      ],
+      "answer": 1,
+      "explanation": "Hash function bersifat one-way — data yang sudah di-hash tidak bisa dikembalikan ke bentuk asli."
+    },
+    {
+      "q": "Two-Factor Authentication (2FA) membutuhkan...",
+      "options": [
+        "Dua password berbeda",
+        "Dua jenis verifikasi berbeda (misal: password + OTP)",
+        "Dua username",
+        "Dua perangkat yang sama"
+      ],
+      "answer": 1,
+      "explanation": "2FA menggabungkan dua faktor: sesuatu yang kamu tahu (password) + sesuatu yang kamu punya (HP/token)."
+    },
+    {
+      "q": "Serangan SQL Injection bertujuan untuk...",
+      "options": [
+        "Membuat website lebih cepat",
+        "Menyisipkan perintah SQL berbahaya melalui input pengguna",
+        "Menghapus database secara otomatis",
+        "Mengganti tampilan website"
+      ],
+      "answer": 1,
+      "explanation": "SQL Injection menyisipkan kode SQL melalui form/input untuk memanipulasi atau mengakses database."
+    },
+    {
+      "q": "Malware yang mengunci file dan meminta tebusan disebut...",
+      "options": ["Virus", "Worm", "Ransomware", "Trojan"],
+      "answer": 2,
+      "explanation": "Ransomware mengenkripsi file korban dan meminta uang tebusan untuk membuka kunci."
+    },
+    {
+      "q": "CIA Triad dalam keamanan informasi terdiri dari...",
+      "options": [
+        "Confidentiality, Integrity, Availability",
+        "Control, Identification, Access",
+        "Communication, Integration, Authentication",
+        "Cryptography, Identity, Authorization"
+      ],
+      "answer": 0,
+      "explanation": "CIA Triad = Confidentiality (kerahasiaan), Integrity (keutuhan data), Availability (ketersediaan)."
+    },
+    {
+      "q": "Firewall tipe yang bisa inspeksi hingga layer aplikasi adalah...",
+      "options": [
+        "Packet Filtering Firewall",
+        "Stateful Firewall",
+        "Application Layer Firewall (Proxy)",
+        "Circuit Level Gateway"
+      ],
+      "answer": 2,
+      "explanation": "Application Layer Firewall (Proxy) bisa inspeksi konten hingga level aplikasi (Layer 7 OSI)."
+    }
+  ],
+  "sistem_operasi": [
+    {
+      "q": "Perintah Linux untuk melihat daftar proses yang sedang berjalan adalah...",
+      "options": ["ls", "ps", "cd", "mkdir"],
+      "answer": 1,
+      "explanation": "ps (process status) menampilkan daftar proses yang sedang berjalan."
+    },
+    {
+      "q": "Perintah Linux untuk mengubah hak akses file adalah...",
+      "options": ["chown", "chmod", "chgrp", "chattr"],
+      "answer": 1,
+      "explanation": "chmod (change mode) mengubah permission file (read/write/execute)."
+    },
+    {
+      "q": "File permission '755' dalam Linux berarti...",
+      "options": [
+        "Owner: read/write, Group: read, Others: read",
+        "Owner: read/write/execute, Group: read/execute, Others: read/execute",
+        "Semua orang bisa read/write/execute",
+        "Hanya owner yang bisa akses"
+      ],
+      "answer": 1,
+      "explanation": "755 = rwxr-xr-x (owner penuh, group & others baca & eksekusi)."
+    },
+    {
+      "q": "Kernel dalam sistem operasi berfungsi sebagai...",
+      "options": [
+        "Antarmuka grafis pengguna",
+        "Inti OS yang mengelola hardware dan proses",
+        "Penyimpanan file",
+        "Browser bawaan"
+      ],
+      "answer": 1,
+      "explanation": "Kernel adalah inti OS yang mengelola CPU, memori, device, dan proses."
+    },
+    {
+      "q": "Perintah Linux untuk melihat isi direktori adalah...",
+      "options": ["dir", "ls", "show", "view"],
+      "answer": 1,
+      "explanation": "ls (list) menampilkan isi direktori. 'dir' juga bisa di beberapa distro tapi 'ls' lebih universal."
+    },
+    {
+      "q": "RAM (Random Access Memory) bersifat...",
+      "options": [
+        "Menyimpan data permanen",
+        "Menyimpan data sementara (volatile)",
+        "Hanya untuk menyimpan OS",
+        "Tidak bisa dihapus"
+      ],
+      "answer": 1,
+      "explanation": "RAM bersifat volatile — data hilang saat komputer dimatikan."
+    },
+    {
+      "q": "Perintah Linux untuk membuat direktori baru adalah...",
+      "options": ["newdir", "mkdir", "createdir", "makedir"],
+      "answer": 1,
+      "explanation": "mkdir (make directory) membuat direktori baru."
+    },
+    {
+      "q": "Proses yang berjalan di background tanpa interaksi user disebut...",
+      "options": ["Thread", "Daemon", "Service", "Task"],
+      "answer": 1,
+      "explanation": "Daemon adalah proses yang berjalan di background di Linux (di Windows disebut Service)."
+    },
+    {
+      "q": "Sistem file Linux yang paling umum digunakan adalah...",
+      "options": ["NTFS", "FAT32", "ext4", "HFS+"],
+      "answer": 2,
+      "explanation": "ext4 adalah filesystem default untuk sebagian besar distribusi Linux modern."
+    },
+    {
+      "q": "Perintah Linux untuk melihat penggunaan ruang disk adalah...",
+      "options": ["meminfo", "df", "diskusage", "showdisk"],
+      "answer": 1,
+      "explanation": "df (disk free) menampilkan penggunaan ruang disk. 'df -h' untuk format human-readable."
+    }
+  ],
+  "pemrograman_teori": [
+    {
+      "q": "Paradigma pemrograman yang menggunakan objek dan class disebut...",
+      "options": ["Functional programming", "Procedural programming", "Object-Oriented Programming (OOP)", "Logic programming"],
+      "answer": 2,
+      "explanation": "OOP menggunakan konsep class, object, inheritance, encapsulation, dan polymorphism."
+    },
+    {
+      "q": "Struktur data yang mengikuti prinsip FIFO (First In First Out) adalah...",
+      "options": ["Stack", "Queue", "Array", "Tree"],
+      "answer": 1,
+      "explanation": "Queue (antrian) mengikuti FIFO — elemen pertama masuk, pertama keluar."
+    },
+    {
+      "q": "Struktur data yang mengikuti prinsip LIFO (Last In First Out) adalah...",
+      "options": ["Queue", "Array", "Stack", "Linked List"],
+      "answer": 2,
+      "explanation": "Stack (tumpukan) mengikuti LIFO — elemen terakhir masuk, pertama keluar."
+    },
+    {
+      "q": "Algoritma sorting dengan kompleksitas rata-rata O(n log n) adalah...",
+      "options": ["Bubble Sort", "Insertion Sort", "Merge Sort", "Selection Sort"],
+      "answer": 2,
+      "explanation": "Merge Sort memiliki kompleksitas O(n log n) untuk best, average, dan worst case."
+    },
+    {
+      "q": "Bahasa pemrograman yang dikompilasi (compiled) contohnya adalah...",
+      "options": ["Python", "JavaScript", "C/C++", "PHP"],
+      "answer": 2,
+      "explanation": "C/C++ adalah bahasa compiled — kode sumber dikompilasi ke bahasa mesin sebelum dieksekusi."
+    },
+    {
+      "q": "API (Application Programming Interface) berfungsi untuk...",
+      "options": [
+        "Menampilkan antarmuka grafis",
+        "Menghubungkan dua aplikasi/sistem untuk saling berkomunikasi",
+        "Menyimpan data di database",
+        "Mengompresi file"
+      ],
+      "answer": 1,
+      "explanation": "API memungkinkan aplikasi yang berbeda untuk saling berkomunikasi dan bertukar data."
+    },
+    {
+      "q": "Git adalah alat yang digunakan untuk...",
+      "options": [
+        "Membuat website",
+        "Version control sistem (mengelola perubahan kode)",
+        "Mengedit gambar",
+        "Menjalankan database"
+      ],
+      "answer": 1,
+      "explanation": "Git adalah distributed version control system untuk melacak perubahan pada kode sumber."
+    },
+    {
+      "q": "REST API menggunakan protokol...",
+      "options": ["FTP", "SMTP", "HTTP/HTTPS", "TCP"],
+      "answer": 2,
+      "explanation": "REST API berjalan di atas protokol HTTP/HTTPS dengan metode GET, POST, PUT, DELETE."
+    },
+    {
+      "q": "Konsep DRY dalam pemrograman berarti...",
+      "options": [
+        "Don't Repeat Yourself",
+        "Data Ready for You",
+        "Direct Run Year",
+        "Dynamic Resource Yield"
+      ],
+      "answer": 0,
+      "explanation": "DRY = Don't Repeat Yourself — hindari duplikasi kode, gunakan fungsi/modul yang reusable."
+    },
+    {
+      "q": "JSON (JavaScript Object Notation) digunakan untuk...",
+      "options": [
+        "Membuat animasi web",
+        "Format pertukaran data antar sistem",
+        "Mengelola database",
+        "Membuat antarmuka pengguna"
+      ],
+      "answer": 1,
+      "explanation": "JSON adalah format ringan untuk pertukaran data, mudah dibaca manusia dan diproses mesin."
+    }
+  ],
+  "hardware": [
+    {
+      "q": "Komponen komputer yang berfungsi sebagai 'otak' pemrosesan data adalah...",
+      "options": ["RAM", "Harddisk", "CPU/Processor", "VGA Card"],
+      "answer": 2,
+      "explanation": "CPU (Central Processing Unit) memproses semua instruksi dan perhitungan data."
+    },
+    {
+      "q": "SSD berbeda dari HDD karena...",
+      "options": [
+        "SSD lebih lambat",
+        "SSD menggunakan chip flash tanpa bagian bergerak",
+        "SSD lebih besar kapasitasnya",
+        "SSD hanya untuk laptop"
+      ],
+      "answer": 1,
+      "explanation": "SSD menggunakan NAND flash memory tanpa piringan berputar, sehingga lebih cepat dan tahan guncangan."
+    },
+    {
+      "q": "Fungsi PSU (Power Supply Unit) adalah...",
+      "options": [
+        "Menyimpan data",
+        "Mengubah arus AC menjadi DC untuk komponen komputer",
+        "Memproses data grafis",
+        "Menghubungkan ke internet"
+      ],
+      "answer": 1,
+      "explanation": "PSU mengubah listrik AC dari stopkontak menjadi DC yang dibutuhkan komponen komputer."
+    },
+    {
+      "q": "RAM DDR4 memiliki kecepatan transfer data lebih tinggi dibanding DDR3 karena...",
+      "options": [
+        "Kapasitas lebih besar",
+        "Frekuensi clock lebih tinggi dan voltase lebih rendah",
+        "Ukuran fisik lebih besar",
+        "Menggunakan lebih banyak pin"
+      ],
+      "answer": 1,
+      "explanation": "DDR4 beroperasi pada frekuensi lebih tinggi (2133-3200+ MHz) dengan voltase lebih rendah (1.2V)."
+    },
+    {
+      "q": "Motherboard berfungsi sebagai...",
+      "options": [
+        "Penyimpan data utama",
+        "Papan sirkuit utama yang menghubungkan semua komponen",
+        "Pendingin komputer",
+        "Sumber listrik"
+      ],
+      "answer": 1,
+      "explanation": "Motherboard adalah papan sirkuit utama tempat CPU, RAM, storage, dan komponen lain terhubung."
+    },
+    {
+      "q": "GPU (Graphics Processing Unit) dioptimalkan untuk...",
+      "options": [
+        "Menjalankan sistem operasi",
+        "Memproses data grafis dan komputasi paralel",
+        "Menyimpan file",
+        "Mengatur jaringan"
+      ],
+      "answer": 1,
+      "explanation": "GPU dirancang untuk rendering grafis dan komputasi paralel massal."
+    },
+    {
+      "q": "BIOS/UEFI dalam komputer berfungsi untuk...",
+      "options": [
+        "Menjalankan aplikasi",
+        "Menginisialisasi hardware saat boot dan memuat OS",
+        "Mengamankan data",
+        "Mengatur koneksi WiFi"
+      ],
+      "answer": 1,
+      "explanation": "BIOS/UEFI adalah firmware yang menginisialisasi hardware saat startup dan memuat sistem operasi."
+    },
+    {
+      "q": "Perangkat input yang menggunakan sensor cahaya untuk mendeteksi gerakan adalah...",
+      "options": ["Keyboard", "Mouse optik", "Touchpad", "Scanner"],
+      "answer": 1,
+      "explanation": "Mouse optik menggunakan sensor LED/laser untuk mendeteksi gerakan pada permukaan."
+    }
+  ]
+}
