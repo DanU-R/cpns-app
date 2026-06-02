@@ -14,6 +14,15 @@ interface CloudStats {
   recentSessions: { id: string; email: string | null; date: string; mode: string; topic: string | null; total: number; correct: number }[];
 }
 
+const topicIcons: Record<string, string> = {
+  jaringan_komputer: "🌐",
+  database: "🗄️",
+  keamanan_informasi: "🔒",
+  sistem_operasi: "💻",
+  pemrograman_teori: "📝",
+  hardware: "🔧",
+};
+
 export default function StatsClient() {
   const searchParams = useSearchParams();
   const urlEmail = searchParams.get("email");
@@ -37,7 +46,7 @@ export default function StatsClient() {
   }, [email]);
 
   const handleClearLocal = () => {
-    if (confirm("Yakin reset semua progress lokal?")) {
+    if (confirm("Reset semua progress lokal?")) {
       clearProgress();
       window.location.reload();
     }
@@ -45,77 +54,96 @@ export default function StatsClient() {
 
   const displayStats = cloudStats || { ...localStats, topicStats: Object.entries(localStats.topicStats).map(([topic, s]) => ({ topic, ...s })), recentSessions: localStats.recentSessions };
   const isCloud = !!cloudStats;
+  const accuracy = displayStats.totalQuestions > 0 ? (displayStats.totalCorrect / displayStats.totalQuestions) * 100 : 0;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8 animate-fadeIn">
+      {/* Header */}
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-gray-800">
-          📊 Statistik Belajar {isCloud ? "(Cloud)" : "(Lokal)"}
-        </h1>
+        <div>
+          <h1 className="text-2xl font-bold">Statistik</h1>
+          <p className="text-sm text-[var(--muted)] mt-0.5">
+            {isCloud ? `Cloud (${email})` : "Lokal"}
+          </p>
+        </div>
         {!isCloud && localStats.totalSessions > 0 && (
-          <button onClick={handleClearLocal} className="text-sm text-red-500 hover:text-red-700 underline">
-            Reset Progress
+          <button onClick={handleClearLocal} className="text-sm text-[var(--danger)] hover:underline">
+            Reset
           </button>
         )}
       </div>
 
       {!email && (
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm text-blue-800">
-          <p className="font-semibold mb-1">☁️ Lihat statistik cloud?</p>
-          <p>Tambahkan <code className="bg-blue-100 px-1 rounded">?email=kamu@email.com</code> di URL.</p>
+        <div className="card p-4 flex items-start gap-3">
+          <div className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center shrink-0">☁️</div>
+          <div>
+            <p className="text-sm font-medium">Lihat statistik cloud</p>
+            <p className="text-xs text-[var(--muted)] mt-0.5">Isi email di <Link href="/" className="text-[var(--primary)] hover:underline">beranda</Link> untuk sync.</p>
+          </div>
         </div>
       )}
 
-      {loading && <div className="text-center py-8 text-gray-500">Memuat statistik cloud...</div>}
-
-      {displayStats.totalSessions === 0 && !loading ? (
-        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 text-center">
-          <p className="text-gray-500 text-lg mb-4">Belum ada riwayat latihan</p>
-          <Link href="/quiz?mode=all" className="text-indigo-600 hover:underline">
-            Mulai latihan sekarang →
-          </Link>
+      {loading && (
+        <div className="text-center py-12">
+          <div className="animate-spin w-6 h-6 border-2 border-[var(--primary)] border-t-transparent rounded-full mx-auto mb-3" />
+          <p className="text-sm text-[var(--muted)]">Memuat statistik cloud...</p>
         </div>
-      ) : displayStats && !loading ? (
+      )}
+
+      {displayStats.totalSessions === 0 && !loading && (
+        <div className="card p-12 text-center">
+          <div className="text-4xl mb-4">📊</div>
+          <p className="text-[var(--muted)] mb-4">Belum ada riwayat latihan</p>
+          <Link href="/quiz?mode=all" className="btn-primary inline-block">Mulai Latihan →</Link>
+        </div>
+      )}
+
+      {displayStats.totalSessions > 0 && !loading && (
         <>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 text-center">
-              <div className="text-3xl font-bold text-indigo-600">{displayStats.totalSessions}</div>
-              <div className="text-sm text-gray-500 mt-1">Total Sesi</div>
-            </div>
-            <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 text-center">
-              <div className="text-3xl font-bold text-purple-600">{displayStats.totalQuestions}</div>
-              <div className="text-sm text-gray-500 mt-1">Soal Dikerjakan</div>
-            </div>
-            <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 text-center">
-              <div className="text-3xl font-bold text-green-600">{displayStats.totalCorrect}</div>
-              <div className="text-sm text-gray-500 mt-1">Benar</div>
-            </div>
-            <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 text-center">
-              <div className={`text-3xl font-bold ${displayStats.totalQuestions > 0 && (displayStats.totalCorrect / displayStats.totalQuestions) * 100 >= 70 ? "text-green-500" : displayStats.totalQuestions > 0 && (displayStats.totalCorrect / displayStats.totalQuestions) * 100 >= 50 ? "text-yellow-500" : "text-red-500"}`}>
-                {displayStats.totalQuestions > 0 ? ((displayStats.totalCorrect / displayStats.totalQuestions) * 100).toFixed(0) : 0}%
+          {/* Summary cards */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {[
+              { label: "Sesi", value: displayStats.totalSessions, color: "text-[var(--primary)]" },
+              { label: "Soal", value: displayStats.totalQuestions, color: "text-[var(--muted)]" },
+              { label: "Benar", value: displayStats.totalCorrect, color: "text-[var(--success)]" },
+              { label: "Akurasi", value: `${accuracy.toFixed(0)}%`, color: accuracy >= 70 ? "text-[var(--success)]" : accuracy >= 50 ? "text-[var(--warning)]" : "text-[var(--danger)]" },
+            ].map((s) => (
+              <div key={s.label} className="card p-5 text-center">
+                <div className={`text-2xl font-bold ${s.color}`}>{s.value}</div>
+                <div className="text-xs text-[var(--muted)] mt-1">{s.label}</div>
               </div>
-              <div className="text-sm text-gray-500 mt-1">Akurasi</div>
-            </div>
+            ))}
           </div>
 
+          {/* Topic breakdown */}
           {displayStats.topicStats && displayStats.topicStats.length > 0 && (
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-              <h2 className="font-semibold text-gray-700 mb-4">Akurasi per Topik</h2>
-              <div className="space-y-3">
+            <div className="card p-6">
+              <h2 className="font-semibold mb-4">Per Topik</h2>
+              <div className="space-y-4">
                 {displayStats.topicStats
                   .sort((a, b) => b.total - a.total)
                   .map((s) => {
                     const acc = s.total > 0 ? (s.correct / s.total) * 100 : 0;
-                    const color = acc >= 70 ? "green" : acc >= 50 ? "yellow" : "red";
                     return (
                       <div key={s.topic} className="flex items-center gap-4">
-                        <div className="w-48 text-sm text-gray-700 truncate">{getTopicName(s.topic)}</div>
-                        <div className="flex-1 bg-gray-200 rounded-full h-3">
-                          <div className={`bg-${color}-500 h-3 rounded-full transition-all`} style={{ width: `${acc}%` }} />
+                        <div className="w-8 h-8 bg-[var(--muted-light)] rounded-lg flex items-center justify-center text-sm shrink-0">
+                          {topicIcons[s.topic] || "📖"}
                         </div>
-                        <div className="text-sm font-mono text-gray-600 w-24 text-right">
-                          {s.correct}/{s.total} ({acc.toFixed(0)}%)
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center justify-between mb-1.5">
+                            <span className="text-sm font-medium truncate">{getTopicName(s.topic)}</span>
+                            <span className="text-xs text-[var(--muted)] font-mono ml-2">{s.correct}/{s.total}</span>
+                          </div>
+                          <div className="w-full bg-[var(--muted-light)] rounded-full h-1.5">
+                            <div
+                              className={`h-1.5 rounded-full transition-all ${acc >= 70 ? "bg-[var(--success)]" : acc >= 50 ? "bg-[var(--warning)]" : "bg-[var(--danger)]"}`}
+                              style={{ width: `${acc}%` }}
+                            />
+                          </div>
                         </div>
+                        <span className={`text-sm font-semibold w-12 text-right ${acc >= 70 ? "text-[var(--success)]" : acc >= 50 ? "text-[var(--warning)]" : "text-[var(--danger)]"}`}>
+                          {acc.toFixed(0)}%
+                        </span>
                       </div>
                     );
                   })}
@@ -123,21 +151,22 @@ export default function StatsClient() {
             </div>
           )}
 
+          {/* Recent sessions */}
           {displayStats.recentSessions && displayStats.recentSessions.length > 0 && (
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-              <h2 className="font-semibold text-gray-700 mb-4">Sesi Terbaru</h2>
-              <div className="space-y-2">
+            <div className="card p-6">
+              <h2 className="font-semibold mb-4">Riwayat</h2>
+              <div className="space-y-1">
                 {displayStats.recentSessions.slice(0, 10).map((session) => {
                   const acc = session.total > 0 ? (session.correct / session.total) * 100 : 0;
                   return (
-                    <div key={session.id} className="flex items-center justify-between py-2 border-b border-gray-100 last:border-0">
-                      <div className="flex items-center gap-3">
-                        <span className="text-sm text-gray-500">{session.date}</span>
-                        <span className="text-sm font-medium text-gray-700">{session.mode}</span>
+                    <div key={session.id} className="flex items-center justify-between py-3 border-b border-[var(--card-border)] last:border-0">
+                      <div>
+                        <p className="text-sm font-medium">{session.mode}</p>
+                        <p className="text-xs text-[var(--muted)]">{session.date}</p>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-sm font-mono">{session.correct}/{session.total}</span>
-                        <span className={`text-sm font-bold px-2 py-0.5 rounded ${acc >= 70 ? "bg-green-100 text-green-700" : acc >= 50 ? "bg-yellow-100 text-yellow-700" : "bg-red-100 text-red-700"}`}>
+                      <div className="flex items-center gap-3">
+                        <span className="text-sm font-mono text-[var(--muted)]">{session.correct}/{session.total}</span>
+                        <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${acc >= 70 ? "bg-[var(--success-light)] text-[var(--success)]" : acc >= 50 ? "bg-[var(--warning-light)] text-[var(--warning)]" : "bg-[var(--danger-light)] text-[var(--danger)]"}`}>
                           {acc.toFixed(0)}%
                         </span>
                       </div>
@@ -148,7 +177,7 @@ export default function StatsClient() {
             </div>
           )}
         </>
-      ) : null}
+      )}
     </div>
   );
 }

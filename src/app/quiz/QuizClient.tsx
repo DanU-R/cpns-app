@@ -13,8 +13,6 @@ export default function QuizClient() {
   const topic = searchParams.get("topic");
   const mode = searchParams.get("mode");
   const urlEmail = searchParams.get("email");
-
-  // Fall back to localStorage email if not in URL
   const email = urlEmail || (typeof window !== "undefined" ? localStorage.getItem("cpns-email") || "" : "");
 
   const [questions, setQuestions] = useState<
@@ -79,8 +77,6 @@ export default function QuizClient() {
     (timedOut = false) => {
       if (!showResult && !timedOut) return;
 
-      const finalCorrect = correct;
-
       setShowResult(false);
       setSelectedAnswer(null);
 
@@ -93,16 +89,15 @@ export default function QuizClient() {
           mode: mode === "all" ? "Simulasi Lengkap" : getTopicName(topic || ""),
           topic: topic || undefined,
           total: questions.length,
-          correct: finalCorrect,
+          correct,
           questions: [...results],
         };
-        // Save to both localStorage and Turso
         addLocalResult(resultData);
         fetch("/api/results", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(resultData),
-        }).catch(() => {}); // Silent fail if DB unavailable
+        }).catch(() => {});
         return;
       }
 
@@ -118,45 +113,57 @@ export default function QuizClient() {
     return `${m}:${s.toString().padStart(2, "0")}`;
   };
 
+  // Finished
   if (isFinished) {
     const accuracy = questions.length > 0 ? (correct / questions.length) * 100 : 0;
     const passing = 60;
+    const passed = accuracy >= passing;
 
     return (
-      <div className="space-y-6">
-        <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 text-center">
-          <h1 className="text-2xl font-bold text-gray-800 mb-4">📊 Hasil Latihan</h1>
-          <div className="text-6xl font-bold mb-4">
-            <span className={accuracy >= passing ? "text-green-500" : "text-red-500"}>
+      <div className="max-w-lg mx-auto text-center animate-fadeIn">
+        <div className="card p-10">
+          <div className={`w-20 h-20 mx-auto rounded-full flex items-center justify-center text-4xl mb-6 ${passed ? "bg-[var(--success-light)]" : "bg-[var(--danger-light)]"}`}>
+            {passed ? "✅" : "❌"}
+          </div>
+          <h1 className="text-2xl font-bold mb-2">
+            {passed ? "Lulus!" : "Belum Lulus"}
+          </h1>
+          <p className="text-[var(--muted)] text-sm mb-6">
+            Passing grade: {passing}%
+          </p>
+
+          <div className="text-5xl font-bold mb-8">
+            <span className={passed ? "text-[var(--success)]" : "text-[var(--danger)]"}>
               {accuracy.toFixed(0)}%
             </span>
           </div>
-          <div className="grid grid-cols-3 gap-4 mb-6 max-w-sm mx-auto">
-            <div className="bg-green-50 rounded-lg p-3">
-              <div className="text-2xl font-bold text-green-600">{correct}</div>
-              <div className="text-xs text-green-700">Benar</div>
+
+          <div className="grid grid-cols-3 gap-3 mb-8">
+            <div className="bg-[var(--success-light)] rounded-xl p-3">
+              <div className="text-xl font-bold text-[var(--success)]">{correct}</div>
+              <div className="text-xs text-[var(--muted)]">Benar</div>
             </div>
-            <div className="bg-red-50 rounded-lg p-3">
-              <div className="text-2xl font-bold text-red-600">{questions.length - correct}</div>
-              <div className="text-xs text-red-700">Salah</div>
+            <div className="bg-[var(--danger-light)] rounded-xl p-3">
+              <div className="text-xl font-bold text-[var(--danger)]">{questions.length - correct}</div>
+              <div className="text-xs text-[var(--muted)]">Salah</div>
             </div>
-            <div className="bg-blue-50 rounded-lg p-3">
-              <div className="text-2xl font-bold text-blue-600">{questions.length}</div>
-              <div className="text-xs text-blue-700">Total</div>
+            <div className="bg-[var(--muted-light)] rounded-xl p-3">
+              <div className="text-xl font-bold text-[var(--muted)]">{questions.length}</div>
+              <div className="text-xs text-[var(--muted)]">Total</div>
             </div>
           </div>
-          <div className={`inline-block px-6 py-2 rounded-full text-white font-semibold mb-6 ${accuracy >= passing ? "bg-green-500" : "bg-red-500"}`}>
-            {accuracy >= passing ? "✅ LULUS" : "❌ BELUM LULUS"}
-          </div>
-          <p className="text-sm text-gray-500 mb-6">Passing grade: {passing}%</p>
+
           {email && (
-            <p className="text-xs text-gray-400 mb-4">📦 Data tersimpan di cloud (email: {email})</p>
+            <p className="text-xs text-[var(--muted)] mb-6 font-mono">
+              ☁️ Disimpan ke cloud ({email})
+            </p>
           )}
-          <div className="flex gap-3 justify-center">
-            <Link href="/" className="px-6 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition">
-              ← Kembali
+
+          <div className="flex gap-3">
+            <Link href="/" className="btn-ghost flex-1">
+              ← Beranda
             </Link>
-            <button onClick={() => window.location.reload()} className="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
+            <button onClick={() => window.location.reload()} className="btn-primary flex-1">
               Ulangi
             </button>
           </div>
@@ -167,70 +174,86 @@ export default function QuizClient() {
 
   if (questions.length === 0) {
     return (
-      <div className="text-center py-12">
-        <p className="text-gray-500">Memuat soal...</p>
-        <Link href="/" className="text-indigo-600 hover:underline mt-4 inline-block">
-          ← Kembali ke Beranda
-        </Link>
+      <div className="text-center py-20 text-[var(--muted)]">
+        <div className="animate-spin w-6 h-6 border-2 border-[var(--primary)] border-t-transparent rounded-full mx-auto mb-4" />
+        <p className="text-sm">Memuat soal...</p>
       </div>
     );
   }
 
   const currentQ = questions[currentIndex];
+  const progress = ((currentIndex + 1) / questions.length) * 100;
 
   return (
-    <div className="space-y-4">
-      <div className="flex items-center justify-between">
+    <div className="max-w-2xl mx-auto animate-fadeIn">
+      {/* Top bar */}
+      <div className="flex items-center justify-between mb-6">
         <div>
-          <h1 className="font-bold text-gray-800">
+          <p className="text-xs text-[var(--muted)] uppercase tracking-wider font-medium">
             {mode === "all" ? "Simulasi Lengkap" : getTopicName(topic || "")}
-          </h1>
-          <p className="text-sm text-gray-500">
-            Soal {currentIndex + 1} dari {questions.length}
+          </p>
+          <p className="text-sm font-medium mt-0.5">
+            Soal {currentIndex + 1} <span className="text-[var(--muted)]">/ {questions.length}</span>
           </p>
         </div>
-        <div className={`px-3 py-1 rounded-full text-sm font-mono font-bold ${timeLeft <= 10 ? "bg-red-100 text-red-600" : timeLeft <= 30 ? "bg-yellow-100 text-yellow-600" : "bg-green-100 text-green-600"}`}>
-          ⏱ {formatTime(timeLeft)}
+        <div className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-mono font-medium ${timeLeft <= 10 ? "bg-[var(--danger-light)] text-[var(--danger)]" : timeLeft <= 30 ? "bg-[var(--warning-light)] text-[var(--warning)]" : "bg-[var(--success-light)] text-[var(--success)]"}`}>
+          <span>⏱</span>
+          {formatTime(timeLeft)}
         </div>
       </div>
 
-      <div className="w-full bg-gray-200 rounded-full h-2">
-        <div className="bg-indigo-500 h-2 rounded-full transition-all" style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }} />
+      {/* Progress */}
+      <div className="w-full bg-[var(--muted-light)] rounded-full h-1.5 mb-8">
+        <div className="bg-[var(--primary)] h-1.5 rounded-full transition-all duration-500 ease-out" style={{ width: `${progress}%` }} />
       </div>
 
-      <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-        <p className="text-lg text-gray-800 mb-6">{currentQ.q}</p>
+      {/* Question */}
+      <div className="card p-6 md:p-8 mb-6">
+        <p className="text-lg md:text-xl font-medium leading-relaxed mb-8">{currentQ.q}</p>
+
         <div className="space-y-3">
           {currentQ.options.map((opt, i) => {
             const letter = String.fromCharCode(65 + i);
-            let className = "w-full text-left p-4 rounded-lg border-2 transition-all flex items-center gap-3 ";
+            const isCorrect = i === currentQ.answer;
+            const isSelected = i === selectedAnswer;
+
+            let baseClass = "w-full text-left p-4 rounded-xl border-2 transition-all duration-200 flex items-center gap-4 ";
+
             if (showResult) {
-              if (i === currentQ.answer) className += "border-green-500 bg-green-50 text-green-800";
-              else if (i === selectedAnswer) className += "border-red-500 bg-red-50 text-red-800";
-              else className += "border-gray-200 text-gray-400";
+              if (isCorrect) baseClass += "border-[var(--success)] bg-[var(--success-light)] ";
+              else if (isSelected) baseClass += "border-[var(--danger)] bg-[var(--danger-light)] ";
+              else baseClass += "border-[var(--card-border)] opacity-40 ";
             } else {
-              className += "border-gray-200 hover:border-indigo-300 hover:bg-indigo-50 cursor-pointer";
+              baseClass += "border-[var(--card-border)] hover:border-[var(--primary)] hover:bg-[var(--primary-light)] cursor-pointer ";
             }
+
             return (
-              <button key={i} onClick={() => handleAnswer(i)} className={className} disabled={showResult}>
-                <span className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${showResult && i === currentQ.answer ? "bg-green-500 text-white" : showResult && i === selectedAnswer ? "bg-red-500 text-white" : "bg-gray-100 text-gray-600"}`}>
+              <button key={i} onClick={() => handleAnswer(i)} className={baseClass} disabled={showResult}>
+                <span className={`w-9 h-9 rounded-lg flex items-center justify-center font-bold text-sm shrink-0 transition-all ${
+                  showResult && isCorrect ? "bg-[var(--success)] text-white" :
+                  showResult && isSelected ? "bg-[var(--danger)] text-white" :
+                  "bg-[var(--muted-light)] text-[var(--muted)]"
+                }`}>
                   {letter}
                 </span>
-                <span className="flex-1">{opt}</span>
+                <span className="text-sm md:text-base">{opt}</span>
               </button>
             );
           })}
         </div>
+
+        {/* Explanation */}
         {showResult && (
-          <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-100">
-            <p className="text-sm font-semibold text-blue-800 mb-1">💡 Pembahasan:</p>
-            <p className="text-sm text-blue-700">{currentQ.explanation}</p>
+          <div className="mt-6 p-4 bg-blue-50 border border-blue-100 rounded-xl animate-fadeIn">
+            <p className="text-xs font-semibold text-blue-600 uppercase tracking-wider mb-1">Pembahasan</p>
+            <p className="text-sm text-blue-800 leading-relaxed">{currentQ.explanation}</p>
           </div>
         )}
       </div>
 
+      {/* Next */}
       {showResult && (
-        <button onClick={() => handleNext()} className="w-full py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition">
+        <button onClick={() => handleNext()} className="w-full btn-primary py-3.5 text-base">
           {currentIndex + 1 >= questions.length ? "Lihat Hasil" : "Soal Berikutnya →"}
         </button>
       )}

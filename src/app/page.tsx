@@ -5,122 +5,151 @@ import { useState, useEffect } from "react";
 import { questionBank, getTopicName } from "@/lib/questions";
 import { getStats as getLocalStats } from "@/lib/storage";
 
+const topicIcons: Record<string, string> = {
+  jaringan_komputer: "🌐",
+  database: "🗄️",
+  keamanan_informasi: "🔒",
+  sistem_operasi: "💻",
+  pemrograman_teori: "📝",
+  hardware: "🔧",
+};
+
 export default function Home() {
   const localStats = getLocalStats();
   const [email, setEmail] = useState("");
 
   useEffect(() => {
-    // Load saved email from localStorage
     const saved = localStorage.getItem("cpns-email");
     if (saved) setEmail(saved);
   }, []);
 
-  const saveEmail = (e: string) => {
-    setEmail(e);
-    if (e) {
-      localStorage.setItem("cpns-email", e);
+  const saveEmail = () => {
+    if (email) {
+      localStorage.setItem("cpns-email", email);
     } else {
       localStorage.removeItem("cpns-email");
     }
   };
 
+  const totalQuestions = Object.values(questionBank).reduce((s, q) => s + q.length, 0);
+
   return (
-    <div className="space-y-8">
+    <div className="space-y-12">
       {/* Hero */}
-      <div className="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl p-8 text-white text-center">
-        <h1 className="text-3xl font-bold mb-2">Latihan SKB CPNS</h1>
-        <p className="text-indigo-100 text-lg">Pranata Komputer</p>
-        <p className="text-indigo-200 mt-2 text-sm">
-          Simulasi CAT dengan soal teori IT, timer, dan pembahasan
+      <section className="text-center py-8 animate-fadeIn">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[var(--primary-light)] text-[var(--primary)] rounded-full text-sm font-medium mb-6">
+          <span className="w-1.5 h-1.5 bg-[var(--primary)] rounded-full animate-pulse" />
+          Simulasi CAT BKN
+        </div>
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-3">
+          Latihan SKB CPNS
+        </h1>
+        <p className="text-lg text-[var(--muted)] max-w-md mx-auto mb-2">
+          Pranata Komputer
         </p>
-      </div>
+        <p className="text-sm text-[var(--muted)]">
+          {Object.keys(questionBank).length} topik • {totalQuestions} soal • Timer & pembahasan
+        </p>
+      </section>
 
       {/* Cloud Sync */}
-      <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-        <div className="flex items-center gap-2 mb-3">
-          <span className="text-xl">☁️</span>
-          <h2 className="font-semibold text-gray-800">Sinkronisasi Cloud (Turso)</h2>
-        </div>
-        <p className="text-sm text-gray-500 mb-3">
-          Simpan progress ke cloud agar bisa diakses dari device lain.
-        </p>
-        <div className="flex gap-2">
-          <input
-            type="email"
-            placeholder="Masukkan email kamu..."
-            value={email}
-            onChange={(e) => saveEmail(e.target.value)}
-            className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-          />
-          <button
-            onClick={() => saveEmail(email)}
-            className="px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm hover:bg-indigo-700 transition whitespace-nowrap"
-          >
-            {email ? "✅ Terhubung" : "Simpan"}
-          </button>
-        </div>
-        {email && (
-          <p className="text-xs text-gray-400 mt-2">
-            Progress akan disimpan dengan email: <span className="font-mono">{email}</span>
-          </p>
-        )}
-      </div>
-
-      {/* Quick Stats */}
-      {localStats.totalSessions > 0 && (
-        <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-          <h2 className="font-semibold text-gray-700 mb-4">📊 Ringkasan Progress (Lokal)</h2>
-          <div className="grid grid-cols-3 gap-4 text-center">
-            <div>
-              <div className="text-2xl font-bold text-indigo-600">{localStats.totalSessions}</div>
-              <div className="text-sm text-gray-500">Sesi Latihan</div>
+      <section className="card p-6 animate-fadeIn" style={{ animationDelay: "0.1s" }}>
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex-1">
+            <div className="flex items-center gap-2.5 mb-1.5">
+              <div className="w-8 h-8 bg-[var(--primary-light)] rounded-lg flex items-center justify-center text-base">
+                ☁️
+              </div>
+              <h2 className="font-semibold">Cloud Sync</h2>
             </div>
-            <div>
-              <div className="text-2xl font-bold text-green-600">{localStats.accuracy.toFixed(0)}%</div>
-              <div className="text-sm text-gray-500">Akurasi</div>
+            <p className="text-sm text-[var(--muted)] mb-4">
+              Simpan progress ke cloud, akses dari device mana saja.
+            </p>
+            <div className="flex gap-2">
+              <input
+                type="email"
+                placeholder="email@kamu.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="input max-w-xs"
+              />
+              <button onClick={saveEmail} className="btn-primary">
+                {email ? "✓ Active" : "Connect"}
+              </button>
             </div>
-            <div>
-              <div className="text-2xl font-bold text-purple-600">{localStats.totalQuestions}</div>
-              <div className="text-sm text-gray-500">Soal Dikerjakan</div>
-            </div>
+            {email && (
+              <p className="text-xs text-[var(--muted)] mt-2 font-mono">
+                Syncing as {email}
+              </p>
+            )}
           </div>
+          {email && (
+            <div className="badge badge-success">Connected</div>
+          )}
         </div>
+      </section>
+
+      {/* Stats Overview */}
+      {localStats.totalSessions > 0 && (
+        <section className="grid grid-cols-3 gap-4 animate-fadeIn" style={{ animationDelay: "0.15s" }}>
+          {[
+            { label: "Sesi", value: localStats.totalSessions, color: "text-[var(--primary)]" },
+            { label: "Akurasi", value: `${localStats.accuracy.toFixed(0)}%`, color: localStats.accuracy >= 70 ? "text-[var(--success)]" : "text-[var(--warning)]" },
+            { label: "Soal", value: localStats.totalQuestions, color: "text-[var(--muted)]" },
+          ].map((stat) => (
+            <div key={stat.label} className="card p-5 text-center">
+              <div className={`text-2xl font-bold ${stat.color}`}>{stat.value}</div>
+              <div className="text-xs text-[var(--muted)] mt-1">{stat.label}</div>
+            </div>
+          ))}
+        </section>
       )}
 
-      {/* Topic Cards */}
-      <div>
-        <h2 className="font-semibold text-gray-700 mb-4">📚 Pilih Topik Latihan</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {/* Topics */}
+      <section>
+        <div className="flex items-center justify-between mb-5">
+          <h2 className="font-semibold text-lg">Topik Latihan</h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {Object.entries(questionBank).map(([key, questions]) => (
             <Link
               key={key}
               href={`/quiz?topic=${key}${email ? `&email=${encodeURIComponent(email)}` : ""}`}
-              className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md hover:border-indigo-200 transition-all block"
+              className="card p-5 group hover:border-[var(--primary)] hover:shadow-lg transition-all duration-300 cursor-pointer"
             >
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="font-semibold text-gray-800">{getTopicName(key)}</h3>
-                  <p className="text-sm text-gray-500 mt-1">{questions.length} soal</p>
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 bg-[var(--muted-light)] rounded-xl flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+                  {topicIcons[key] || "📖"}
                 </div>
-                <span className="text-indigo-500 text-xl">→</span>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-medium text-sm truncate">{getTopicName(key)}</h3>
+                  <p className="text-xs text-[var(--muted)] mt-0.5">{questions.length} soal</p>
+                </div>
+                <span className="text-[var(--muted)] group-hover:text-[var(--primary)] group-hover:translate-x-0.5 transition-all">
+                  →
+                </span>
               </div>
             </Link>
           ))}
         </div>
-      </div>
+      </section>
 
-      {/* Full Simulation */}
-      <div>
+      {/* CTA */}
+      <section className="animate-fadeIn" style={{ animationDelay: "0.2s" }}>
         <Link
           href={`/quiz?mode=all${email ? `&email=${encodeURIComponent(email)}` : ""}`}
-          className="block bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl p-6 text-white text-center hover:shadow-lg transition-all"
+          className="block card p-8 text-center group hover:shadow-xl transition-all duration-300 border-2 border-dashed hover:border-[var(--primary)] hover:border-solid"
         >
-          <h2 className="text-xl font-bold mb-1">🎯 Simulasi SKB Lengkap</h2>
-          <p className="text-green-100 text-sm">
-            Semua topik acak • {Object.values(questionBank).reduce((s, q) => s + q.length, 0)} soal
+          <div className="text-3xl mb-3">🎯</div>
+          <h2 className="text-xl font-bold mb-1.5">Simulasi Lengkap</h2>
+          <p className="text-sm text-[var(--muted)] mb-4">
+            Semua topik diacak • {totalQuestions} soal • Passing grade 60%
           </p>
+          <span className="btn-primary inline-block">
+            Mulai Simulasi →
+          </span>
         </Link>
-      </div>
+      </section>
     </div>
   );
 }
