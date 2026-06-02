@@ -16,7 +16,8 @@ interface CloudStats {
 
 export default function StatsClient() {
   const searchParams = useSearchParams();
-  const email = searchParams.get("email");
+  const urlEmail = searchParams.get("email");
+  const email = urlEmail || (typeof window !== "undefined" ? localStorage.getItem("cpns-email") || "" : "");
   const [cloudStats, setCloudStats] = useState<CloudStats | null>(null);
   const [loading, setLoading] = useState(false);
 

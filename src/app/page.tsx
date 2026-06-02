@@ -1,9 +1,28 @@
+"use client";
+
 import Link from "next/link";
+import { useState, useEffect } from "react";
 import { questionBank, getTopicName } from "@/lib/questions";
 import { getStats as getLocalStats } from "@/lib/storage";
 
 export default function Home() {
   const localStats = getLocalStats();
+  const [email, setEmail] = useState("");
+
+  useEffect(() => {
+    // Load saved email from localStorage
+    const saved = localStorage.getItem("cpns-email");
+    if (saved) setEmail(saved);
+  }, []);
+
+  const saveEmail = (e: string) => {
+    setEmail(e);
+    if (e) {
+      localStorage.setItem("cpns-email", e);
+    } else {
+      localStorage.removeItem("cpns-email");
+    }
+  };
 
   return (
     <div className="space-y-8">
@@ -16,14 +35,35 @@ export default function Home() {
         </p>
       </div>
 
-      {/* Email sync banner */}
-      <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800">
-        <p className="font-semibold mb-1">☁️ Sinkronisasi Cloud (Turso)</p>
-        <p className="text-amber-700">
-          Tambahkan <code className="bg-amber-100 px-1 rounded">?email=kamu@email.com</code> di URL untuk sync progress ke cloud.
-          <br />
-          Contoh: <code className="bg-amber-100 px-1 rounded">/quiz?mode=all&email=test@mail.com</code>
+      {/* Cloud Sync */}
+      <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+        <div className="flex items-center gap-2 mb-3">
+          <span className="text-xl">☁️</span>
+          <h2 className="font-semibold text-gray-800">Sinkronisasi Cloud (Turso)</h2>
+        </div>
+        <p className="text-sm text-gray-500 mb-3">
+          Simpan progress ke cloud agar bisa diakses dari device lain.
         </p>
+        <div className="flex gap-2">
+          <input
+            type="email"
+            placeholder="Masukkan email kamu..."
+            value={email}
+            onChange={(e) => saveEmail(e.target.value)}
+            className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+          />
+          <button
+            onClick={() => saveEmail(email)}
+            className="px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm hover:bg-indigo-700 transition whitespace-nowrap"
+          >
+            {email ? "✅ Terhubung" : "Simpan"}
+          </button>
+        </div>
+        {email && (
+          <p className="text-xs text-gray-400 mt-2">
+            Progress akan disimpan dengan email: <span className="font-mono">{email}</span>
+          </p>
+        )}
       </div>
 
       {/* Quick Stats */}
@@ -54,7 +94,7 @@ export default function Home() {
           {Object.entries(questionBank).map(([key, questions]) => (
             <Link
               key={key}
-              href={`/quiz?topic=${key}`}
+              href={`/quiz?topic=${key}${email ? `&email=${encodeURIComponent(email)}` : ""}`}
               className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md hover:border-indigo-200 transition-all block"
             >
               <div className="flex items-center justify-between">
@@ -72,7 +112,7 @@ export default function Home() {
       {/* Full Simulation */}
       <div>
         <Link
-          href="/quiz?mode=all"
+          href={`/quiz?mode=all${email ? `&email=${encodeURIComponent(email)}` : ""}`}
           className="block bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl p-6 text-white text-center hover:shadow-lg transition-all"
         >
           <h2 className="text-xl font-bold mb-1">🎯 Simulasi SKB Lengkap</h2>

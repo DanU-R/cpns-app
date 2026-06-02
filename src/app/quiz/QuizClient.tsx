@@ -12,7 +12,10 @@ export default function QuizClient() {
   const searchParams = useSearchParams();
   const topic = searchParams.get("topic");
   const mode = searchParams.get("mode");
-  const email = searchParams.get("email");
+  const urlEmail = searchParams.get("email");
+
+  // Fall back to localStorage email if not in URL
+  const email = urlEmail || (typeof window !== "undefined" ? localStorage.getItem("cpns-email") || "" : "");
 
   const [questions, setQuestions] = useState<
     { q: string; options: string[]; answer: number; explanation: string; topic: string }[]
